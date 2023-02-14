@@ -40,12 +40,12 @@ public class Type_factory__o_u_e_p_c_p_e_l_e_p_EditHTMLView__quals__j_e_i_Any_j_
     final EditHTMLView instance = new EditHTMLView(_translationService_0);
     registerDependentScopedReference(instance, _translationService_0);
     setIncompleteInstance(instance);
-    final Div EditHTMLView_body = (Div) contextManager.getInstance("ExtensionProvided_factory__o_j_e_c_c_d_Div__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
-    registerDependentScopedReference(instance, EditHTMLView_body);
-    EditHTMLView_Div_body(instance, EditHTMLView_body);
     final Div EditHTMLView_footer = (Div) contextManager.getInstance("ExtensionProvided_factory__o_j_e_c_c_d_Div__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
     registerDependentScopedReference(instance, EditHTMLView_footer);
     EditHTMLView_Div_footer(instance, EditHTMLView_footer);
+    final Div EditHTMLView_body = (Div) contextManager.getInstance("ExtensionProvided_factory__o_j_e_c_c_d_Div__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
+    registerDependentScopedReference(instance, EditHTMLView_body);
+    EditHTMLView_Div_body(instance, EditHTMLView_body);
     o_u_e_p_c_p_e_l_e_p_EditHTMLViewTemplateResource templateForEditHTMLView = GWT.create(o_u_e_p_c_p_e_l_e_p_EditHTMLViewTemplateResource.class);
     Element parentElementForTemplateOfEditHTMLView = TemplateUtil.getRootTemplateParentElement(templateForEditHTMLView.getContents().getText(), "org/uberfire/ext/plugin/client/perspective/editor/layout/editor/popups/EditHTMLView.html", "");
     TemplateUtil.translateTemplate("org/uberfire/ext/plugin/client/perspective/editor/layout/editor/popups/EditHTMLView.html", TemplateUtil.getRootTemplateElement(parentElementForTemplateOfEditHTMLView));

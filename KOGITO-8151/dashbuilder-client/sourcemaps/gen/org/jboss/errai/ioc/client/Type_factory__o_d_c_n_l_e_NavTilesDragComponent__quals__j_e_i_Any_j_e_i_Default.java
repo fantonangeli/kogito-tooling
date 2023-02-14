@@ -29,13 +29,13 @@ public class Type_factory__o_d_c_n_l_e_NavTilesDragComponent__quals__j_e_i_Any_j
   }
 
   public NavTilesDragComponent createInstance(final ContextManager contextManager) {
-    final NavigationManager _navigationManager_0 = (NavigationManagerImpl) contextManager.getInstance("Type_factory__o_d_c_n_i_NavigationManagerImpl__quals__j_e_i_Any_j_e_i_Default");
-    final NavComponentConfigModal _navComponentConfigModal_2 = (NavComponentConfigModal) contextManager.getInstance("Type_factory__o_d_c_n_w_NavComponentConfigModal__quals__j_e_i_Any_j_e_i_Default");
     final NavTilesWidget _navWidget_3 = (NavTilesWidget) contextManager.getInstance("Type_factory__o_d_c_n_w_NavTilesWidget__quals__j_e_i_Any_j_e_i_Default");
     final PerspectivePluginManager _pluginManager_1 = (RuntimePerspectivePluginManager) contextManager.getInstance("Type_factory__o_d_c_p_RuntimePerspectivePluginManager__quals__j_e_i_Any_j_e_i_Default");
+    final NavComponentConfigModal _navComponentConfigModal_2 = (NavComponentConfigModal) contextManager.getInstance("Type_factory__o_d_c_n_w_NavComponentConfigModal__quals__j_e_i_Any_j_e_i_Default");
+    final NavigationManager _navigationManager_0 = (NavigationManagerImpl) contextManager.getInstance("Type_factory__o_d_c_n_i_NavigationManagerImpl__quals__j_e_i_Any_j_e_i_Default");
     final NavTilesDragComponent instance = new NavTilesDragComponent(_navigationManager_0, _pluginManager_1, _navComponentConfigModal_2, _navWidget_3);
-    registerDependentScopedReference(instance, _navComponentConfigModal_2);
     registerDependentScopedReference(instance, _navWidget_3);
+    registerDependentScopedReference(instance, _navComponentConfigModal_2);
     setIncompleteInstance(instance);
     thisInstance.setReference(instance, "onNavTreeChangedSubscription", CDI.subscribe("org.dashbuilder.navigation.event.NavTreeChangedEvent", new AbstractCDIEventCallback<NavTreeChangedEvent>() {
       public void fireEvent(final NavTreeChangedEvent event) {

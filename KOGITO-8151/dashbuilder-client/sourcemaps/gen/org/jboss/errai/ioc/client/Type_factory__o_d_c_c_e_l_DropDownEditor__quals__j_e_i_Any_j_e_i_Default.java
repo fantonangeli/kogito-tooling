@@ -25,12 +25,12 @@ public class Type_factory__o_d_c_c_e_l_DropDownEditor__quals__j_e_i_Any_j_e_i_De
 
   public DropDownEditor createInstance(final ContextManager contextManager) {
     final View _view_0 = (DropDownEditorView) contextManager.getInstance("Type_factory__o_d_c_c_e_l_DropDownEditorView__quals__j_e_i_Any_j_e_i_Default");
-    final LiveSearchDropDown _dropDown_1 = (LiveSearchDropDown) contextManager.getInstance("Type_factory__o_u_e_w_c_c_d_LiveSearchDropDown__quals__j_e_i_Any_j_e_i_Default");
     final Event<ValueChangeEvent<String>> _valueChangeEvent_2 = (Event) contextManager.getContextualInstance("ContextualProvider_factory__j_e_e_Event__quals__Universal", new Class[] { ValueChangeEvent.class }, new Annotation[] { });
+    final LiveSearchDropDown _dropDown_1 = (LiveSearchDropDown) contextManager.getInstance("Type_factory__o_u_e_w_c_c_d_LiveSearchDropDown__quals__j_e_i_Any_j_e_i_Default");
     final DropDownEditor instance = new DropDownEditor(_view_0, _dropDown_1, _valueChangeEvent_2);
     registerDependentScopedReference(instance, _view_0);
-    registerDependentScopedReference(instance, _dropDown_1);
     registerDependentScopedReference(instance, _valueChangeEvent_2);
+    registerDependentScopedReference(instance, _dropDown_1);
     setIncompleteInstance(instance);
     setIncompleteInstance(null);
     return instance;

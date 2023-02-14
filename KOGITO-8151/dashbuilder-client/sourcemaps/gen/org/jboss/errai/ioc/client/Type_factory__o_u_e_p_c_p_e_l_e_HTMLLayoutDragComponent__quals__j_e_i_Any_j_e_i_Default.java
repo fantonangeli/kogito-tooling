@@ -20,11 +20,11 @@ public class Type_factory__o_u_e_p_c_p_e_l_e_HTMLLayoutDragComponent__quals__j_e
   public HTMLLayoutDragComponent createInstance(final ContextManager contextManager) {
     final HTMLLayoutDragComponent instance = new HTMLLayoutDragComponent();
     setIncompleteInstance(instance);
+    final LayoutEditorCssHelper HTMLLayoutDragComponent_layoutCssHelper = (LayoutEditorCssHelper) contextManager.getInstance("Type_factory__o_u_e_l_e_c_i_LayoutEditorCssHelper__quals__j_e_i_Any_j_e_i_Default");
+    HTMLLayoutDragComponent_LayoutEditorCssHelper_layoutCssHelper(instance, HTMLLayoutDragComponent_layoutCssHelper);
     final EditHTMLPresenter HTMLLayoutDragComponent_htmlEditor = (EditHTMLPresenter) contextManager.getInstance("Type_factory__o_u_e_p_c_p_e_l_e_p_EditHTMLPresenter__quals__j_e_i_Any_j_e_i_Default");
     registerDependentScopedReference(instance, HTMLLayoutDragComponent_htmlEditor);
     HTMLLayoutDragComponent_EditHTMLPresenter_htmlEditor(instance, HTMLLayoutDragComponent_htmlEditor);
-    final LayoutEditorCssHelper HTMLLayoutDragComponent_layoutCssHelper = (LayoutEditorCssHelper) contextManager.getInstance("Type_factory__o_u_e_l_e_c_i_LayoutEditorCssHelper__quals__j_e_i_Any_j_e_i_Default");
-    HTMLLayoutDragComponent_LayoutEditorCssHelper_layoutCssHelper(instance, HTMLLayoutDragComponent_layoutCssHelper);
     setIncompleteInstance(null);
     return instance;
   }

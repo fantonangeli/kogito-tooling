@@ -29,10 +29,10 @@ public class Type_factory__o_d_c_n_l_e_NavMenuBarDragComponent__quals__j_e_i_Any
   }
 
   public NavMenuBarDragComponent createInstance(final ContextManager contextManager) {
+    final PerspectivePluginManager _pluginManager_1 = (RuntimePerspectivePluginManager) contextManager.getInstance("Type_factory__o_d_c_p_RuntimePerspectivePluginManager__quals__j_e_i_Any_j_e_i_Default");
+    final NavigationManager _navigationManager_0 = (NavigationManagerImpl) contextManager.getInstance("Type_factory__o_d_c_n_i_NavigationManagerImpl__quals__j_e_i_Any_j_e_i_Default");
     final NavComponentConfigModal _navComponentConfigModal_2 = (NavComponentConfigModal) contextManager.getInstance("Type_factory__o_d_c_n_w_NavComponentConfigModal__quals__j_e_i_Any_j_e_i_Default");
     final NavMenuBarWidget _navWidget_3 = (NavMenuBarWidget) contextManager.getInstance("Type_factory__o_d_c_n_w_NavMenuBarWidget__quals__j_e_i_Any_j_e_i_Default");
-    final NavigationManager _navigationManager_0 = (NavigationManagerImpl) contextManager.getInstance("Type_factory__o_d_c_n_i_NavigationManagerImpl__quals__j_e_i_Any_j_e_i_Default");
-    final PerspectivePluginManager _pluginManager_1 = (RuntimePerspectivePluginManager) contextManager.getInstance("Type_factory__o_d_c_p_RuntimePerspectivePluginManager__quals__j_e_i_Any_j_e_i_Default");
     final NavMenuBarDragComponent instance = new NavMenuBarDragComponent(_navigationManager_0, _pluginManager_1, _navComponentConfigModal_2, _navWidget_3);
     registerDependentScopedReference(instance, _navComponentConfigModal_2);
     registerDependentScopedReference(instance, _navWidget_3);

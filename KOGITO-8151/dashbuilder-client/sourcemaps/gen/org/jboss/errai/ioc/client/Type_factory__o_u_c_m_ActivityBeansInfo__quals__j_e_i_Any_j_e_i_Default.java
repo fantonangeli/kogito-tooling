@@ -149,8 +149,8 @@ public class Type_factory__o_u_c_m_ActivityBeansInfo__quals__j_e_i_Any_j_e_i_Def
   }
 
   public ActivityBeansInfo createInstance(final ContextManager contextManager) {
-    final SyncBeanManager _beanManager_0 = (SyncBeanManager) contextManager.getInstance("Producer_factory__o_j_e_i_c_c_SyncBeanManager__quals__j_e_i_Any_j_e_i_Default");
     final ActivityBeansCache _activityBeansCache_1 = (ActivityBeansCache) contextManager.getInstance("Type_factory__o_u_c_m_ActivityBeansCache__quals__j_e_i_Any_j_e_i_Default");
+    final SyncBeanManager _beanManager_0 = (SyncBeanManager) contextManager.getInstance("Producer_factory__o_j_e_i_c_c_SyncBeanManager__quals__j_e_i_Any_j_e_i_Default");
     final ActivityBeansInfo instance = new ActivityBeansInfo(_beanManager_0, _activityBeansCache_1);
     registerDependentScopedReference(instance, _beanManager_0);
     setIncompleteInstance(instance);

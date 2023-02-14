@@ -24,10 +24,10 @@ public class Type_factory__o_u_c_w_p_i_SplitLayoutPanelView__quals__j_e_i_Any_j_
   public SplitLayoutPanelView createInstance(final ContextManager contextManager) {
     final SplitLayoutPanelView instance = new SplitLayoutPanelView();
     setIncompleteInstance(instance);
-    final PlaceManagerImpl SplitLayoutPanelView_placeManager = (PlaceManagerImpl) contextManager.getInstance("Type_factory__o_u_c_m_PlaceManagerImpl__quals__j_e_i_Any_j_e_i_Default");
-    SplitLayoutPanelView_PlaceManager_placeManager(instance, SplitLayoutPanelView_placeManager);
     final LayoutSelection SplitLayoutPanelView_layoutSelection = (LayoutSelection) contextManager.getInstance("Type_factory__o_u_c_w_LayoutSelection__quals__j_e_i_Any_j_e_i_Default");
     SplitLayoutPanelView_LayoutSelection_layoutSelection(instance, SplitLayoutPanelView_layoutSelection);
+    final PlaceManagerImpl SplitLayoutPanelView_placeManager = (PlaceManagerImpl) contextManager.getInstance("Type_factory__o_u_c_m_PlaceManagerImpl__quals__j_e_i_Any_j_e_i_Default");
+    SplitLayoutPanelView_PlaceManager_placeManager(instance, SplitLayoutPanelView_placeManager);
     setIncompleteInstance(null);
     return instance;
   }

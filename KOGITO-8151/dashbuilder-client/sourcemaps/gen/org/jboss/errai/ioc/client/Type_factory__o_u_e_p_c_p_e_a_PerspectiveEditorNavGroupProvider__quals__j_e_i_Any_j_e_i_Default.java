@@ -101,8 +101,8 @@ public class Type_factory__o_u_e_p_c_p_e_a_PerspectiveEditorNavGroupProvider__qu
   }
 
   public PerspectiveEditorNavGroupProvider createInstance(final ContextManager contextManager) {
-    final SyncBeanManager _beanManager_0 = (SyncBeanManager) contextManager.getInstance("Producer_factory__o_j_e_i_c_c_SyncBeanManager__quals__j_e_i_Any_j_e_i_Default");
     final PerspectiveEditorPaletteI18n _i18n_1 = (PerspectiveEditorPaletteI18nImpl) contextManager.getInstance("Type_factory__o_u_e_p_c_r_i_PerspectiveEditorPaletteI18nImpl__quals__j_e_i_Any_j_e_i_Default");
+    final SyncBeanManager _beanManager_0 = (SyncBeanManager) contextManager.getInstance("Producer_factory__o_j_e_i_c_c_SyncBeanManager__quals__j_e_i_Any_j_e_i_Default");
     final PerspectiveEditorNavGroupProvider instance = new PerspectiveEditorNavGroupProvider(_beanManager_0, _i18n_1);
     registerDependentScopedReference(instance, _beanManager_0);
     setIncompleteInstance(instance);

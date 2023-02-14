@@ -36,12 +36,12 @@ public class Type_factory__o_u_c_v_p_m_m_m_GroupMenuItemView__quals__j_e_i_Any_j
   public GroupMenuItemView createInstance(final ContextManager contextManager) {
     final GroupMenuItemView instance = new GroupMenuItemView();
     setIncompleteInstance(instance);
-    final UnorderedList GroupMenuItemView_items = (UnorderedList) contextManager.getInstance("ExtensionProvided_factory__o_j_e_c_c_d_UnorderedList__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
-    registerDependentScopedReference(instance, GroupMenuItemView_items);
-    GroupMenuItemView_UnorderedList_items(instance, GroupMenuItemView_items);
     final Heading GroupMenuItemView_title = (Heading) contextManager.getInstance("ExtensionProvided_factory__o_j_e_c_c_d_Heading__quals__j_e_i_Any_j_e_i_Default_j_i_Named_1");
     registerDependentScopedReference(instance, GroupMenuItemView_title);
     GroupMenuItemView_Heading_title(instance, GroupMenuItemView_title);
+    final UnorderedList GroupMenuItemView_items = (UnorderedList) contextManager.getInstance("ExtensionProvided_factory__o_j_e_c_c_d_UnorderedList__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
+    registerDependentScopedReference(instance, GroupMenuItemView_items);
+    GroupMenuItemView_UnorderedList_items(instance, GroupMenuItemView_items);
     o_u_c_v_p_m_m_m_GroupMenuItemViewTemplateResource templateForGroupMenuItemView = GWT.create(o_u_c_v_p_m_m_m_GroupMenuItemViewTemplateResource.class);
     Element parentElementForTemplateOfGroupMenuItemView = TemplateUtil.getRootTemplateParentElement(templateForGroupMenuItemView.getContents().getText(), "org/uberfire/client/views/pfly/menu/megamenu/menuitem/GroupMenuItemView.html", "");
     TemplateUtil.translateTemplate("org/uberfire/client/views/pfly/menu/megamenu/menuitem/GroupMenuItemView.html", TemplateUtil.getRootTemplateElement(parentElementForTemplateOfGroupMenuItemView));

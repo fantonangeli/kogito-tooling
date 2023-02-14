@@ -1,4 +1,4 @@
-// .ui.xml template last modified: 1676275309353
+// .ui.xml template last modified: 1676370409533
 package org.uberfire.ext.plugin.client.perspective.editor;
 
 import com.google.gwt.core.client.GWT;

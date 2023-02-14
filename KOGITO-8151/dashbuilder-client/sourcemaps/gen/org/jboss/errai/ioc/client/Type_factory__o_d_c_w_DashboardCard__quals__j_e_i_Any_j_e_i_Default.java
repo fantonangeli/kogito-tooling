@@ -20,11 +20,11 @@ public class Type_factory__o_d_c_w_DashboardCard__quals__j_e_i_Any_j_e_i_Default
   public DashboardCard createInstance(final ContextManager contextManager) {
     final DashboardCard instance = new DashboardCard();
     setIncompleteInstance(instance);
-    final RouterScreen DashboardCard_routerScreen = (RouterScreen) contextManager.getInstance("Type_factory__o_d_c_s_RouterScreen__quals__j_e_i_Any_j_e_i_Default");
-    DashboardCard_RouterScreen_routerScreen(instance, DashboardCard_routerScreen);
     final DashboardCardView DashboardCard_view = (DashboardCardView) contextManager.getInstance("Type_factory__o_d_c_w_v_DashboardCardView__quals__j_e_i_Any_j_e_i_Default");
     registerDependentScopedReference(instance, DashboardCard_view);
     DashboardCard_View_view(instance, DashboardCard_view);
+    final RouterScreen DashboardCard_routerScreen = (RouterScreen) contextManager.getInstance("Type_factory__o_d_c_s_RouterScreen__quals__j_e_i_Any_j_e_i_Default");
+    DashboardCard_RouterScreen_routerScreen(instance, DashboardCard_routerScreen);
     final PlaceManagerImpl DashboardCard_placeManager = (PlaceManagerImpl) contextManager.getInstance("Type_factory__o_u_c_m_PlaceManagerImpl__quals__j_e_i_Any_j_e_i_Default");
     DashboardCard_PlaceManager_placeManager(instance, DashboardCard_placeManager);
     setIncompleteInstance(null);

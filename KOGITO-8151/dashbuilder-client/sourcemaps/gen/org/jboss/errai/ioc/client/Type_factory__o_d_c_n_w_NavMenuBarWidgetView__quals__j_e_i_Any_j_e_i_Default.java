@@ -53,6 +53,9 @@ public class Type_factory__o_d_c_n_w_NavMenuBarWidgetView__quals__j_e_i_Any_j_e_
     final NavMenuBarWidgetView instance = new NavMenuBarWidgetView(_alertBox_0);
     registerDependentScopedReference(instance, _alertBox_0);
     setIncompleteInstance(instance);
+    final UnorderedList NavMenuBarWidgetView_navBar = (UnorderedList) contextManager.getInstance("ExtensionProvided_factory__o_j_e_c_c_d_UnorderedList__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
+    registerDependentScopedReference(instance, NavMenuBarWidgetView_navBar);
+    NavMenuBarWidgetView_UnorderedList_navBar(instance, NavMenuBarWidgetView_navBar);
     final HTMLElement NavMenuBarWidgetView_nav = (HTMLElement) contextManager.getContextualInstance("ContextualProvider_factory__o_j_e_c_c_d_HTMLElement__quals__Universal", new Class[] { }, new Annotation[] { new Named() {
         public Class annotationType() {
           return Named.class;
@@ -66,9 +69,6 @@ public class Type_factory__o_d_c_n_w_NavMenuBarWidgetView__quals__j_e_i_Any_j_e_
     } });
     registerDependentScopedReference(instance, NavMenuBarWidgetView_nav);
     NavMenuBarWidgetView_HTMLElement_nav(instance, NavMenuBarWidgetView_nav);
-    final UnorderedList NavMenuBarWidgetView_navBar = (UnorderedList) contextManager.getInstance("ExtensionProvided_factory__o_j_e_c_c_d_UnorderedList__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
-    registerDependentScopedReference(instance, NavMenuBarWidgetView_navBar);
-    NavMenuBarWidgetView_UnorderedList_navBar(instance, NavMenuBarWidgetView_navBar);
     final Div NavMenuBarWidgetView_mainDiv = (Div) contextManager.getInstance("ExtensionProvided_factory__o_j_e_c_c_d_Div__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
     registerDependentScopedReference(instance, NavMenuBarWidgetView_mainDiv);
     NavMenuBarWidgetView_Div_mainDiv(instance, NavMenuBarWidgetView_mainDiv);

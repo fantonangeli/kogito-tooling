@@ -24,12 +24,12 @@ public class Type_factory__o_d_d_c_w_ExternalComponentPropertiesEditor__quals__j
     final ExternalComponentPropertiesEditorView ExternalComponentPropertiesEditor_view = (ExternalComponentPropertiesEditorView) contextManager.getInstance("Type_factory__o_d_d_c_w_ExternalComponentPropertiesEditorView__quals__j_e_i_Any_j_e_i_Default");
     registerDependentScopedReference(instance, ExternalComponentPropertiesEditor_view);
     ExternalComponentPropertiesEditor_View_view(instance, ExternalComponentPropertiesEditor_view);
-    final BusyIndicatorView ExternalComponentPropertiesEditor_loading = (BusyIndicatorView) contextManager.getInstance("Type_factory__o_u_e_w_c_c_c_BusyIndicatorView__quals__j_e_i_Any_j_e_i_Default");
-    registerDependentScopedReference(instance, ExternalComponentPropertiesEditor_loading);
-    ExternalComponentPropertiesEditor_BusyIndicatorView_loading(instance, ExternalComponentPropertiesEditor_loading);
     final Caller ExternalComponentPropertiesEditor_externalComponentService = (Caller) contextManager.getContextualInstance("ContextualProvider_factory__o_j_e_c_c_a_Caller__quals__Universal", new Class[] { ComponentService.class }, new Annotation[] { });
     registerDependentScopedReference(instance, ExternalComponentPropertiesEditor_externalComponentService);
     ExternalComponentPropertiesEditor_Caller_externalComponentService(instance, ExternalComponentPropertiesEditor_externalComponentService);
+    final BusyIndicatorView ExternalComponentPropertiesEditor_loading = (BusyIndicatorView) contextManager.getInstance("Type_factory__o_u_e_w_c_c_c_BusyIndicatorView__quals__j_e_i_Any_j_e_i_Default");
+    registerDependentScopedReference(instance, ExternalComponentPropertiesEditor_loading);
+    ExternalComponentPropertiesEditor_BusyIndicatorView_loading(instance, ExternalComponentPropertiesEditor_loading);
     setIncompleteInstance(null);
     return instance;
   }

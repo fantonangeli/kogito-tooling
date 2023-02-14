@@ -272,14 +272,14 @@ public class Type_factory__o_d_c_n_p_PerspectivePluginManagerImpl__quals__j_e_i_
   }
 
   public PerspectivePluginManagerImpl createInstance(final ContextManager contextManager) {
-    final LayoutGenerator _layoutGenerator_0 = (BootstrapLayoutGenerator) contextManager.getInstance("Type_factory__o_u_e_l_e_c_g_BootstrapLayoutGenerator__quals__j_e_i_Any_j_e_i_Default");
+    final NavigationManager _navigationManager_1 = (NavigationManagerImpl) contextManager.getInstance("Type_factory__o_d_c_n_i_NavigationManagerImpl__quals__j_e_i_Any_j_e_i_Default");
     final Caller<PerspectivePluginServices> _pluginServices_2 = (Caller) contextManager.getContextualInstance("ContextualProvider_factory__o_j_e_c_c_a_Caller__quals__Universal", new Class[] { PerspectivePluginServices.class }, new Annotation[] { });
     final Event<PerspectivePluginsChangedEvent> _perspectivesChangedEvent_3 = (Event) contextManager.getContextualInstance("ContextualProvider_factory__j_e_e_Event__quals__Universal", new Class[] { PerspectivePluginsChangedEvent.class }, new Annotation[] { });
-    final NavigationManager _navigationManager_1 = (NavigationManagerImpl) contextManager.getInstance("Type_factory__o_d_c_n_i_NavigationManagerImpl__quals__j_e_i_Any_j_e_i_Default");
+    final LayoutGenerator _layoutGenerator_0 = (BootstrapLayoutGenerator) contextManager.getInstance("Type_factory__o_u_e_l_e_c_g_BootstrapLayoutGenerator__quals__j_e_i_Any_j_e_i_Default");
     final PerspectivePluginManagerImpl instance = new PerspectivePluginManagerImpl(_layoutGenerator_0, _navigationManager_1, _pluginServices_2, _perspectivesChangedEvent_3);
-    registerDependentScopedReference(instance, _layoutGenerator_0);
     registerDependentScopedReference(instance, _pluginServices_2);
     registerDependentScopedReference(instance, _perspectivesChangedEvent_3);
+    registerDependentScopedReference(instance, _layoutGenerator_0);
     setIncompleteInstance(instance);
     setIncompleteInstance(null);
     return instance;

@@ -50,9 +50,6 @@ public class Type_factory__o_u_c_v_p_m_MultiScreenPartWidget__quals__j_e_i_Any_j
   public MultiScreenPartWidget createInstance(final ContextManager contextManager) {
     final MultiScreenPartWidget instance = new MultiScreenPartWidget();
     setIncompleteInstance(instance);
-    final ManagedInstance MultiScreenPartWidget_multiScreenViews = (ManagedInstance) contextManager.getContextualInstance("ContextualProvider_factory__o_j_e_i_c_a_ManagedInstance__quals__Universal", new Class[] { MultiScreenView.class }, new Annotation[] { });
-    registerDependentScopedReference(instance, MultiScreenPartWidget_multiScreenViews);
-    MultiScreenPartWidget_ManagedInstance_multiScreenViews(instance, MultiScreenPartWidget_multiScreenViews);
     final MultiScreenMenuBuilder MultiScreenPartWidget_menuBuilder = (MultiScreenMenuBuilder) contextManager.getInstance("Type_factory__o_u_c_v_p_m_MultiScreenMenuBuilder__quals__j_e_i_Any_j_e_i_Default");
     registerDependentScopedReference(instance, MultiScreenPartWidget_menuBuilder);
     MultiScreenPartWidget_MultiScreenMenuBuilder_menuBuilder(instance, MultiScreenPartWidget_menuBuilder);
@@ -61,6 +58,9 @@ public class Type_factory__o_u_c_v_p_m_MultiScreenPartWidget__quals__j_e_i_Any_j
     MultiScreenPartWidget_HTMLDivElement_content(instance, MultiScreenPartWidget_content);
     final PanelManagerImpl MultiScreenPartWidget_panelManager = (PanelManagerImpl) contextManager.getInstance("Type_factory__o_u_c_w_PanelManagerImpl__quals__j_e_i_Any_j_e_i_Default");
     MultiScreenPartWidget_PanelManager_panelManager(instance, MultiScreenPartWidget_panelManager);
+    final ManagedInstance MultiScreenPartWidget_multiScreenViews = (ManagedInstance) contextManager.getContextualInstance("ContextualProvider_factory__o_j_e_i_c_a_ManagedInstance__quals__Universal", new Class[] { MultiScreenView.class }, new Annotation[] { });
+    registerDependentScopedReference(instance, MultiScreenPartWidget_multiScreenViews);
+    MultiScreenPartWidget_ManagedInstance_multiScreenViews(instance, MultiScreenPartWidget_multiScreenViews);
     o_u_c_v_p_m_MultiScreenPartWidgetTemplateResource templateForMultiScreenPartWidget = GWT.create(o_u_c_v_p_m_MultiScreenPartWidgetTemplateResource.class);
     Element parentElementForTemplateOfMultiScreenPartWidget = TemplateUtil.getRootTemplateParentElement(templateForMultiScreenPartWidget.getContents().getText(), "org/uberfire/client/views/pfly/multiscreen/MultiScreenPartWidget.html", "");
     TemplateUtil.translateTemplate("org/uberfire/client/views/pfly/multiscreen/MultiScreenPartWidget.html", TemplateUtil.getRootTemplateElement(parentElementForTemplateOfMultiScreenPartWidget));

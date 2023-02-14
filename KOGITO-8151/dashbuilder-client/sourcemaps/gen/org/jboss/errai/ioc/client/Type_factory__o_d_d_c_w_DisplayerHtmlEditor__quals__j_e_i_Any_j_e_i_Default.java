@@ -16,11 +16,11 @@ public class Type_factory__o_d_d_c_w_DisplayerHtmlEditor__quals__j_e_i_Any_j_e_i
   }
 
   public DisplayerHtmlEditor createInstance(final ContextManager contextManager) {
-    final View _view_0 = (DisplayerHtmlEditorView) contextManager.getInstance("Type_factory__o_d_d_c_w_DisplayerHtmlEditorView__quals__j_e_i_Any_j_e_i_Default");
     final SourceCodeEditor _sourceCodeEditor_1 = (SourceCodeEditor) contextManager.getInstance("Type_factory__o_d_d_c_w_s_SourceCodeEditor__quals__j_e_i_Any_j_e_i_Default");
+    final View _view_0 = (DisplayerHtmlEditorView) contextManager.getInstance("Type_factory__o_d_d_c_w_DisplayerHtmlEditorView__quals__j_e_i_Any_j_e_i_Default");
     final DisplayerHtmlEditor instance = new DisplayerHtmlEditor(_view_0, _sourceCodeEditor_1);
-    registerDependentScopedReference(instance, _view_0);
     registerDependentScopedReference(instance, _sourceCodeEditor_1);
+    registerDependentScopedReference(instance, _view_0);
     setIncompleteInstance(instance);
     setIncompleteInstance(null);
     return instance;

@@ -20,13 +20,13 @@ public class Type_factory__o_d_d_c_w_g_ColumnFunctionEditor__quals__j_e_i_Any_j_
   }
 
   public ColumnFunctionEditor createInstance(final ContextManager contextManager) {
-    final ColumnDetailsEditor _columnDetailsEditor_1 = (ColumnDetailsEditor) contextManager.getInstance("Type_factory__o_d_d_c_w_g_ColumnDetailsEditor__quals__j_e_i_Any_j_e_i_Default");
     final Event<GroupFunctionChangedEvent> _changeEvent_2 = (Event) contextManager.getContextualInstance("ContextualProvider_factory__j_e_e_Event__quals__Universal", new Class[] { GroupFunctionChangedEvent.class }, new Annotation[] { });
+    final ColumnDetailsEditor _columnDetailsEditor_1 = (ColumnDetailsEditor) contextManager.getInstance("Type_factory__o_d_d_c_w_g_ColumnDetailsEditor__quals__j_e_i_Any_j_e_i_Default");
     final View _view_0 = (ColumnFunctionEditorView) contextManager.getInstance("Type_factory__o_d_d_c_w_g_ColumnFunctionEditorView__quals__j_e_i_Any_j_e_i_Default");
     final Event<GroupFunctionDeletedEvent> _deleteEvent_3 = (Event) contextManager.getContextualInstance("ContextualProvider_factory__j_e_e_Event__quals__Universal", new Class[] { GroupFunctionDeletedEvent.class }, new Annotation[] { });
     final ColumnFunctionEditor instance = new ColumnFunctionEditor(_view_0, _columnDetailsEditor_1, _changeEvent_2, _deleteEvent_3);
-    registerDependentScopedReference(instance, _columnDetailsEditor_1);
     registerDependentScopedReference(instance, _changeEvent_2);
+    registerDependentScopedReference(instance, _columnDetailsEditor_1);
     registerDependentScopedReference(instance, _view_0);
     registerDependentScopedReference(instance, _deleteEvent_3);
     setIncompleteInstance(instance);

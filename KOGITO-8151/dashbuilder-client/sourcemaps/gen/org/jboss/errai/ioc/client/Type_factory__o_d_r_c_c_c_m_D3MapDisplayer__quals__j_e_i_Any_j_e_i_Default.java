@@ -23,13 +23,13 @@ public class Type_factory__o_d_r_c_c_c_m_D3MapDisplayer__quals__j_e_i_Any_j_e_i_
   }
 
   public D3MapDisplayer createInstance(final ContextManager contextManager) {
-    final FilterLabelSet _filterLabelSet_0 = (FilterLabelSet) contextManager.getInstance("Type_factory__o_d_c_c_w_FilterLabelSet__quals__j_e_i_Any_j_e_i_Default");
     final View _view_1 = (D3MapDisplayerView) contextManager.getInstance("Type_factory__o_d_r_c_c_c_m_D3MapDisplayerView__quals__j_e_i_Any_j_e_i_Default");
     final CountriesGeoJsonService _countriesGeoJsonService_2 = (CountriesGeoJsonServiceImpl) contextManager.getInstance("Type_factory__o_d_r_c_c_c_m_g_i_CountriesGeoJsonServiceImpl__quals__j_e_i_Any_j_e_i_Default");
+    final FilterLabelSet _filterLabelSet_0 = (FilterLabelSet) contextManager.getInstance("Type_factory__o_d_c_c_w_FilterLabelSet__quals__j_e_i_Any_j_e_i_Default");
     final D3MapDisplayer instance = new D3MapDisplayer(_filterLabelSet_0, _view_1, _countriesGeoJsonService_2);
-    registerDependentScopedReference(instance, _filterLabelSet_0);
     registerDependentScopedReference(instance, _view_1);
     registerDependentScopedReference(instance, _countriesGeoJsonService_2);
+    registerDependentScopedReference(instance, _filterLabelSet_0);
     setIncompleteInstance(instance);
     setIncompleteInstance(null);
     return instance;
