@@ -24,13 +24,13 @@ public class Type_factory__o_d_d_c_w_f_DataSetFilterEditor__quals__j_e_i_Any_j_e
   }
 
   public DataSetFilterEditor createInstance(final ContextManager contextManager) {
-    final View _view_0 = (DataSetFilterEditorView) contextManager.getInstance("Type_factory__o_d_d_c_w_f_DataSetFilterEditorView__quals__j_e_i_Any_j_e_i_Default");
     final SyncBeanManager _beanManager_1 = (SyncBeanManager) contextManager.getInstance("Producer_factory__o_j_e_i_c_c_SyncBeanManager__quals__j_e_i_Any_j_e_i_Default");
     final Event<DataSetFilterChangedEvent> _changeEvent_2 = (Event) contextManager.getContextualInstance("ContextualProvider_factory__j_e_e_Event__quals__Universal", new Class[] { DataSetFilterChangedEvent.class }, new Annotation[] { });
+    final View _view_0 = (DataSetFilterEditorView) contextManager.getInstance("Type_factory__o_d_d_c_w_f_DataSetFilterEditorView__quals__j_e_i_Any_j_e_i_Default");
     final DataSetFilterEditor instance = new DataSetFilterEditor(_view_0, _beanManager_1, _changeEvent_2);
-    registerDependentScopedReference(instance, _view_0);
     registerDependentScopedReference(instance, _beanManager_1);
     registerDependentScopedReference(instance, _changeEvent_2);
+    registerDependentScopedReference(instance, _view_0);
     setIncompleteInstance(instance);
     thisInstance.setReference(instance, "onColumnFilterChangedSubscription", CDI.subscribeLocal("org.dashbuilder.displayer.client.events.ColumnFilterChangedEvent", new AbstractCDIEventCallback<ColumnFilterChangedEvent>() {
       public void fireEvent(final ColumnFilterChangedEvent event) {

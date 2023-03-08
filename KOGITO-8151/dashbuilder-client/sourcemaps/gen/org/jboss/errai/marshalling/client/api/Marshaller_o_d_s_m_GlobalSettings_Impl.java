@@ -12,6 +12,7 @@ public class Marshaller_o_d_s_m_GlobalSettings_Impl implements GeneratedMarshall
   private GlobalSettings[] EMPTY_ARRAY = new GlobalSettings[0];
   private Marshaller<Mode> org_dashbuilder_displayer_Mode = null;
   private Marshaller<DisplayerSettings> org_dashbuilder_displayer_DisplayerSettings = null;
+  private Marshaller<Boolean> java_lang_Boolean = Marshalling.getMarshaller(Boolean.class);
   public GlobalSettings[] getEmptyArray() {
     return EMPTY_ARRAY;
   }
@@ -42,10 +43,20 @@ public class Marshaller_o_d_s_m_GlobalSettings_Impl implements GeneratedMarshall
         break;
         case "settings": entity.setSettings(org_dashbuilder_displayer_DisplayerSettings.demarshall(objVal, a1));
         break;
+        case "allowUrlProperties": entity.setAllowUrlProperties(java_lang_Boolean.demarshall(objVal, a1));
+        break;
       }
     }
     return entity;
   }
+
+  native static boolean GlobalSettings_boolean_allowUrlProperties(GlobalSettings instance) /*-{
+    return instance.@org.dashbuilder.shared.model.GlobalSettings::allowUrlProperties;
+  }-*/;
+
+  native static void GlobalSettings_boolean_allowUrlProperties(GlobalSettings instance, boolean value) /*-{
+    instance.@org.dashbuilder.shared.model.GlobalSettings::allowUrlProperties = value;
+  }-*/;
 
   public String marshall(GlobalSettings a0, MarshallingSession a1) {
     lazyInit();
@@ -57,7 +68,7 @@ public class Marshaller_o_d_s_m_GlobalSettings_Impl implements GeneratedMarshall
     if (ref) {
       return prefix + "}";
     }
-    return prefix + ((((((((("" + ",\"") + "mode") + "\":") + (a0.getMode() != null ? ((((((("{\"" + "^EncodedType") + "\":\"") + "org.dashbuilder.displayer.Mode") + "\",\"") + "^EnumStringValue") + "\":\"") + a0.getMode().name()) + "\"}" : "null")) + ",\"") + "settings") + "\":") + org_dashbuilder_displayer_DisplayerSettings.marshall(a0.getSettings(), a1)) + "}");
+    return prefix + ((((((((((((("" + ",\"") + "mode") + "\":") + (a0.getMode() != null ? ((((((("{\"" + "^EncodedType") + "\":\"") + "org.dashbuilder.displayer.Mode") + "\",\"") + "^EnumStringValue") + "\":\"") + a0.getMode().name()) + "\"}" : "null")) + ",\"") + "settings") + "\":") + org_dashbuilder_displayer_DisplayerSettings.marshall(a0.getSettings(), a1)) + ",\"") + "allowUrlProperties") + "\":") + java_lang_Boolean.marshall(GlobalSettings_boolean_allowUrlProperties(a0), a1)) + "}");
   }
 
   private void lazyInit() {

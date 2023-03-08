@@ -87,11 +87,11 @@ public class Type_factory__o_d_c_RuntimeModelBackendAppLoader__quals__j_e_i_Any_
   public RuntimeModelBackendAppLoader createInstance(final ContextManager contextManager) {
     final RuntimeModelBackendAppLoader instance = new RuntimeModelBackendAppLoader();
     setIncompleteInstance(instance);
+    final ErrorResponseVerifier RuntimeModelBackendAppLoader_verifier = (ErrorResponseVerifier) contextManager.getInstance("Type_factory__o_d_c_e_ErrorResponseVerifier__quals__j_e_i_Any_j_e_i_Default");
+    RuntimeModelBackendAppLoader_ErrorResponseVerifier_verifier(instance, RuntimeModelBackendAppLoader_verifier);
     final Caller RuntimeModelBackendAppLoader_runtimeModelServiceCaller = (Caller) contextManager.getContextualInstance("ContextualProvider_factory__o_j_e_c_c_a_Caller__quals__Universal", new Class[] { RuntimeModelService.class }, new Annotation[] { });
     registerDependentScopedReference(instance, RuntimeModelBackendAppLoader_runtimeModelServiceCaller);
     RuntimeModelBackendAppLoader_Caller_runtimeModelServiceCaller(instance, RuntimeModelBackendAppLoader_runtimeModelServiceCaller);
-    final ErrorResponseVerifier RuntimeModelBackendAppLoader_verifier = (ErrorResponseVerifier) contextManager.getInstance("Type_factory__o_d_c_e_ErrorResponseVerifier__quals__j_e_i_Any_j_e_i_Default");
-    RuntimeModelBackendAppLoader_ErrorResponseVerifier_verifier(instance, RuntimeModelBackendAppLoader_verifier);
     setIncompleteInstance(null);
     return instance;
   }

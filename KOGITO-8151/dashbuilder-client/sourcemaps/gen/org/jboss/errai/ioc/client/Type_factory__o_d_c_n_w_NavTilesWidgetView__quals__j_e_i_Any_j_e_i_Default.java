@@ -49,9 +49,6 @@ public class Type_factory__o_d_c_n_w_NavTilesWidgetView__quals__j_e_i_Any_j_e_i_
     final NavTilesWidgetView instance = new NavTilesWidgetView(_alertBox_0);
     registerDependentScopedReference(instance, _alertBox_0);
     setIncompleteInstance(instance);
-    final Div NavTilesWidgetView_tilesDiv = (Div) contextManager.getInstance("ExtensionProvided_factory__o_j_e_c_c_d_Div__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
-    registerDependentScopedReference(instance, NavTilesWidgetView_tilesDiv);
-    NavTilesWidgetView_Div_tilesDiv(instance, NavTilesWidgetView_tilesDiv);
     final OrderedList NavTilesWidgetView_breadcrumb = (OrderedList) contextManager.getInstance("ExtensionProvided_factory__o_j_e_c_c_d_OrderedList__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
     registerDependentScopedReference(instance, NavTilesWidgetView_breadcrumb);
     NavTilesWidgetView_OrderedList_breadcrumb(instance, NavTilesWidgetView_breadcrumb);
@@ -61,6 +58,9 @@ public class Type_factory__o_d_c_n_w_NavTilesWidgetView__quals__j_e_i_Any_j_e_i_
     final Div NavTilesWidgetView_contentDiv = (Div) contextManager.getInstance("ExtensionProvided_factory__o_j_e_c_c_d_Div__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
     registerDependentScopedReference(instance, NavTilesWidgetView_contentDiv);
     NavTilesWidgetView_Div_contentDiv(instance, NavTilesWidgetView_contentDiv);
+    final Div NavTilesWidgetView_tilesDiv = (Div) contextManager.getInstance("ExtensionProvided_factory__o_j_e_c_c_d_Div__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
+    registerDependentScopedReference(instance, NavTilesWidgetView_tilesDiv);
+    NavTilesWidgetView_Div_tilesDiv(instance, NavTilesWidgetView_tilesDiv);
     o_d_c_n_w_NavTilesWidgetViewTemplateResource templateForNavTilesWidgetView = GWT.create(o_d_c_n_w_NavTilesWidgetViewTemplateResource.class);
     Element parentElementForTemplateOfNavTilesWidgetView = TemplateUtil.getRootTemplateParentElement(templateForNavTilesWidgetView.getContents().getText(), "org/dashbuilder/client/navigation/widget/NavTilesWidgetView.html", "");
     TemplateUtil.translateTemplate("org/dashbuilder/client/navigation/widget/NavTilesWidgetView.html", TemplateUtil.getRootTemplateElement(parentElementForTemplateOfNavTilesWidgetView));

@@ -37,15 +37,15 @@ public class Type_factory__o_u_e_e_c_c_f_p_SavePopUpView__quals__j_e_i_Any_j_e_i
   public SavePopUpView createInstance(final ContextManager contextManager) {
     final SavePopUpView instance = new SavePopUpView();
     setIncompleteInstance(instance);
-    final TranslationService SavePopUpView_translationService = (TranslationService) contextManager.getInstance("Provider_factory__o_j_e_u_c_l_s_TranslationService__quals__j_e_i_Any_j_e_i_Default");
-    registerDependentScopedReference(instance, SavePopUpView_translationService);
-    SavePopUpView_TranslationService_translationService(instance, SavePopUpView_translationService);
     final Div SavePopUpView_body = (Div) contextManager.getInstance("ExtensionProvided_factory__o_j_e_c_c_d_Div__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
     registerDependentScopedReference(instance, SavePopUpView_body);
     SavePopUpView_Div_body(instance, SavePopUpView_body);
     final TextBox SavePopUpView_commentTextBox = (TextBox) contextManager.getInstance("ExtensionProvided_factory__o_g_c_u_TextBox__quals__j_e_i_Any_j_e_i_Default");
     registerDependentScopedReference(instance, SavePopUpView_commentTextBox);
     SavePopUpView_TextBox_commentTextBox(instance, SavePopUpView_commentTextBox);
+    final TranslationService SavePopUpView_translationService = (TranslationService) contextManager.getInstance("Provider_factory__o_j_e_u_c_l_s_TranslationService__quals__j_e_i_Any_j_e_i_Default");
+    registerDependentScopedReference(instance, SavePopUpView_translationService);
+    SavePopUpView_TranslationService_translationService(instance, SavePopUpView_translationService);
     o_u_e_e_c_c_f_p_SavePopUpViewTemplateResource templateForSavePopUpView = GWT.create(o_u_e_e_c_c_f_p_SavePopUpViewTemplateResource.class);
     Element parentElementForTemplateOfSavePopUpView = TemplateUtil.getRootTemplateParentElement(templateForSavePopUpView.getContents().getText(), "org/uberfire/ext/editor/commons/client/file/popups/SavePopUpView.html", "");
     TemplateUtil.translateTemplate("org/uberfire/ext/editor/commons/client/file/popups/SavePopUpView.html", TemplateUtil.getRootTemplateElement(parentElementForTemplateOfSavePopUpView));

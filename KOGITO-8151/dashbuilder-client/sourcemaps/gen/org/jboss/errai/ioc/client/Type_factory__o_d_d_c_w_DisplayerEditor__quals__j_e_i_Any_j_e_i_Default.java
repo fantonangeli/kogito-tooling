@@ -37,30 +37,30 @@ public class Type_factory__o_d_d_c_w_DisplayerEditor__quals__j_e_i_Any_j_e_i_Def
   }
 
   public DisplayerEditor createInstance(final ContextManager contextManager) {
-    final DisplayerTypeSelector _typeSelector_4 = (DisplayerTypeSelector) contextManager.getInstance("Type_factory__o_d_d_c_w_DisplayerTypeSelector__quals__j_e_i_Any_j_e_i_Default");
-    final RendererManager _rendererManager_11 = (RendererManager) contextManager.getInstance("Type_factory__o_d_d_c_RendererManager__quals__j_e_i_Any_j_e_i_Default");
-    final Event<DisplayerEditorClosedEvent> _closedEvent_10 = (Event) contextManager.getContextualInstance("ContextualProvider_factory__j_e_e_Event__quals__Universal", new Class[] { DisplayerEditorClosedEvent.class }, new Annotation[] { });
-    final ExternalComponentPropertiesEditor _externalComponentPropertiesEditor_12 = (ExternalComponentPropertiesEditor) contextManager.getInstance("Type_factory__o_d_d_c_w_ExternalComponentPropertiesEditor__quals__j_e_i_Any_j_e_i_Default");
+    final DisplayerSettingsEditor _settingsEditor_6 = (DisplayerSettingsEditor) contextManager.getInstance("Type_factory__o_d_d_c_w_DisplayerSettingsEditor__quals__j_e_i_Any_j_e_i_Default");
     final View _view_0 = (DisplayerEditorView) contextManager.getInstance("Type_factory__o_d_d_c_w_DisplayerEditorView__quals__j_e_i_Any_j_e_i_Default");
-    final DisplayerPrototypes _displayerPrototypes_3 = (DisplayerPrototypes) contextManager.getInstance("Type_factory__o_d_d_c_p_DisplayerPrototypes__quals__j_e_i_Any_j_e_i_Default");
-    final DisplayerHtmlEditor _displayerHtmlEditor_8 = (DisplayerHtmlEditor) contextManager.getInstance("Type_factory__o_d_d_c_w_DisplayerHtmlEditor__quals__j_e_i_Any_j_e_i_Default");
-    final Event<DisplayerSettingsChangedEvent> _displayerSettingsChangedEvent_13 = (Event) contextManager.getContextualInstance("ContextualProvider_factory__j_e_e_Event__quals__Universal", new Class[] { DisplayerSettingsChangedEvent.class }, new Annotation[] { });
-    final DataSetClientServices _clientServices_1 = (RuntimeDataSetClientServices) contextManager.getInstance("Type_factory__o_d_c_s_RuntimeDataSetClientServices__quals__j_e_i_Any_j_e_i_Default");
+    final ExternalComponentPropertiesEditor _externalComponentPropertiesEditor_12 = (ExternalComponentPropertiesEditor) contextManager.getInstance("Type_factory__o_d_d_c_w_ExternalComponentPropertiesEditor__quals__j_e_i_Any_j_e_i_Default");
+    final DisplayerTypeSelector _typeSelector_4 = (DisplayerTypeSelector) contextManager.getInstance("Type_factory__o_d_d_c_w_DisplayerTypeSelector__quals__j_e_i_Any_j_e_i_Default");
     final Event<DisplayerEditorSavedEvent> _savedEvent_9 = (Event) contextManager.getContextualInstance("ContextualProvider_factory__j_e_e_Event__quals__Universal", new Class[] { DisplayerEditorSavedEvent.class }, new Annotation[] { });
     final DisplayerLocator _displayerLocator_2 = (DisplayerLocator) contextManager.getInstance("Type_factory__o_d_d_c_DisplayerLocator__quals__j_e_i_Any_j_e_i_Default");
+    final DisplayerPrototypes _displayerPrototypes_3 = (DisplayerPrototypes) contextManager.getInstance("Type_factory__o_d_d_c_p_DisplayerPrototypes__quals__j_e_i_Any_j_e_i_Default");
+    final DataSetClientServices _clientServices_1 = (RuntimeDataSetClientServices) contextManager.getInstance("Type_factory__o_d_c_s_RuntimeDataSetClientServices__quals__j_e_i_Any_j_e_i_Default");
     final DisplayerEditorStatus _editorStatus_7 = (DisplayerEditorStatus) contextManager.getInstance("Type_factory__o_d_d_c_w_DisplayerEditorStatus__quals__j_e_i_Any_j_e_i_Default");
+    final Event<DisplayerSettingsChangedEvent> _displayerSettingsChangedEvent_13 = (Event) contextManager.getContextualInstance("ContextualProvider_factory__j_e_e_Event__quals__Universal", new Class[] { DisplayerSettingsChangedEvent.class }, new Annotation[] { });
     final DataSetLookupEditor _lookupEditor_5 = (DataSetLookupEditor) contextManager.getInstance("Type_factory__o_d_d_c_w_DataSetLookupEditor__quals__j_e_i_Any_j_e_i_Default");
-    final DisplayerSettingsEditor _settingsEditor_6 = (DisplayerSettingsEditor) contextManager.getInstance("Type_factory__o_d_d_c_w_DisplayerSettingsEditor__quals__j_e_i_Any_j_e_i_Default");
+    final RendererManager _rendererManager_11 = (RendererManager) contextManager.getInstance("Type_factory__o_d_d_c_RendererManager__quals__j_e_i_Any_j_e_i_Default");
+    final DisplayerHtmlEditor _displayerHtmlEditor_8 = (DisplayerHtmlEditor) contextManager.getInstance("Type_factory__o_d_d_c_w_DisplayerHtmlEditor__quals__j_e_i_Any_j_e_i_Default");
+    final Event<DisplayerEditorClosedEvent> _closedEvent_10 = (Event) contextManager.getContextualInstance("ContextualProvider_factory__j_e_e_Event__quals__Universal", new Class[] { DisplayerEditorClosedEvent.class }, new Annotation[] { });
     final DisplayerEditor instance = new DisplayerEditor(_view_0, _clientServices_1, _displayerLocator_2, _displayerPrototypes_3, _typeSelector_4, _lookupEditor_5, _settingsEditor_6, _editorStatus_7, _displayerHtmlEditor_8, _savedEvent_9, _closedEvent_10, _rendererManager_11, _externalComponentPropertiesEditor_12, _displayerSettingsChangedEvent_13);
-    registerDependentScopedReference(instance, _typeSelector_4);
-    registerDependentScopedReference(instance, _closedEvent_10);
-    registerDependentScopedReference(instance, _externalComponentPropertiesEditor_12);
-    registerDependentScopedReference(instance, _view_0);
-    registerDependentScopedReference(instance, _displayerHtmlEditor_8);
-    registerDependentScopedReference(instance, _displayerSettingsChangedEvent_13);
-    registerDependentScopedReference(instance, _savedEvent_9);
-    registerDependentScopedReference(instance, _lookupEditor_5);
     registerDependentScopedReference(instance, _settingsEditor_6);
+    registerDependentScopedReference(instance, _view_0);
+    registerDependentScopedReference(instance, _externalComponentPropertiesEditor_12);
+    registerDependentScopedReference(instance, _typeSelector_4);
+    registerDependentScopedReference(instance, _savedEvent_9);
+    registerDependentScopedReference(instance, _displayerSettingsChangedEvent_13);
+    registerDependentScopedReference(instance, _lookupEditor_5);
+    registerDependentScopedReference(instance, _displayerHtmlEditor_8);
+    registerDependentScopedReference(instance, _closedEvent_10);
     setIncompleteInstance(instance);
     thisInstance.setReference(instance, "onDataSetLookupChangedSubscription", CDI.subscribeLocal("org.dashbuilder.displayer.client.events.DataSetLookupChangedEvent", new AbstractCDIEventCallback<DataSetLookupChangedEvent>() {
       public void fireEvent(final DataSetLookupChangedEvent event) {

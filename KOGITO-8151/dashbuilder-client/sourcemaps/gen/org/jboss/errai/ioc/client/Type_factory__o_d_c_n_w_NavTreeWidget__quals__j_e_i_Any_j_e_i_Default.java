@@ -34,10 +34,10 @@ public class Type_factory__o_d_c_n_w_NavTreeWidget__quals__j_e_i_Any_j_e_i_Defau
 
   public NavTreeWidget createInstance(final ContextManager contextManager) {
     final View _view_0 = (NavTreeWidgetView) contextManager.getInstance("Type_factory__o_d_c_n_w_NavTreeWidgetView__quals__j_e_i_Any_j_e_i_Default");
+    final PlaceManager _placeManager_3 = (PlaceManagerImpl) contextManager.getInstance("Type_factory__o_u_c_m_PlaceManagerImpl__quals__j_e_i_Any_j_e_i_Default");
     final SyncBeanManager _beanManager_1 = (SyncBeanManager) contextManager.getInstance("Producer_factory__o_j_e_i_c_c_SyncBeanManager__quals__j_e_i_Any_j_e_i_Default");
     final PerspectivePluginManager _pluginManager_2 = (RuntimePerspectivePluginManager) contextManager.getInstance("Type_factory__o_d_c_p_RuntimePerspectivePluginManager__quals__j_e_i_Any_j_e_i_Default");
     final NavigationManager _navigationManager_4 = (NavigationManagerImpl) contextManager.getInstance("Type_factory__o_d_c_n_i_NavigationManagerImpl__quals__j_e_i_Any_j_e_i_Default");
-    final PlaceManager _placeManager_3 = (PlaceManagerImpl) contextManager.getInstance("Type_factory__o_u_c_m_PlaceManagerImpl__quals__j_e_i_Any_j_e_i_Default");
     final NavTreeWidget instance = new NavTreeWidget(_view_0, _beanManager_1, _pluginManager_2, _placeManager_3, _navigationManager_4);
     registerDependentScopedReference(instance, _view_0);
     registerDependentScopedReference(instance, _beanManager_1);

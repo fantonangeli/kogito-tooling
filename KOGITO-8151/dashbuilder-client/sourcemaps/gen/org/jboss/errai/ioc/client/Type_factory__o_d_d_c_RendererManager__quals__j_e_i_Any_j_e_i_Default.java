@@ -188,11 +188,11 @@ public class Type_factory__o_d_d_c_RendererManager__quals__j_e_i_Any_j_e_i_Defau
   }
 
   public RendererManager createInstance(final ContextManager contextManager) {
-    final SyncBeanManager _beanManager_0 = (SyncBeanManager) contextManager.getInstance("Producer_factory__o_j_e_i_c_c_SyncBeanManager__quals__j_e_i_Any_j_e_i_Default");
     final Caller<RendererSettingsService> _rendererSettingsService_1 = (Caller) contextManager.getContextualInstance("ContextualProvider_factory__o_j_e_c_c_a_Caller__quals__Universal", new Class[] { RendererSettingsService.class }, new Annotation[] { });
+    final SyncBeanManager _beanManager_0 = (SyncBeanManager) contextManager.getInstance("Producer_factory__o_j_e_i_c_c_SyncBeanManager__quals__j_e_i_Any_j_e_i_Default");
     final RendererManager instance = new RendererManager(_beanManager_0, _rendererSettingsService_1);
-    registerDependentScopedReference(instance, _beanManager_0);
     registerDependentScopedReference(instance, _rendererSettingsService_1);
+    registerDependentScopedReference(instance, _beanManager_0);
     setIncompleteInstance(instance);
     setIncompleteInstance(null);
     return instance;

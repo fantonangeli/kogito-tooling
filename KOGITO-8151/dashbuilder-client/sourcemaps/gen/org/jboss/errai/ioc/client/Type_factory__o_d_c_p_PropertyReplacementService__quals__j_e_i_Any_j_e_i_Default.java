@@ -56,13 +56,23 @@ public class Type_factory__o_d_c_p_PropertyReplacementService__quals__j_e_i_Any_
       }
     }
 
-    @Override public String getExternalPropertyValue(String key, String v) {
+    @Override public String replace(String content, Map properties, boolean allowUrlProperties) {
       if (proxyHelper != null) {
         final PropertyReplacementService proxiedInstance = proxyHelper.getInstance(this);
-        final String retVal = proxiedInstance.getExternalPropertyValue(key, v);
+        final String retVal = proxiedInstance.replace(content, properties, allowUrlProperties);
         return retVal;
       } else {
-        return super.getExternalPropertyValue(key, v);
+        return super.replace(content, properties, allowUrlProperties);
+      }
+    }
+
+    @Override public String getExternalPropertyValue(boolean allowUrlProperties, String key, String v) {
+      if (proxyHelper != null) {
+        final PropertyReplacementService proxiedInstance = proxyHelper.getInstance(this);
+        final String retVal = proxiedInstance.getExternalPropertyValue(allowUrlProperties, key, v);
+        return retVal;
+      } else {
+        return super.getExternalPropertyValue(allowUrlProperties, key, v);
       }
     }
 

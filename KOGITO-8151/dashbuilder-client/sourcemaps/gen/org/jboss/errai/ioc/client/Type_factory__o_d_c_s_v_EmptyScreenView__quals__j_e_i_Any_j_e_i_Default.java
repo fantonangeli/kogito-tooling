@@ -8,6 +8,7 @@ import com.google.gwt.resources.client.CssResource;
 import com.google.gwt.resources.client.CssResource.NotStrict;
 import com.google.gwt.resources.client.TextResource;
 import com.google.gwt.user.client.ui.Widget;
+import elemental2.dom.HTMLButtonElement;
 import elemental2.dom.HTMLDivElement;
 import elemental2.dom.HTMLParagraphElement;
 import java.util.HashMap;
@@ -46,6 +47,12 @@ public class Type_factory__o_d_c_s_v_EmptyScreenView__quals__j_e_i_Any_j_e_i_Def
   public EmptyScreenView createInstance(final ContextManager contextManager) {
     final EmptyScreenView instance = new EmptyScreenView();
     setIncompleteInstance(instance);
+    final HTMLDivElement EmptyScreenView_trySamplesContainer = (HTMLDivElement) contextManager.getInstance("ExtensionProvided_factory__e_d_HTMLDivElement__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
+    registerDependentScopedReference(instance, EmptyScreenView_trySamplesContainer);
+    EmptyScreenView_HTMLDivElement_trySamplesContainer(instance, EmptyScreenView_trySamplesContainer);
+    final HTMLButtonElement EmptyScreenView_trySamples = (HTMLButtonElement) contextManager.getInstance("ExtensionProvided_factory__e_d_HTMLButtonElement__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
+    registerDependentScopedReference(instance, EmptyScreenView_trySamples);
+    EmptyScreenView_HTMLButtonElement_trySamples(instance, EmptyScreenView_trySamples);
     final HTMLDivElement EmptyScreenView_emptyImport = (HTMLDivElement) contextManager.getInstance("ExtensionProvided_factory__e_d_HTMLDivElement__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
     registerDependentScopedReference(instance, EmptyScreenView_emptyImport);
     EmptyScreenView_HTMLDivElement_emptyImport(instance, EmptyScreenView_emptyImport);
@@ -62,10 +69,12 @@ public class Type_factory__o_d_c_s_v_EmptyScreenView__quals__j_e_i_Any_j_e_i_Def
     Element parentElementForTemplateOfEmptyScreenView = TemplateUtil.getRootTemplateParentElement(templateForEmptyScreenView.getContents().getText(), "org/dashbuilder/client/screens/view/EmptyScreenView.html", "");
     TemplateUtil.translateTemplate("org/dashbuilder/client/screens/view/EmptyScreenView.html", TemplateUtil.getRootTemplateElement(parentElementForTemplateOfEmptyScreenView));
     Map<String, Element> dataFieldElements = TemplateUtil.getDataFieldElements(TemplateUtil.getRootTemplateElement(parentElementForTemplateOfEmptyScreenView));
-    final Map<String, DataFieldMeta> dataFieldMetas = new HashMap<String, DataFieldMeta>(3);
+    final Map<String, DataFieldMeta> dataFieldMetas = new HashMap<String, DataFieldMeta>(5);
     dataFieldMetas.put("emptyImport", new DataFieldMeta());
     dataFieldMetas.put("uploadContainer", new DataFieldMeta());
+    dataFieldMetas.put("trySamplesContainer", new DataFieldMeta());
     dataFieldMetas.put("subTitleParagraph", new DataFieldMeta());
+    dataFieldMetas.put("trySamples", new DataFieldMeta());
     Map<String, Widget> templateFieldsMap = new LinkedHashMap<String, Widget>();
     TemplateUtil.compositeComponentReplace("org.dashbuilder.client.screens.view.EmptyScreenView", "org/dashbuilder/client/screens/view/EmptyScreenView.html", new Supplier<Widget>() {
       public Widget get() {
@@ -79,12 +88,24 @@ public class Type_factory__o_d_c_s_v_EmptyScreenView__quals__j_e_i_Any_j_e_i_Def
     }, dataFieldElements, dataFieldMetas, "uploadContainer");
     TemplateUtil.compositeComponentReplace("org.dashbuilder.client.screens.view.EmptyScreenView", "org/dashbuilder/client/screens/view/EmptyScreenView.html", new Supplier<Widget>() {
       public Widget get() {
+        return ElementWrapperWidget.getWidget(TemplateUtil.asElement(EmptyScreenView_HTMLDivElement_trySamplesContainer(instance)));
+      }
+    }, dataFieldElements, dataFieldMetas, "trySamplesContainer");
+    TemplateUtil.compositeComponentReplace("org.dashbuilder.client.screens.view.EmptyScreenView", "org/dashbuilder/client/screens/view/EmptyScreenView.html", new Supplier<Widget>() {
+      public Widget get() {
         return ElementWrapperWidget.getWidget(TemplateUtil.asElement(EmptyScreenView_HTMLParagraphElement_subTitleParagraph(instance)));
       }
     }, dataFieldElements, dataFieldMetas, "subTitleParagraph");
+    TemplateUtil.compositeComponentReplace("org.dashbuilder.client.screens.view.EmptyScreenView", "org/dashbuilder/client/screens/view/EmptyScreenView.html", new Supplier<Widget>() {
+      public Widget get() {
+        return ElementWrapperWidget.getWidget(TemplateUtil.asElement(EmptyScreenView_HTMLButtonElement_trySamples(instance)));
+      }
+    }, dataFieldElements, dataFieldMetas, "trySamples");
     templateFieldsMap.put("emptyImport", ElementWrapperWidget.getWidget(TemplateUtil.asElement(EmptyScreenView_HTMLDivElement_emptyImport(instance))));
     templateFieldsMap.put("uploadContainer", ElementWrapperWidget.getWidget(TemplateUtil.asElement(EmptyScreenView_HTMLDivElement_uploadContainer(instance))));
+    templateFieldsMap.put("trySamplesContainer", ElementWrapperWidget.getWidget(TemplateUtil.asElement(EmptyScreenView_HTMLDivElement_trySamplesContainer(instance))));
     templateFieldsMap.put("subTitleParagraph", ElementWrapperWidget.getWidget(TemplateUtil.asElement(EmptyScreenView_HTMLParagraphElement_subTitleParagraph(instance))));
+    templateFieldsMap.put("trySamples", ElementWrapperWidget.getWidget(TemplateUtil.asElement(EmptyScreenView_HTMLButtonElement_trySamples(instance))));
     TemplateUtil.initTemplated(instance, TemplateUtil.getRootTemplateElement(parentElementForTemplateOfEmptyScreenView), templateFieldsMap.values());
     StyleBindingsRegistry.get().updateStyles(instance);
     setIncompleteInstance(null);
@@ -129,5 +150,21 @@ public class Type_factory__o_d_c_s_v_EmptyScreenView__quals__j_e_i_Any_j_e_i_Def
 
   native static void EmptyScreenView_UploadWidget_uploadWidget(EmptyScreenView instance, UploadWidget value) /*-{
     instance.@org.dashbuilder.client.screens.view.EmptyScreenView::uploadWidget = value;
+  }-*/;
+
+  native static HTMLDivElement EmptyScreenView_HTMLDivElement_trySamplesContainer(EmptyScreenView instance) /*-{
+    return instance.@org.dashbuilder.client.screens.view.EmptyScreenView::trySamplesContainer;
+  }-*/;
+
+  native static void EmptyScreenView_HTMLDivElement_trySamplesContainer(EmptyScreenView instance, HTMLDivElement value) /*-{
+    instance.@org.dashbuilder.client.screens.view.EmptyScreenView::trySamplesContainer = value;
+  }-*/;
+
+  native static HTMLButtonElement EmptyScreenView_HTMLButtonElement_trySamples(EmptyScreenView instance) /*-{
+    return instance.@org.dashbuilder.client.screens.view.EmptyScreenView::trySamples;
+  }-*/;
+
+  native static void EmptyScreenView_HTMLButtonElement_trySamples(EmptyScreenView instance, HTMLButtonElement value) /*-{
+    instance.@org.dashbuilder.client.screens.view.EmptyScreenView::trySamples = value;
   }-*/;
 }

@@ -1,4 +1,4 @@
-// .ui.xml template last modified: 1676370409533
+// .ui.xml template last modified: 1678262285977
 package org.uberfire.ext.plugin.client.perspective.editor.layout.editor.popups;
 
 import com.google.gwt.core.client.GWT;

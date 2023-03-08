@@ -20,18 +20,18 @@ public class Type_factory__o_d_d_c_w_ExternalComponentEditor__quals__j_e_i_Any_j
   public ExternalComponentEditor createInstance(final ContextManager contextManager) {
     final ExternalComponentEditor instance = new ExternalComponentEditor();
     setIncompleteInstance(instance);
-    final ExternalComponentPropertiesEditor ExternalComponentEditor_propertiesEditor = (ExternalComponentPropertiesEditor) contextManager.getInstance("Type_factory__o_d_d_c_w_ExternalComponentPropertiesEditor__quals__j_e_i_Any_j_e_i_Default");
-    registerDependentScopedReference(instance, ExternalComponentEditor_propertiesEditor);
-    ExternalComponentEditor_ExternalComponentPropertiesEditor_propertiesEditor(instance, ExternalComponentEditor_propertiesEditor);
+    final ExternalComponentMessageHelper ExternalComponentEditor_messageHelper = (ExternalComponentMessageHelper) contextManager.getInstance("Producer_factory__o_d_d_e_ExternalComponentMessageHelper__quals__j_e_i_Any_j_e_i_Default");
+    registerDependentScopedReference(instance, ExternalComponentEditor_messageHelper);
+    ExternalComponentEditor_ExternalComponentMessageHelper_messageHelper(instance, ExternalComponentEditor_messageHelper);
     final ExternalComponentEditorView ExternalComponentEditor_view = (ExternalComponentEditorView) contextManager.getInstance("Type_factory__o_d_d_c_w_ExternalComponentEditorView__quals__j_e_i_Any_j_e_i_Default");
     registerDependentScopedReference(instance, ExternalComponentEditor_view);
     ExternalComponentEditor_View_view(instance, ExternalComponentEditor_view);
     final ExternalComponentPresenter ExternalComponentEditor_externalComponentPresenter = (ExternalComponentPresenter) contextManager.getInstance("Type_factory__o_d_d_c_w_ExternalComponentPresenter__quals__j_e_i_Any_j_e_i_Default");
     registerDependentScopedReference(instance, ExternalComponentEditor_externalComponentPresenter);
     ExternalComponentEditor_ExternalComponentPresenter_externalComponentPresenter(instance, ExternalComponentEditor_externalComponentPresenter);
-    final ExternalComponentMessageHelper ExternalComponentEditor_messageHelper = (ExternalComponentMessageHelper) contextManager.getInstance("Producer_factory__o_d_d_e_ExternalComponentMessageHelper__quals__j_e_i_Any_j_e_i_Default");
-    registerDependentScopedReference(instance, ExternalComponentEditor_messageHelper);
-    ExternalComponentEditor_ExternalComponentMessageHelper_messageHelper(instance, ExternalComponentEditor_messageHelper);
+    final ExternalComponentPropertiesEditor ExternalComponentEditor_propertiesEditor = (ExternalComponentPropertiesEditor) contextManager.getInstance("Type_factory__o_d_d_c_w_ExternalComponentPropertiesEditor__quals__j_e_i_Any_j_e_i_Default");
+    registerDependentScopedReference(instance, ExternalComponentEditor_propertiesEditor);
+    ExternalComponentEditor_ExternalComponentPropertiesEditor_propertiesEditor(instance, ExternalComponentEditor_propertiesEditor);
     setIncompleteInstance(null);
     return instance;
   }

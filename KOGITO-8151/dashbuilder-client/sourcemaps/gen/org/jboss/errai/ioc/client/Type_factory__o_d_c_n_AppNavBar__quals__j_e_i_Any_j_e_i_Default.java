@@ -75,10 +75,10 @@ public class Type_factory__o_d_c_n_AppNavBar__quals__j_e_i_Any_j_e_i_Default ext
   public AppNavBar createInstance(final ContextManager contextManager) {
     final AppNavBar instance = new AppNavBar();
     setIncompleteInstance(instance);
-    final WorkbenchLayoutImpl AppNavBar_wbLayout = (WorkbenchLayoutImpl) contextManager.getInstance("Type_factory__o_u_c_w_WorkbenchLayoutImpl__quals__j_e_i_Any_j_e_i_Default");
-    AppNavBar_WorkbenchLayout_wbLayout(instance, AppNavBar_wbLayout);
     final RuntimeClientLoader AppNavBar_loader = (RuntimeClientLoader) contextManager.getInstance("Type_factory__o_d_c_RuntimeClientLoader__quals__j_e_i_Any_j_e_i_Default");
     AppNavBar_RuntimeClientLoader_loader(instance, AppNavBar_loader);
+    final WorkbenchLayoutImpl AppNavBar_wbLayout = (WorkbenchLayoutImpl) contextManager.getInstance("Type_factory__o_u_c_w_WorkbenchLayoutImpl__quals__j_e_i_Any_j_e_i_Default");
+    AppNavBar_WorkbenchLayout_wbLayout(instance, AppNavBar_wbLayout);
     setIncompleteInstance(null);
     return instance;
   }

@@ -15,6 +15,7 @@ import org.dashbuilder.client.parser.RuntimeModelClientParserFactory;
 import org.dashbuilder.client.perspective.generator.RuntimePerspectiveGenerator;
 import org.dashbuilder.client.plugins.RuntimePerspectivePluginManager;
 import org.dashbuilder.client.screens.RouterScreen;
+import org.dashbuilder.client.services.SamplesService;
 import org.dashbuilder.dataset.events.DataSetDefRemovedEvent;
 import org.dashbuilder.shared.event.UpdatedGlobalSettingsEvent;
 import org.dashbuilder.shared.event.UpdatedRuntimeModelEvent;
@@ -140,6 +141,16 @@ public class Type_factory__o_d_c_RuntimeClientLoader__quals__j_e_i_Any_j_e_i_Def
       }
     }
 
+    @Override public boolean hasSamples() {
+      if (proxyHelper != null) {
+        final RuntimeClientLoader proxiedInstance = proxyHelper.getInstance(this);
+        final boolean retVal = proxiedInstance.hasSamples();
+        return retVal;
+      } else {
+        return super.hasSamples();
+      }
+    }
+
     @Override public boolean loadContentAndRoute(String content) {
       if (proxyHelper != null) {
         final RuntimeClientLoader proxiedInstance = proxyHelper.getInstance(this);
@@ -166,23 +177,24 @@ public class Type_factory__o_d_c_RuntimeClientLoader__quals__j_e_i_Any_j_e_i_Def
   }
 
   public RuntimeClientLoader createInstance(final ContextManager contextManager) {
-    final RouterScreen _router_11 = (RouterScreen) contextManager.getInstance("Type_factory__o_d_c_s_RouterScreen__quals__j_e_i_Any_j_e_i_Default");
-    final RuntimeModelClientParserFactory _parserFactory_6 = (RuntimeModelClientParserFactory) contextManager.getInstance("Type_factory__o_d_c_p_RuntimeModelClientParserFactory__quals__j_e_i_Any_j_e_i_Default");
-    final Event<UpdatedRuntimeModelEvent> _updatedRuntimeModelEvent_8 = (Event) contextManager.getContextualInstance("ContextualProvider_factory__j_e_e_Event__quals__Universal", new Class[] { UpdatedRuntimeModelEvent.class }, new Annotation[] { });
-    final BusyIndicatorView _loading_4 = (BusyIndicatorView) contextManager.getInstance("Type_factory__o_u_e_w_c_c_c_BusyIndicatorView__quals__j_e_i_Any_j_e_i_Default");
-    final Event<DataSetDefRemovedEvent> _dataSetDefRemovedEvent_9 = (Event) contextManager.getContextualInstance("ContextualProvider_factory__j_e_e_Event__quals__Universal", new Class[] { DataSetDefRemovedEvent.class }, new Annotation[] { });
-    final RuntimePerspectivePluginManager _runtimePerspectivePluginManager_2 = (RuntimePerspectivePluginManager) contextManager.getInstance("Type_factory__o_d_c_p_RuntimePerspectivePluginManager__quals__j_e_i_Any_j_e_i_Default");
-    final RuntimeModelContentListener _contentListener_7 = (RuntimeModelContentListener) contextManager.getInstance("Type_factory__o_d_c_RuntimeModelContentListener__quals__j_e_i_Any_j_e_i_Default");
+    final RuntimeModelContentListener _contentListener_8 = (RuntimeModelContentListener) contextManager.getInstance("Type_factory__o_d_c_RuntimeModelContentListener__quals__j_e_i_Any_j_e_i_Default");
+    final RuntimePerspectiveGenerator _perspectiveEditorGenerator_1 = (RuntimePerspectiveGenerator) contextManager.getInstance("Type_factory__o_d_c_p_g_RuntimePerspectiveGenerator__quals__j_e_i_Any_j_e_i_Default");
+    final NavigationManager _navigationManager_3 = (NavigationManagerImpl) contextManager.getInstance("Type_factory__o_d_c_n_i_NavigationManagerImpl__quals__j_e_i_Any_j_e_i_Default");
     final RuntimeModelBackendAppLoader _runtimeModelResourceClient_0 = (RuntimeModelBackendAppLoader) contextManager.getInstance("Type_factory__o_d_c_RuntimeModelBackendAppLoader__quals__j_e_i_Any_j_e_i_Default");
     final ExternalDataSetClientProvider _externalDataSetRegister_5 = (ExternalDataSetClientProvider) contextManager.getInstance("Type_factory__o_d_c_e_ExternalDataSetClientProvider__quals__j_e_i_Any_j_e_i_Default");
-    final NavigationManager _navigationManager_3 = (NavigationManagerImpl) contextManager.getInstance("Type_factory__o_d_c_n_i_NavigationManagerImpl__quals__j_e_i_Any_j_e_i_Default");
-    final RuntimePerspectiveGenerator _perspectiveEditorGenerator_1 = (RuntimePerspectiveGenerator) contextManager.getInstance("Type_factory__o_d_c_p_g_RuntimePerspectiveGenerator__quals__j_e_i_Any_j_e_i_Default");
-    final Event<UpdatedGlobalSettingsEvent> _updatedGlobalSettingsEvent_10 = (Event) contextManager.getContextualInstance("ContextualProvider_factory__j_e_e_Event__quals__Universal", new Class[] { UpdatedGlobalSettingsEvent.class }, new Annotation[] { });
-    final RuntimeClientLoader instance = new RuntimeClientLoader(_runtimeModelResourceClient_0, _perspectiveEditorGenerator_1, _runtimePerspectivePluginManager_2, _navigationManager_3, _loading_4, _externalDataSetRegister_5, _parserFactory_6, _contentListener_7, _updatedRuntimeModelEvent_8, _dataSetDefRemovedEvent_9, _updatedGlobalSettingsEvent_10, _router_11);
-    registerDependentScopedReference(instance, _updatedRuntimeModelEvent_8);
+    final RouterScreen _router_12 = (RouterScreen) contextManager.getInstance("Type_factory__o_d_c_s_RouterScreen__quals__j_e_i_Any_j_e_i_Default");
+    final BusyIndicatorView _loading_4 = (BusyIndicatorView) contextManager.getInstance("Type_factory__o_u_e_w_c_c_c_BusyIndicatorView__quals__j_e_i_Any_j_e_i_Default");
+    final Event<UpdatedGlobalSettingsEvent> _updatedGlobalSettingsEvent_11 = (Event) contextManager.getContextualInstance("ContextualProvider_factory__j_e_e_Event__quals__Universal", new Class[] { UpdatedGlobalSettingsEvent.class }, new Annotation[] { });
+    final RuntimePerspectivePluginManager _runtimePerspectivePluginManager_2 = (RuntimePerspectivePluginManager) contextManager.getInstance("Type_factory__o_d_c_p_RuntimePerspectivePluginManager__quals__j_e_i_Any_j_e_i_Default");
+    final SamplesService _samplesService_6 = (SamplesService) contextManager.getInstance("Type_factory__o_d_c_s_SamplesService__quals__j_e_i_Any_j_e_i_Default");
+    final RuntimeModelClientParserFactory _parserFactory_7 = (RuntimeModelClientParserFactory) contextManager.getInstance("Type_factory__o_d_c_p_RuntimeModelClientParserFactory__quals__j_e_i_Any_j_e_i_Default");
+    final Event<UpdatedRuntimeModelEvent> _updatedRuntimeModelEvent_9 = (Event) contextManager.getContextualInstance("ContextualProvider_factory__j_e_e_Event__quals__Universal", new Class[] { UpdatedRuntimeModelEvent.class }, new Annotation[] { });
+    final Event<DataSetDefRemovedEvent> _dataSetDefRemovedEvent_10 = (Event) contextManager.getContextualInstance("ContextualProvider_factory__j_e_e_Event__quals__Universal", new Class[] { DataSetDefRemovedEvent.class }, new Annotation[] { });
+    final RuntimeClientLoader instance = new RuntimeClientLoader(_runtimeModelResourceClient_0, _perspectiveEditorGenerator_1, _runtimePerspectivePluginManager_2, _navigationManager_3, _loading_4, _externalDataSetRegister_5, _samplesService_6, _parserFactory_7, _contentListener_8, _updatedRuntimeModelEvent_9, _dataSetDefRemovedEvent_10, _updatedGlobalSettingsEvent_11, _router_12);
     registerDependentScopedReference(instance, _loading_4);
-    registerDependentScopedReference(instance, _dataSetDefRemovedEvent_9);
-    registerDependentScopedReference(instance, _updatedGlobalSettingsEvent_10);
+    registerDependentScopedReference(instance, _updatedGlobalSettingsEvent_11);
+    registerDependentScopedReference(instance, _updatedRuntimeModelEvent_9);
+    registerDependentScopedReference(instance, _dataSetDefRemovedEvent_10);
     setIncompleteInstance(instance);
     setIncompleteInstance(null);
     return instance;

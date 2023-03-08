@@ -87,10 +87,10 @@ public class Type_factory__o_d_c_n_GoToDashboardMenuBuilder__quals__j_e_i_Any_j_
   public GoToDashboardMenuBuilder createInstance(final ContextManager contextManager) {
     final GoToDashboardMenuBuilder instance = new GoToDashboardMenuBuilder();
     setIncompleteInstance(instance);
-    final PerspectiveManagerImpl GoToDashboardMenuBuilder_perspectiveManager = (PerspectiveManagerImpl) contextManager.getInstance("Type_factory__o_u_c_m_PerspectiveManagerImpl__quals__j_e_i_Any_j_e_i_Default");
-    GoToDashboardMenuBuilder_PerspectiveManager_perspectiveManager(instance, GoToDashboardMenuBuilder_perspectiveManager);
     final MenuBuilderHelper GoToDashboardMenuBuilder_menuBuilderHelper = (MenuBuilderHelper) contextManager.getInstance("Type_factory__o_d_c_n_MenuBuilderHelper__quals__j_e_i_Any_j_e_i_Default");
     GoToDashboardMenuBuilder_MenuBuilderHelper_menuBuilderHelper(instance, GoToDashboardMenuBuilder_menuBuilderHelper);
+    final PerspectiveManagerImpl GoToDashboardMenuBuilder_perspectiveManager = (PerspectiveManagerImpl) contextManager.getInstance("Type_factory__o_u_c_m_PerspectiveManagerImpl__quals__j_e_i_Any_j_e_i_Default");
+    GoToDashboardMenuBuilder_PerspectiveManager_perspectiveManager(instance, GoToDashboardMenuBuilder_perspectiveManager);
     setIncompleteInstance(null);
     return instance;
   }

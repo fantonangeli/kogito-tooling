@@ -20,11 +20,11 @@ public class Type_factory__o_d_c_n_w_e_TargetPerspectiveEditor__quals__j_e_i_Any
 
   public TargetPerspectiveEditor createInstance(final ContextManager contextManager) {
     final PerspectivePluginManager _perspectivePluginManager_2 = (RuntimePerspectivePluginManager) contextManager.getInstance("Type_factory__o_d_c_p_RuntimePerspectivePluginManager__quals__j_e_i_Any_j_e_i_Default");
-    final PerspectiveDropDown _perspectiveDropDown_1 = (PerspectiveDropDown) contextManager.getInstance("Type_factory__o_u_e_w_c_c_d_PerspectiveDropDown__quals__j_e_i_Any_j_e_i_Default");
     final View _view_0 = (TargetPerspectiveEditorView) contextManager.getInstance("Type_factory__o_d_c_n_w_e_TargetPerspectiveEditorView__quals__j_e_i_Any_j_e_i_Default");
+    final PerspectiveDropDown _perspectiveDropDown_1 = (PerspectiveDropDown) contextManager.getInstance("Type_factory__o_u_e_w_c_c_d_PerspectiveDropDown__quals__j_e_i_Any_j_e_i_Default");
     final TargetPerspectiveEditor instance = new TargetPerspectiveEditor(_view_0, _perspectiveDropDown_1, _perspectivePluginManager_2);
-    registerDependentScopedReference(instance, _perspectiveDropDown_1);
     registerDependentScopedReference(instance, _view_0);
+    registerDependentScopedReference(instance, _perspectiveDropDown_1);
     setIncompleteInstance(instance);
     setIncompleteInstance(null);
     return instance;

@@ -92,10 +92,10 @@ public class Type_factory__o_d_c_p_RuntimeModelClientParserFactory__quals__j_e_i
     final Instance RuntimeModelClientParserFactory_parsers = (Instance) contextManager.getContextualInstance("ContextualProvider_factory__j_e_i_Instance__quals__Universal", new Class[] { RuntimeModelClientParser.class }, new Annotation[] { });
     registerDependentScopedReference(instance, RuntimeModelClientParserFactory_parsers);
     RuntimeModelClientParserFactory_Instance_parsers(instance, RuntimeModelClientParserFactory_parsers);
-    final JSONRuntimeModelClientParser RuntimeModelClientParserFactory_jsonParser = (JSONRuntimeModelClientParser) contextManager.getInstance("Type_factory__o_d_c_p_JSONRuntimeModelClientParser__quals__j_e_i_Any_j_e_i_Default");
-    RuntimeModelClientParserFactory_JSONRuntimeModelClientParser_jsonParser(instance, RuntimeModelClientParserFactory_jsonParser);
     final YAMLRuntimeModelClientParser RuntimeModelClientParserFactory_yamlParser = (YAMLRuntimeModelClientParser) contextManager.getInstance("Type_factory__o_d_c_p_YAMLRuntimeModelClientParser__quals__j_e_i_Any_j_e_i_Default");
     RuntimeModelClientParserFactory_YAMLRuntimeModelClientParser_yamlParser(instance, RuntimeModelClientParserFactory_yamlParser);
+    final JSONRuntimeModelClientParser RuntimeModelClientParserFactory_jsonParser = (JSONRuntimeModelClientParser) contextManager.getInstance("Type_factory__o_d_c_p_JSONRuntimeModelClientParser__quals__j_e_i_Any_j_e_i_Default");
+    RuntimeModelClientParserFactory_JSONRuntimeModelClientParser_jsonParser(instance, RuntimeModelClientParserFactory_jsonParser);
     setIncompleteInstance(null);
     return instance;
   }

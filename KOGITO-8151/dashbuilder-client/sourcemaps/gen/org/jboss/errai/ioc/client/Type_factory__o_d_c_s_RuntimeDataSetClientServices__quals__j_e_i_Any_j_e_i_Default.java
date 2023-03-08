@@ -198,19 +198,19 @@ public class Type_factory__o_d_c_s_RuntimeDataSetClientServices__quals__j_e_i_An
   public RuntimeDataSetClientServices createInstance(final ContextManager contextManager) {
     final RuntimeDataSetClientServices instance = new RuntimeDataSetClientServices();
     setIncompleteInstance(instance);
+    final ClientDataSetMetadataJSONMarshaller RuntimeDataSetClientServices_dataSetMetadataJsonMarshaller = (ClientDataSetMetadataJSONMarshaller) contextManager.getInstance("Type_factory__o_d_c_m_ClientDataSetMetadataJSONMarshaller__quals__j_e_i_Any_j_e_i_Default");
+    RuntimeDataSetClientServices_ClientDataSetMetadataJSONMarshaller_dataSetMetadataJsonMarshaller(instance, RuntimeDataSetClientServices_dataSetMetadataJsonMarshaller);
     final ErrorResponseVerifier RuntimeDataSetClientServices_verifier = (ErrorResponseVerifier) contextManager.getInstance("Type_factory__o_d_c_e_ErrorResponseVerifier__quals__j_e_i_Any_j_e_i_Default");
     RuntimeDataSetClientServices_ErrorResponseVerifier_verifier(instance, RuntimeDataSetClientServices_verifier);
+    final ClientDataSetManager RuntimeDataSetClientServices_clientDataSetManager = (ClientDataSetManager) contextManager.getInstance("Type_factory__o_d_d_c_ClientDataSetManager__quals__j_e_i_Any_j_e_i_Default");
+    RuntimeDataSetClientServices_ClientDataSetManager_clientDataSetManager(instance, RuntimeDataSetClientServices_clientDataSetManager);
+    final ExternalDataSetClientProvider RuntimeDataSetClientServices_externalDataSetClientProvider = (ExternalDataSetClientProvider) contextManager.getInstance("Type_factory__o_d_c_e_ExternalDataSetClientProvider__quals__j_e_i_Any_j_e_i_Default");
+    RuntimeDataSetClientServices_ExternalDataSetClientProvider_externalDataSetClientProvider(instance, RuntimeDataSetClientServices_externalDataSetClientProvider);
     final DefaultRuntimeErrorCallback RuntimeDataSetClientServices_errorCallback = (DefaultRuntimeErrorCallback) contextManager.getInstance("Type_factory__o_d_c_e_DefaultRuntimeErrorCallback__quals__j_e_i_Any_j_e_i_Default");
     registerDependentScopedReference(instance, RuntimeDataSetClientServices_errorCallback);
     RuntimeDataSetClientServices_DefaultRuntimeErrorCallback_errorCallback(instance, RuntimeDataSetClientServices_errorCallback);
-    final ClientDataSetManager RuntimeDataSetClientServices_clientDataSetManager = (ClientDataSetManager) contextManager.getInstance("Type_factory__o_d_d_c_ClientDataSetManager__quals__j_e_i_Any_j_e_i_Default");
-    RuntimeDataSetClientServices_ClientDataSetManager_clientDataSetManager(instance, RuntimeDataSetClientServices_clientDataSetManager);
     final RuntimeClientLoader RuntimeDataSetClientServices_loader = (RuntimeClientLoader) contextManager.getInstance("Type_factory__o_d_c_RuntimeClientLoader__quals__j_e_i_Any_j_e_i_Default");
     RuntimeDataSetClientServices_RuntimeClientLoader_loader(instance, RuntimeDataSetClientServices_loader);
-    final ExternalDataSetClientProvider RuntimeDataSetClientServices_externalDataSetClientProvider = (ExternalDataSetClientProvider) contextManager.getInstance("Type_factory__o_d_c_e_ExternalDataSetClientProvider__quals__j_e_i_Any_j_e_i_Default");
-    RuntimeDataSetClientServices_ExternalDataSetClientProvider_externalDataSetClientProvider(instance, RuntimeDataSetClientServices_externalDataSetClientProvider);
-    final ClientDataSetMetadataJSONMarshaller RuntimeDataSetClientServices_dataSetMetadataJsonMarshaller = (ClientDataSetMetadataJSONMarshaller) contextManager.getInstance("Type_factory__o_d_c_m_ClientDataSetMetadataJSONMarshaller__quals__j_e_i_Any_j_e_i_Default");
-    RuntimeDataSetClientServices_ClientDataSetMetadataJSONMarshaller_dataSetMetadataJsonMarshaller(instance, RuntimeDataSetClientServices_dataSetMetadataJsonMarshaller);
     setIncompleteInstance(null);
     return instance;
   }
@@ -229,20 +229,20 @@ public class Type_factory__o_d_c_s_RuntimeDataSetClientServices__quals__j_e_i_An
     instance.@org.dashbuilder.client.services.RuntimeDataSetClientServices::clientDataSetManager = value;
   }-*/;
 
-  native static DefaultRuntimeErrorCallback RuntimeDataSetClientServices_DefaultRuntimeErrorCallback_errorCallback(RuntimeDataSetClientServices instance) /*-{
-    return instance.@org.dashbuilder.client.services.RuntimeDataSetClientServices::errorCallback;
-  }-*/;
-
-  native static void RuntimeDataSetClientServices_DefaultRuntimeErrorCallback_errorCallback(RuntimeDataSetClientServices instance, DefaultRuntimeErrorCallback value) /*-{
-    instance.@org.dashbuilder.client.services.RuntimeDataSetClientServices::errorCallback = value;
-  }-*/;
-
   native static ExternalDataSetClientProvider RuntimeDataSetClientServices_ExternalDataSetClientProvider_externalDataSetClientProvider(RuntimeDataSetClientServices instance) /*-{
     return instance.@org.dashbuilder.client.services.RuntimeDataSetClientServices::externalDataSetClientProvider;
   }-*/;
 
   native static void RuntimeDataSetClientServices_ExternalDataSetClientProvider_externalDataSetClientProvider(RuntimeDataSetClientServices instance, ExternalDataSetClientProvider value) /*-{
     instance.@org.dashbuilder.client.services.RuntimeDataSetClientServices::externalDataSetClientProvider = value;
+  }-*/;
+
+  native static DefaultRuntimeErrorCallback RuntimeDataSetClientServices_DefaultRuntimeErrorCallback_errorCallback(RuntimeDataSetClientServices instance) /*-{
+    return instance.@org.dashbuilder.client.services.RuntimeDataSetClientServices::errorCallback;
+  }-*/;
+
+  native static void RuntimeDataSetClientServices_DefaultRuntimeErrorCallback_errorCallback(RuntimeDataSetClientServices instance, DefaultRuntimeErrorCallback value) /*-{
+    instance.@org.dashbuilder.client.services.RuntimeDataSetClientServices::errorCallback = value;
   }-*/;
 
   native static RuntimeClientLoader RuntimeDataSetClientServices_RuntimeClientLoader_loader(RuntimeDataSetClientServices instance) /*-{

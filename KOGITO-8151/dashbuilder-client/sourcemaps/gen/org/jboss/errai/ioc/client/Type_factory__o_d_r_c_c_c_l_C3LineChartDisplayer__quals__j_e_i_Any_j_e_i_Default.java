@@ -25,8 +25,8 @@ public class Type_factory__o_d_r_c_c_c_l_C3LineChartDisplayer__quals__j_e_i_Any_
 
   public C3LineChartDisplayer createInstance(final ContextManager contextManager) {
     final View _view_0 = (C3LineChartView) contextManager.getInstance("Type_factory__o_d_r_c_c_c_l_C3LineChartView__quals__j_e_i_Any_j_e_i_Default");
-    final FilterLabelSet _filterLabelSet_1 = (FilterLabelSet) contextManager.getInstance("Type_factory__o_d_c_c_w_FilterLabelSet__quals__j_e_i_Any_j_e_i_Default");
     final C3JsTypesFactory _builder_2 = (C3JsTypesFactory) contextManager.getInstance("Type_factory__o_d_r_c_c_j_C3JsTypesFactory__quals__j_e_i_Any_j_e_i_Default");
+    final FilterLabelSet _filterLabelSet_1 = (FilterLabelSet) contextManager.getInstance("Type_factory__o_d_c_c_w_FilterLabelSet__quals__j_e_i_Any_j_e_i_Default");
     final C3LineChartDisplayer instance = new C3LineChartDisplayer(_view_0, _filterLabelSet_1, _builder_2);
     registerDependentScopedReference(instance, _view_0);
     registerDependentScopedReference(instance, _filterLabelSet_1);

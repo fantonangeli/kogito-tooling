@@ -88,11 +88,11 @@ public class Type_factory__o_u_e_p_c_v_PluginNameValidator__quals__j_e_i_Any_j_e
   public PluginNameValidator createInstance(final ContextManager contextManager) {
     final PluginNameValidator instance = new PluginNameValidator();
     setIncompleteInstance(instance);
-    final DefaultFileNameValidator PluginNameValidator_defaultFileNameValidator = (DefaultFileNameValidator) contextManager.getInstance("Type_factory__o_u_e_e_c_c_v_DefaultFileNameValidator__quals__j_e_i_Any_j_e_i_Default");
-    PluginNameValidator_DefaultFileNameValidator_defaultFileNameValidator(instance, PluginNameValidator_defaultFileNameValidator);
     final Caller PluginNameValidator_pluginServices = (Caller) contextManager.getContextualInstance("ContextualProvider_factory__o_j_e_c_c_a_Caller__quals__Universal", new Class[] { PluginServices.class }, new Annotation[] { });
     registerDependentScopedReference(instance, PluginNameValidator_pluginServices);
     PluginNameValidator_Caller_pluginServices(instance, PluginNameValidator_pluginServices);
+    final DefaultFileNameValidator PluginNameValidator_defaultFileNameValidator = (DefaultFileNameValidator) contextManager.getInstance("Type_factory__o_u_e_e_c_c_v_DefaultFileNameValidator__quals__j_e_i_Any_j_e_i_Default");
+    PluginNameValidator_DefaultFileNameValidator_defaultFileNameValidator(instance, PluginNameValidator_defaultFileNameValidator);
     setIncompleteInstance(null);
     return instance;
   }

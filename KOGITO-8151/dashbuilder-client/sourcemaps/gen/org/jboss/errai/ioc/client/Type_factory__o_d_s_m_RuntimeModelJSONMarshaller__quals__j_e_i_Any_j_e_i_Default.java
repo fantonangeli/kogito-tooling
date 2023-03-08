@@ -4,6 +4,7 @@ import java.util.Map;
 import javax.enterprise.context.ApplicationScoped;
 import org.dashbuilder.json.JsonObject;
 import org.dashbuilder.shared.marshalling.RuntimeModelJSONMarshaller;
+import org.dashbuilder.shared.model.GlobalSettings;
 import org.dashbuilder.shared.model.RuntimeModel;
 import org.jboss.errai.ioc.client.container.Context;
 import org.jboss.errai.ioc.client.container.ContextManager;
@@ -85,6 +86,16 @@ public class Type_factory__o_d_s_m_RuntimeModelJSONMarshaller__quals__j_e_i_Any_
         return retVal;
       } else {
         return super.retrieveProperties(json);
+      }
+    }
+
+    @Override public GlobalSettings retrieveGlobalSettings(String json) {
+      if (proxyHelper != null) {
+        final RuntimeModelJSONMarshaller proxiedInstance = proxyHelper.getInstance(this);
+        final GlobalSettings retVal = proxiedInstance.retrieveGlobalSettings(json);
+        return retVal;
+      } else {
+        return super.retrieveGlobalSettings(json);
       }
     }
 

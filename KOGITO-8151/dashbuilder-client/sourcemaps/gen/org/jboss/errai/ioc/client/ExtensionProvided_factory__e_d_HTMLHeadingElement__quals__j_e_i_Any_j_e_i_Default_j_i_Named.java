@@ -14,13 +14,13 @@ import org.jboss.errai.ioc.client.container.Factory;
 import org.jboss.errai.ioc.client.container.FactoryHandleImpl;
 
 public class ExtensionProvided_factory__e_d_HTMLHeadingElement__quals__j_e_i_Any_j_e_i_Default_j_i_Named extends Factory<HTMLHeadingElement> { public ExtensionProvided_factory__e_d_HTMLHeadingElement__quals__j_e_i_Any_j_e_i_Default_j_i_Named() {
-    super(new FactoryHandleImpl(HTMLHeadingElement.class, "ExtensionProvided_factory__e_d_HTMLHeadingElement__quals__j_e_i_Any_j_e_i_Default_j_i_Named", Dependent.class, false, "h2", true));
+    super(new FactoryHandleImpl(HTMLHeadingElement.class, "ExtensionProvided_factory__e_d_HTMLHeadingElement__quals__j_e_i_Any_j_e_i_Default_j_i_Named", Dependent.class, false, "h3", true));
     handle.setAssignableTypes(new Class[] { HTMLHeadingElement.class, HTMLElement.class, Element.class, Node.class, Object.class, EventTarget.class });
-    handle.setQualifiers(new Annotation[] { QualifierUtil.ANY_ANNOTATION, QualifierUtil.DEFAULT_ANNOTATION, QualifierUtil.createNamed("h2") });
+    handle.setQualifiers(new Annotation[] { QualifierUtil.ANY_ANNOTATION, QualifierUtil.DEFAULT_ANNOTATION, QualifierUtil.createNamed("h3") });
   }
 
   public HTMLHeadingElement createInstance(final ContextManager contextManager) {
-    final Element element = DomGlobal.document.createElement("h2");
+    final Element element = DomGlobal.document.createElement("h3");
     final HTMLHeadingElement retVal = Js.cast(element);
     return retVal;
   }

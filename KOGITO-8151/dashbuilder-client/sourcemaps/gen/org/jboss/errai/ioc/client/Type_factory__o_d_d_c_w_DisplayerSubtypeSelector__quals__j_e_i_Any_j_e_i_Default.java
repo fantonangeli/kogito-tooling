@@ -19,12 +19,12 @@ public class Type_factory__o_d_d_c_w_DisplayerSubtypeSelector__quals__j_e_i_Any_
   }
 
   public DisplayerSubtypeSelector createInstance(final ContextManager contextManager) {
+    final View _view_0 = (DisplayerSubtypeSelectorView) contextManager.getInstance("Type_factory__o_d_d_c_w_DisplayerSubtypeSelectorView__quals__j_e_i_Any_j_e_i_Default");
     final RendererManager _rendererManager_1 = (RendererManager) contextManager.getInstance("Type_factory__o_d_d_c_RendererManager__quals__j_e_i_Any_j_e_i_Default");
     final Event<DisplayerSubtypeSelectedEvent> _selectEvent_2 = (Event) contextManager.getContextualInstance("ContextualProvider_factory__j_e_e_Event__quals__Universal", new Class[] { DisplayerSubtypeSelectedEvent.class }, new Annotation[] { });
-    final View _view_0 = (DisplayerSubtypeSelectorView) contextManager.getInstance("Type_factory__o_d_d_c_w_DisplayerSubtypeSelectorView__quals__j_e_i_Any_j_e_i_Default");
     final DisplayerSubtypeSelector instance = new DisplayerSubtypeSelector(_view_0, _rendererManager_1, _selectEvent_2);
-    registerDependentScopedReference(instance, _selectEvent_2);
     registerDependentScopedReference(instance, _view_0);
+    registerDependentScopedReference(instance, _selectEvent_2);
     setIncompleteInstance(instance);
     setIncompleteInstance(null);
     return instance;

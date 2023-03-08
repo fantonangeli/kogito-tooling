@@ -20,14 +20,14 @@ public class Type_factory__o_d_d_c_w_DisplayerTypeSelector__quals__j_e_i_Any_j_e
   }
 
   public DisplayerTypeSelector createInstance(final ContextManager contextManager) {
-    final Event<DisplayerTypeSelectedEvent> _typeSelectedEvent_2 = (Event) contextManager.getContextualInstance("ContextualProvider_factory__j_e_e_Event__quals__Universal", new Class[] { DisplayerTypeSelectedEvent.class }, new Annotation[] { });
-    final RendererManager _rendererManager_3 = (RendererManager) contextManager.getInstance("Type_factory__o_d_d_c_RendererManager__quals__j_e_i_Any_j_e_i_Default");
-    final DisplayerSubtypeSelector _subtypeSelector_1 = (DisplayerSubtypeSelector) contextManager.getInstance("Type_factory__o_d_d_c_w_DisplayerSubtypeSelector__quals__j_e_i_Any_j_e_i_Default");
     final View _view_0 = (DisplayerTypeSelectorView) contextManager.getInstance("Type_factory__o_d_d_c_w_DisplayerTypeSelectorView__quals__j_e_i_Any_j_e_i_Default");
+    final DisplayerSubtypeSelector _subtypeSelector_1 = (DisplayerSubtypeSelector) contextManager.getInstance("Type_factory__o_d_d_c_w_DisplayerSubtypeSelector__quals__j_e_i_Any_j_e_i_Default");
+    final RendererManager _rendererManager_3 = (RendererManager) contextManager.getInstance("Type_factory__o_d_d_c_RendererManager__quals__j_e_i_Any_j_e_i_Default");
+    final Event<DisplayerTypeSelectedEvent> _typeSelectedEvent_2 = (Event) contextManager.getContextualInstance("ContextualProvider_factory__j_e_e_Event__quals__Universal", new Class[] { DisplayerTypeSelectedEvent.class }, new Annotation[] { });
     final DisplayerTypeSelector instance = new DisplayerTypeSelector(_view_0, _subtypeSelector_1, _typeSelectedEvent_2, _rendererManager_3);
-    registerDependentScopedReference(instance, _typeSelectedEvent_2);
-    registerDependentScopedReference(instance, _subtypeSelector_1);
     registerDependentScopedReference(instance, _view_0);
+    registerDependentScopedReference(instance, _subtypeSelector_1);
+    registerDependentScopedReference(instance, _typeSelectedEvent_2);
     setIncompleteInstance(instance);
     setIncompleteInstance(null);
     return instance;

@@ -47,12 +47,12 @@ public class Type_factory__o_d_c_w_v_DashboardCardView__quals__j_e_i_Any_j_e_i_D
   public DashboardCardView createInstance(final ContextManager contextManager) {
     final DashboardCardView instance = new DashboardCardView();
     setIncompleteInstance(instance);
-    final HTMLHeadingElement DashboardCardView_cardTitle = (HTMLHeadingElement) contextManager.getInstance("ExtensionProvided_factory__e_d_HTMLHeadingElement__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
-    registerDependentScopedReference(instance, DashboardCardView_cardTitle);
-    DashboardCardView_HTMLHeadingElement_cardTitle(instance, DashboardCardView_cardTitle);
     final HTMLDivElement DashboardCardView_dashboardCardRoot = (HTMLDivElement) contextManager.getInstance("ExtensionProvided_factory__e_d_HTMLDivElement__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
     registerDependentScopedReference(instance, DashboardCardView_dashboardCardRoot);
     DashboardCardView_HTMLDivElement_dashboardCardRoot(instance, DashboardCardView_dashboardCardRoot);
+    final HTMLHeadingElement DashboardCardView_cardTitle = (HTMLHeadingElement) contextManager.getInstance("ExtensionProvided_factory__e_d_HTMLHeadingElement__quals__j_e_i_Any_j_e_i_Default_j_i_Named_1");
+    registerDependentScopedReference(instance, DashboardCardView_cardTitle);
+    DashboardCardView_HTMLHeadingElement_cardTitle(instance, DashboardCardView_cardTitle);
     o_d_c_w_v_DashboardCardViewTemplateResource templateForDashboardCardView = GWT.create(o_d_c_w_v_DashboardCardViewTemplateResource.class);
     Element parentElementForTemplateOfDashboardCardView = TemplateUtil.getRootTemplateParentElement(templateForDashboardCardView.getContents().getText(), "org/dashbuilder/client/widgets/view/DashboardCardView.html", "");
     TemplateUtil.translateTemplate("org/dashbuilder/client/widgets/view/DashboardCardView.html", TemplateUtil.getRootTemplateElement(parentElementForTemplateOfDashboardCardView));

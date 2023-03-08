@@ -24,13 +24,13 @@ public class Type_factory__o_d_c_c_e_f_FileUploadEditor__quals__j_e_i_Any_j_e_i_
   }
 
   public FileUploadEditor createInstance(final ContextManager contextManager) {
-    final View _view_2 = (FileUploadEditorView) contextManager.getInstance("Type_factory__o_d_c_c_e_f_FileUploadEditorView__quals__j_e_i_Any_j_e_i_Default");
     final Event<ValueChangeEvent<String>> _valueChangeEvent_0 = (Event) contextManager.getContextualInstance("ContextualProvider_factory__j_e_e_Event__quals__Universal", new Class[] { ValueChangeEvent.class }, new Annotation[] { });
     final Event<NotificationEvent> _workbenchNotification_1 = (Event) contextManager.getContextualInstance("ContextualProvider_factory__j_e_e_Event__quals__Universal", new Class[] { NotificationEvent.class }, new Annotation[] { });
+    final View _view_2 = (FileUploadEditorView) contextManager.getInstance("Type_factory__o_d_c_c_e_f_FileUploadEditorView__quals__j_e_i_Any_j_e_i_Default");
     final FileUploadEditor instance = new FileUploadEditor(_valueChangeEvent_0, _workbenchNotification_1, _view_2);
-    registerDependentScopedReference(instance, _view_2);
     registerDependentScopedReference(instance, _valueChangeEvent_0);
     registerDependentScopedReference(instance, _workbenchNotification_1);
+    registerDependentScopedReference(instance, _view_2);
     setIncompleteInstance(instance);
     setIncompleteInstance(null);
     return instance;

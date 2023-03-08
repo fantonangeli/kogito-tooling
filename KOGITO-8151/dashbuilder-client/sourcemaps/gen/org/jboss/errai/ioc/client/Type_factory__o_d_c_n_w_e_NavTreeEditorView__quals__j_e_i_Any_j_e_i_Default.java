@@ -52,12 +52,6 @@ public class Type_factory__o_d_c_n_w_e_NavTreeEditorView__quals__j_e_i_Any_j_e_i
     final Div NavTreeEditorView_mainDiv = (Div) contextManager.getInstance("ExtensionProvided_factory__o_j_e_c_c_d_Div__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
     registerDependentScopedReference(instance, NavTreeEditorView_mainDiv);
     NavTreeEditorView_Div_mainDiv(instance, NavTreeEditorView_mainDiv);
-    final Span NavTreeEditorView_alertMessage = (Span) contextManager.getInstance("ExtensionProvided_factory__o_j_e_c_c_d_Span__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
-    registerDependentScopedReference(instance, NavTreeEditorView_alertMessage);
-    NavTreeEditorView_Span_alertMessage(instance, NavTreeEditorView_alertMessage);
-    final Div NavTreeEditorView_alertDiv = (Div) contextManager.getInstance("ExtensionProvided_factory__o_j_e_c_c_d_Div__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
-    registerDependentScopedReference(instance, NavTreeEditorView_alertDiv);
-    NavTreeEditorView_Div_alertDiv(instance, NavTreeEditorView_alertDiv);
     final Button NavTreeEditorView_saveButton = (Button) contextManager.getInstance("ExtensionProvided_factory__o_j_e_c_c_d_Button__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
     registerDependentScopedReference(instance, NavTreeEditorView_saveButton);
     NavTreeEditorView_Button_saveButton(instance, NavTreeEditorView_saveButton);
@@ -67,6 +61,12 @@ public class Type_factory__o_d_c_n_w_e_NavTreeEditorView__quals__j_e_i_Any_j_e_i
     final Div NavTreeEditorView_childrenDiv = (Div) contextManager.getInstance("ExtensionProvided_factory__o_j_e_c_c_d_Div__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
     registerDependentScopedReference(instance, NavTreeEditorView_childrenDiv);
     NavTreeEditorView_Div_childrenDiv(instance, NavTreeEditorView_childrenDiv);
+    final Span NavTreeEditorView_alertMessage = (Span) contextManager.getInstance("ExtensionProvided_factory__o_j_e_c_c_d_Span__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
+    registerDependentScopedReference(instance, NavTreeEditorView_alertMessage);
+    NavTreeEditorView_Span_alertMessage(instance, NavTreeEditorView_alertMessage);
+    final Div NavTreeEditorView_alertDiv = (Div) contextManager.getInstance("ExtensionProvided_factory__o_j_e_c_c_d_Div__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
+    registerDependentScopedReference(instance, NavTreeEditorView_alertDiv);
+    NavTreeEditorView_Div_alertDiv(instance, NavTreeEditorView_alertDiv);
     o_d_c_n_w_e_NavTreeEditorViewTemplateResource templateForNavTreeEditorView = GWT.create(o_d_c_n_w_e_NavTreeEditorViewTemplateResource.class);
     Element parentElementForTemplateOfNavTreeEditorView = TemplateUtil.getRootTemplateParentElement(templateForNavTreeEditorView.getContents().getText(), "org/dashbuilder/client/navigation/widget/editor/NavTreeEditorView.html", "");
     TemplateUtil.translateTemplate("org/dashbuilder/client/navigation/widget/editor/NavTreeEditorView.html", TemplateUtil.getRootTemplateElement(parentElementForTemplateOfNavTreeEditorView));

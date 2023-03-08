@@ -111,14 +111,22 @@ public class AppConstants_ implements org.dashbuilder.client.resources.i18n.AppC
   }
   
   public java.lang.String emptyClientMode() {
-    return "Dashboards were not imported. You can import by uploading a supported YAML/JSON file.";
+    return "Dashboards were not imported. You can import a dashboard by creating a supported YAML/JSON file";
   }
   
   public java.lang.String emptyWithImportId(java.lang.String arg0) {
-    return "Not able to load <strong>" + arg0 + "</strong>. You can import dashboards by uploading a supported YAML/JSON file.";
+    return "Not able to load <strong>" + arg0 + "</strong>. You can import a dashboard by creating a supported YAML/JSON file";
   }
   
   public java.lang.String errorContentTitle() {
     return "Error loading content";
+  }
+  
+  public java.lang.String samplesScreenTitle() {
+    return "Samples";
+  }
+  
+  public java.lang.String emptyScreenTrySamples() {
+    return "or you can try samples below.";
   }
 }

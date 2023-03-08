@@ -18,11 +18,11 @@ public class Type_factory__o_d_d_c_c_f_BackendFunctionLoader__quals__j_e_i_Any_j
   public BackendFunctionLoader createInstance(final ContextManager contextManager) {
     final BackendFunctionLoader instance = new BackendFunctionLoader();
     setIncompleteInstance(instance);
-    final ComponentFunctionLocator BackendFunctionLoader_componentFunctionLocator = (ComponentFunctionLocator) contextManager.getInstance("Type_factory__o_d_d_c_c_f_ComponentFunctionLocator__quals__j_e_i_Any_j_e_i_Default");
-    BackendFunctionLoader_ComponentFunctionLocator_componentFunctionLocator(instance, BackendFunctionLoader_componentFunctionLocator);
     final Caller BackendFunctionLoader_backendFunctionLoaderService = (Caller) contextManager.getContextualInstance("ContextualProvider_factory__o_j_e_c_c_a_Caller__quals__Universal", new Class[] { BackendComponentFunctionService.class }, new Annotation[] { });
     registerDependentScopedReference(instance, BackendFunctionLoader_backendFunctionLoaderService);
     BackendFunctionLoader_Caller_backendFunctionLoaderService(instance, BackendFunctionLoader_backendFunctionLoaderService);
+    final ComponentFunctionLocator BackendFunctionLoader_componentFunctionLocator = (ComponentFunctionLocator) contextManager.getInstance("Type_factory__o_d_d_c_c_f_ComponentFunctionLocator__quals__j_e_i_Any_j_e_i_Default");
+    BackendFunctionLoader_ComponentFunctionLocator_componentFunctionLocator(instance, BackendFunctionLoader_componentFunctionLocator);
     setIncompleteInstance(null);
     return instance;
   }

@@ -173,23 +173,23 @@ public class Type_factory__o_u_c_w_w_m_m_WorkbenchMegaMenuProducer__quals__j_e_i
   }
 
   public WorkbenchMegaMenuProducer createInstance(final ContextManager contextManager) {
-    final ManagedInstance<GroupMenuItemPresenter> _groupMenuItemPresenters_6 = (ManagedInstance) contextManager.getContextualInstance("ContextualProvider_factory__o_j_e_i_c_a_ManagedInstance__quals__Universal", new Class[] { GroupMenuItemPresenter.class }, new Annotation[] { });
+    final ManagedInstance<MegaMenuBrand> _megaMenuBrands_3 = (ManagedInstance) contextManager.getContextualInstance("ContextualProvider_factory__o_j_e_i_c_a_ManagedInstance__quals__Universal", new Class[] { MegaMenuBrand.class }, new Annotation[] { });
+    final ManagedInstance<ChildMenuItemPresenter> _childMenuItemPresenters_5 = (ManagedInstance) contextManager.getContextualInstance("ContextualProvider_factory__o_j_e_i_c_a_ManagedInstance__quals__Universal", new Class[] { ChildMenuItemPresenter.class }, new Annotation[] { });
     final ManagedInstance<ChildContextMenuItemPresenter> _childContextMenuItemPresenters_7 = (ManagedInstance) contextManager.getContextualInstance("ContextualProvider_factory__o_j_e_i_c_a_ManagedInstance__quals__Universal", new Class[] { ChildContextMenuItemPresenter.class }, new Annotation[] { });
+    final Workbench _workbench_9 = (Workbench) contextManager.getInstance("Type_factory__o_u_c_w_Workbench__quals__j_e_i_Any_j_e_i_Default");
     final ActivityManager _activityManager_1 = (ActivityManagerImpl) contextManager.getInstance("Type_factory__o_u_c_m_ActivityManagerImpl__quals__j_e_i_Any_j_e_i_Default");
+    final ManagedInstance<GroupMenuItemPresenter> _groupMenuItemPresenters_6 = (ManagedInstance) contextManager.getContextualInstance("ContextualProvider_factory__o_j_e_i_c_a_ManagedInstance__quals__Universal", new Class[] { GroupMenuItemPresenter.class }, new Annotation[] { });
+    final PerspectiveManager _perspectiveManager_0 = (PerspectiveManagerImpl) contextManager.getInstance("Type_factory__o_u_c_m_PerspectiveManagerImpl__quals__j_e_i_Any_j_e_i_Default");
     final ManagedInstance<GroupContextMenuItemPresenter> _groupContextMenuItemPresenters_8 = (ManagedInstance) contextManager.getContextualInstance("ContextualProvider_factory__o_j_e_i_c_a_ManagedInstance__quals__Universal", new Class[] { GroupContextMenuItemPresenter.class }, new Annotation[] { });
     final View _view_2 = (WorkbenchMegaMenuView) contextManager.getInstance("Type_factory__o_u_c_v_p_m_m_WorkbenchMegaMenuView__quals__j_e_i_Any_j_e_i_Default");
     final PlaceManager _placeManager_4 = (PlaceManagerImpl) contextManager.getInstance("Type_factory__o_u_c_m_PlaceManagerImpl__quals__j_e_i_Any_j_e_i_Default");
-    final Workbench _workbench_9 = (Workbench) contextManager.getInstance("Type_factory__o_u_c_w_Workbench__quals__j_e_i_Any_j_e_i_Default");
-    final ManagedInstance<MegaMenuBrand> _megaMenuBrands_3 = (ManagedInstance) contextManager.getContextualInstance("ContextualProvider_factory__o_j_e_i_c_a_ManagedInstance__quals__Universal", new Class[] { MegaMenuBrand.class }, new Annotation[] { });
-    final ManagedInstance<ChildMenuItemPresenter> _childMenuItemPresenters_5 = (ManagedInstance) contextManager.getContextualInstance("ContextualProvider_factory__o_j_e_i_c_a_ManagedInstance__quals__Universal", new Class[] { ChildMenuItemPresenter.class }, new Annotation[] { });
-    final PerspectiveManager _perspectiveManager_0 = (PerspectiveManagerImpl) contextManager.getInstance("Type_factory__o_u_c_m_PerspectiveManagerImpl__quals__j_e_i_Any_j_e_i_Default");
     final WorkbenchMegaMenuProducer instance = new WorkbenchMegaMenuProducer(_perspectiveManager_0, _activityManager_1, _view_2, _megaMenuBrands_3, _placeManager_4, _childMenuItemPresenters_5, _groupMenuItemPresenters_6, _childContextMenuItemPresenters_7, _groupContextMenuItemPresenters_8, _workbench_9);
-    registerDependentScopedReference(instance, _groupMenuItemPresenters_6);
-    registerDependentScopedReference(instance, _childContextMenuItemPresenters_7);
-    registerDependentScopedReference(instance, _groupContextMenuItemPresenters_8);
-    registerDependentScopedReference(instance, _view_2);
     registerDependentScopedReference(instance, _megaMenuBrands_3);
     registerDependentScopedReference(instance, _childMenuItemPresenters_5);
+    registerDependentScopedReference(instance, _childContextMenuItemPresenters_7);
+    registerDependentScopedReference(instance, _groupMenuItemPresenters_6);
+    registerDependentScopedReference(instance, _groupContextMenuItemPresenters_8);
+    registerDependentScopedReference(instance, _view_2);
     setIncompleteInstance(instance);
     setIncompleteInstance(null);
     return instance;

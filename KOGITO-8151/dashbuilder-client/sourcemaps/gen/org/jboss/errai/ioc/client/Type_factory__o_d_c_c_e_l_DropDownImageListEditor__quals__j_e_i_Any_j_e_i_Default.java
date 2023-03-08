@@ -24,11 +24,11 @@ public class Type_factory__o_d_c_c_e_l_DropDownImageListEditor__quals__j_e_i_Any
   }
 
   public DropDownImageListEditor createInstance(final ContextManager contextManager) {
-    final DropDownImageListEditorView _dropDownImageListEditorView_0 = (DropDownImageListEditorView) contextManager.getInstance("Type_factory__o_d_c_c_e_l_DropDownImageListEditorView__quals__j_e_i_Any_j_e_i_Default");
     final Event<ValueChangeEvent> _valueChangeEvent_1 = (Event) contextManager.getContextualInstance("ContextualProvider_factory__j_e_e_Event__quals__Universal", new Class[] { ValueChangeEvent.class }, new Annotation[] { });
+    final DropDownImageListEditorView _dropDownImageListEditorView_0 = (DropDownImageListEditorView) contextManager.getInstance("Type_factory__o_d_c_c_e_l_DropDownImageListEditorView__quals__j_e_i_Any_j_e_i_Default");
     final DropDownImageListEditor instance = new DropDownImageListEditor(_dropDownImageListEditorView_0, _valueChangeEvent_1);
-    registerDependentScopedReference(instance, _dropDownImageListEditorView_0);
     registerDependentScopedReference(instance, _valueChangeEvent_1);
+    registerDependentScopedReference(instance, _dropDownImageListEditorView_0);
     setIncompleteInstance(instance);
     setIncompleteInstance(null);
     return instance;

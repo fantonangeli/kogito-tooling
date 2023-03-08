@@ -1,4 +1,4 @@
-// .ui.xml template last modified: 1676370398430
+// .ui.xml template last modified: 1678262277446
 package org.uberfire.ext.widgets.common.client.common.popups.footers;
 
 import com.google.gwt.core.client.GWT;
