@@ -52,9 +52,6 @@ public class Type_factory__o_d_d_c_w_ExternalComponentEditorView__quals__j_e_i_A
   public ExternalComponentEditorView createInstance(final ContextManager contextManager) {
     final ExternalComponentEditorView instance = new ExternalComponentEditorView();
     setIncompleteInstance(instance);
-    final HTMLDivElement ExternalComponentEditorView_componentEditorPropertiesColumn = (HTMLDivElement) contextManager.getInstance("ExtensionProvided_factory__e_d_HTMLDivElement__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
-    registerDependentScopedReference(instance, ExternalComponentEditorView_componentEditorPropertiesColumn);
-    ExternalComponentEditorView_HTMLDivElement_componentEditorPropertiesColumn(instance, ExternalComponentEditorView_componentEditorPropertiesColumn);
     final Elemental2DomUtil ExternalComponentEditorView_domUtil = (Elemental2DomUtil) contextManager.getInstance("Type_factory__o_j_e_c_c_d_e_Elemental2DomUtil__quals__j_e_i_Any_j_e_i_Default");
     registerDependentScopedReference(instance, ExternalComponentEditorView_domUtil);
     ExternalComponentEditorView_Elemental2DomUtil_domUtil(instance, ExternalComponentEditorView_domUtil);
@@ -64,6 +61,9 @@ public class Type_factory__o_d_d_c_w_ExternalComponentEditorView__quals__j_e_i_A
     final HTMLDivElement ExternalComponentEditorView_componentEditorRootContainer = (HTMLDivElement) contextManager.getInstance("ExtensionProvided_factory__e_d_HTMLDivElement__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
     registerDependentScopedReference(instance, ExternalComponentEditorView_componentEditorRootContainer);
     ExternalComponentEditorView_HTMLDivElement_componentEditorRootContainer(instance, ExternalComponentEditorView_componentEditorRootContainer);
+    final HTMLDivElement ExternalComponentEditorView_componentEditorPropertiesColumn = (HTMLDivElement) contextManager.getInstance("ExtensionProvided_factory__e_d_HTMLDivElement__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
+    registerDependentScopedReference(instance, ExternalComponentEditorView_componentEditorPropertiesColumn);
+    ExternalComponentEditorView_HTMLDivElement_componentEditorPropertiesColumn(instance, ExternalComponentEditorView_componentEditorPropertiesColumn);
     o_d_d_c_w_ExternalComponentEditorViewTemplateResource templateForExternalComponentEditorView = GWT.create(o_d_d_c_w_ExternalComponentEditorViewTemplateResource.class);
     Element parentElementForTemplateOfExternalComponentEditorView = TemplateUtil.getRootTemplateParentElement(templateForExternalComponentEditorView.getContents().getText(), "org/dashbuilder/displayer/client/widgets/ExternalComponentEditorView.html", "");
     TemplateUtil.translateTemplate("org/dashbuilder/displayer/client/widgets/ExternalComponentEditorView.html", TemplateUtil.getRootTemplateElement(parentElementForTemplateOfExternalComponentEditorView));

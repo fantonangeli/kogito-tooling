@@ -21,15 +21,15 @@ public class Type_factory__o_u_c_v_p_m_MultiScreenMenuBuilder__quals__j_e_i_Any_
   public MultiScreenMenuBuilder createInstance(final ContextManager contextManager) {
     final MultiScreenMenuBuilder instance = new MultiScreenMenuBuilder();
     setIncompleteInstance(instance);
-    final ManagedInstance MultiScreenMenuBuilder_kebabMenuItems = (ManagedInstance) contextManager.getContextualInstance("ContextualProvider_factory__o_j_e_i_c_a_ManagedInstance__quals__Universal", new Class[] { KebabMenuItem.class }, new Annotation[] { });
-    registerDependentScopedReference(instance, MultiScreenMenuBuilder_kebabMenuItems);
-    MultiScreenMenuBuilder_ManagedInstance_kebabMenuItems(instance, MultiScreenMenuBuilder_kebabMenuItems);
     final HTMLDocument MultiScreenMenuBuilder_document = (HTMLDocument) contextManager.getInstance("Producer_factory__e_d_HTMLDocument__quals__j_e_i_Any_j_e_i_Default");
     registerDependentScopedReference(instance, MultiScreenMenuBuilder_document);
     MultiScreenMenuBuilder_HTMLDocument_document(instance, MultiScreenMenuBuilder_document);
     final ManagedInstance MultiScreenMenuBuilder_buttons = (ManagedInstance) contextManager.getContextualInstance("ContextualProvider_factory__o_j_e_i_c_a_ManagedInstance__quals__Universal", new Class[] { Button.class }, new Annotation[] { });
     registerDependentScopedReference(instance, MultiScreenMenuBuilder_buttons);
     MultiScreenMenuBuilder_ManagedInstance_buttons(instance, MultiScreenMenuBuilder_buttons);
+    final ManagedInstance MultiScreenMenuBuilder_kebabMenuItems = (ManagedInstance) contextManager.getContextualInstance("ContextualProvider_factory__o_j_e_i_c_a_ManagedInstance__quals__Universal", new Class[] { KebabMenuItem.class }, new Annotation[] { });
+    registerDependentScopedReference(instance, MultiScreenMenuBuilder_kebabMenuItems);
+    MultiScreenMenuBuilder_ManagedInstance_kebabMenuItems(instance, MultiScreenMenuBuilder_kebabMenuItems);
     final ManagedInstance MultiScreenMenuBuilder_kebabMenus = (ManagedInstance) contextManager.getContextualInstance("ContextualProvider_factory__o_j_e_i_c_a_ManagedInstance__quals__Universal", new Class[] { KebabMenu.class }, new Annotation[] { });
     registerDependentScopedReference(instance, MultiScreenMenuBuilder_kebabMenus);
     MultiScreenMenuBuilder_ManagedInstance_kebabMenus(instance, MultiScreenMenuBuilder_kebabMenus);

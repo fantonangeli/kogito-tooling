@@ -142,15 +142,15 @@ public class Type_factory__o_d_c_s_RuntimeScreen__quals__j_e_i_Any_j_e_i_Default
   public RuntimeScreen createInstance(final ContextManager contextManager) {
     final RuntimeScreen instance = new RuntimeScreen();
     setIncompleteInstance(instance);
-    final PlaceManagerImpl RuntimeScreen_placeManager = (PlaceManagerImpl) contextManager.getInstance("Type_factory__o_u_c_m_PlaceManagerImpl__quals__j_e_i_Any_j_e_i_Default");
-    RuntimeScreen_PlaceManager_placeManager(instance, RuntimeScreen_placeManager);
-    final AppNavBar RuntimeScreen_appNavBar = (AppNavBar) contextManager.getInstance("Type_factory__o_d_c_n_AppNavBar__quals__j_e_i_Any_j_e_i_Default");
-    RuntimeScreen_AppNavBar_appNavBar(instance, RuntimeScreen_appNavBar);
+    final NavBarHelper RuntimeScreen_menusHelper = (NavBarHelper) contextManager.getInstance("Type_factory__o_d_c_n_NavBarHelper__quals__j_e_i_Any_j_e_i_Default_1");
+    RuntimeScreen_NavBarHelper_menusHelper(instance, RuntimeScreen_menusHelper);
     final RuntimeScreenView RuntimeScreen_view = (RuntimeScreenView) contextManager.getInstance("Type_factory__o_d_c_s_v_RuntimeScreenView__quals__j_e_i_Any_j_e_i_Default");
     registerDependentScopedReference(instance, RuntimeScreen_view);
     RuntimeScreen_View_view(instance, RuntimeScreen_view);
-    final NavBarHelper RuntimeScreen_menusHelper = (NavBarHelper) contextManager.getInstance("Type_factory__o_d_c_n_NavBarHelper__quals__j_e_i_Any_j_e_i_Default_1");
-    RuntimeScreen_NavBarHelper_menusHelper(instance, RuntimeScreen_menusHelper);
+    final AppNavBar RuntimeScreen_appNavBar = (AppNavBar) contextManager.getInstance("Type_factory__o_d_c_n_AppNavBar__quals__j_e_i_Any_j_e_i_Default");
+    RuntimeScreen_AppNavBar_appNavBar(instance, RuntimeScreen_appNavBar);
+    final PlaceManagerImpl RuntimeScreen_placeManager = (PlaceManagerImpl) contextManager.getInstance("Type_factory__o_u_c_m_PlaceManagerImpl__quals__j_e_i_Any_j_e_i_Default");
+    RuntimeScreen_PlaceManager_placeManager(instance, RuntimeScreen_placeManager);
     setIncompleteInstance(null);
     return instance;
   }

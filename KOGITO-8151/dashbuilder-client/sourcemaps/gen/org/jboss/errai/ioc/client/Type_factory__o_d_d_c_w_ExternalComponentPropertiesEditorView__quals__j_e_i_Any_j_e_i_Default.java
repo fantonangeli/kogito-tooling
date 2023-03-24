@@ -59,6 +59,15 @@ public class Type_factory__o_d_d_c_w_ExternalComponentPropertiesEditorView__qual
   public ExternalComponentPropertiesEditorView createInstance(final ContextManager contextManager) {
     final ExternalComponentPropertiesEditorView instance = new ExternalComponentPropertiesEditorView();
     setIncompleteInstance(instance);
+    final Elemental2DomUtil ExternalComponentPropertiesEditorView_elementalUtil = (Elemental2DomUtil) contextManager.getInstance("Type_factory__o_j_e_c_c_d_e_Elemental2DomUtil__quals__j_e_i_Any_j_e_i_Default");
+    registerDependentScopedReference(instance, ExternalComponentPropertiesEditorView_elementalUtil);
+    ExternalComponentPropertiesEditorView_Elemental2DomUtil_elementalUtil(instance, ExternalComponentPropertiesEditorView_elementalUtil);
+    final HTMLDivElement ExternalComponentPropertiesEditorView_messageContainer = (HTMLDivElement) contextManager.getInstance("ExtensionProvided_factory__e_d_HTMLDivElement__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
+    registerDependentScopedReference(instance, ExternalComponentPropertiesEditorView_messageContainer);
+    ExternalComponentPropertiesEditorView_HTMLDivElement_messageContainer(instance, ExternalComponentPropertiesEditorView_messageContainer);
+    final HTMLDivElement ExternalComponentPropertiesEditorView_externalComponentPropertiesRoot = (HTMLDivElement) contextManager.getInstance("ExtensionProvided_factory__e_d_HTMLDivElement__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
+    registerDependentScopedReference(instance, ExternalComponentPropertiesEditorView_externalComponentPropertiesRoot);
+    ExternalComponentPropertiesEditorView_HTMLDivElement_externalComponentPropertiesRoot(instance, ExternalComponentPropertiesEditorView_externalComponentPropertiesRoot);
     final HTMLElement ExternalComponentPropertiesEditorView_messageTextContainer = (HTMLElement) contextManager.getContextualInstance("ContextualProvider_factory__e_d_HTMLElement__quals__Universal", new Class[] { }, new Annotation[] { new Named() {
         public Class annotationType() {
           return Named.class;
@@ -72,15 +81,6 @@ public class Type_factory__o_d_d_c_w_ExternalComponentPropertiesEditorView__qual
     } });
     registerDependentScopedReference(instance, ExternalComponentPropertiesEditorView_messageTextContainer);
     ExternalComponentPropertiesEditorView_HTMLElement_messageTextContainer(instance, ExternalComponentPropertiesEditorView_messageTextContainer);
-    final HTMLDivElement ExternalComponentPropertiesEditorView_externalComponentPropertiesRoot = (HTMLDivElement) contextManager.getInstance("ExtensionProvided_factory__e_d_HTMLDivElement__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
-    registerDependentScopedReference(instance, ExternalComponentPropertiesEditorView_externalComponentPropertiesRoot);
-    ExternalComponentPropertiesEditorView_HTMLDivElement_externalComponentPropertiesRoot(instance, ExternalComponentPropertiesEditorView_externalComponentPropertiesRoot);
-    final Elemental2DomUtil ExternalComponentPropertiesEditorView_elementalUtil = (Elemental2DomUtil) contextManager.getInstance("Type_factory__o_j_e_c_c_d_e_Elemental2DomUtil__quals__j_e_i_Any_j_e_i_Default");
-    registerDependentScopedReference(instance, ExternalComponentPropertiesEditorView_elementalUtil);
-    ExternalComponentPropertiesEditorView_Elemental2DomUtil_elementalUtil(instance, ExternalComponentPropertiesEditorView_elementalUtil);
-    final HTMLDivElement ExternalComponentPropertiesEditorView_messageContainer = (HTMLDivElement) contextManager.getInstance("ExtensionProvided_factory__e_d_HTMLDivElement__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
-    registerDependentScopedReference(instance, ExternalComponentPropertiesEditorView_messageContainer);
-    ExternalComponentPropertiesEditorView_HTMLDivElement_messageContainer(instance, ExternalComponentPropertiesEditorView_messageContainer);
     thisInstance.setReference(instance, "onPropertyEditorChangeSubscription", CDI.subscribeLocal("org.uberfire.ext.properties.editor.model.PropertyEditorChangeEvent", new AbstractCDIEventCallback<PropertyEditorChangeEvent>() {
       public void fireEvent(final PropertyEditorChangeEvent event) {
         ExternalComponentPropertiesEditorView_onPropertyEditorChange_PropertyEditorChangeEvent(instance, event);

@@ -47,18 +47,18 @@ public class Type_factory__o_d_d_c_w_DisplayerHtmlEditorView__quals__j_e_i_Any_j
   public DisplayerHtmlEditorView createInstance(final ContextManager contextManager) {
     final DisplayerHtmlEditorView instance = new DisplayerHtmlEditorView();
     setIncompleteInstance(instance);
-    final FlowPanel DisplayerHtmlEditorView_contentPanel = (FlowPanel) contextManager.getInstance("ExtensionProvided_factory__c_g_g_u_c_u_FlowPanel__quals__j_e_i_Any_j_e_i_Default");
-    registerDependentScopedReference(instance, DisplayerHtmlEditorView_contentPanel);
-    DisplayerHtmlEditorView_FlowPanel_contentPanel(instance, DisplayerHtmlEditorView_contentPanel);
-    final Anchor DisplayerHtmlEditorView_previewAnchor = (Anchor) contextManager.getInstance("ExtensionProvided_factory__o_j_e_c_c_d_Anchor__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
-    registerDependentScopedReference(instance, DisplayerHtmlEditorView_previewAnchor);
-    DisplayerHtmlEditorView_Anchor_previewAnchor(instance, DisplayerHtmlEditorView_previewAnchor);
     final ListItem DisplayerHtmlEditorView_previewItem = (ListItem) contextManager.getInstance("ExtensionProvided_factory__o_j_e_c_c_d_ListItem__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
     registerDependentScopedReference(instance, DisplayerHtmlEditorView_previewItem);
     DisplayerHtmlEditorView_ListItem_previewItem(instance, DisplayerHtmlEditorView_previewItem);
     final UnorderedList DisplayerHtmlEditorView_tabList = (UnorderedList) contextManager.getInstance("ExtensionProvided_factory__o_j_e_c_c_d_UnorderedList__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
     registerDependentScopedReference(instance, DisplayerHtmlEditorView_tabList);
     DisplayerHtmlEditorView_UnorderedList_tabList(instance, DisplayerHtmlEditorView_tabList);
+    final Anchor DisplayerHtmlEditorView_previewAnchor = (Anchor) contextManager.getInstance("ExtensionProvided_factory__o_j_e_c_c_d_Anchor__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
+    registerDependentScopedReference(instance, DisplayerHtmlEditorView_previewAnchor);
+    DisplayerHtmlEditorView_Anchor_previewAnchor(instance, DisplayerHtmlEditorView_previewAnchor);
+    final FlowPanel DisplayerHtmlEditorView_contentPanel = (FlowPanel) contextManager.getInstance("ExtensionProvided_factory__c_g_g_u_c_u_FlowPanel__quals__j_e_i_Any_j_e_i_Default");
+    registerDependentScopedReference(instance, DisplayerHtmlEditorView_contentPanel);
+    DisplayerHtmlEditorView_FlowPanel_contentPanel(instance, DisplayerHtmlEditorView_contentPanel);
     o_d_d_c_w_DisplayerHtmlEditorViewTemplateResource templateForDisplayerHtmlEditorView = GWT.create(o_d_d_c_w_DisplayerHtmlEditorViewTemplateResource.class);
     Element parentElementForTemplateOfDisplayerHtmlEditorView = TemplateUtil.getRootTemplateParentElement(templateForDisplayerHtmlEditorView.getContents().getText(), "org/dashbuilder/displayer/client/widgets/DisplayerHtmlEditorView.html", "");
     TemplateUtil.translateTemplate("org/dashbuilder/displayer/client/widgets/DisplayerHtmlEditorView.html", TemplateUtil.getRootTemplateElement(parentElementForTemplateOfDisplayerHtmlEditorView));

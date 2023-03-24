@@ -103,11 +103,11 @@ public class Type_factory__o_d_d_c_c_ExternalComponentDispatcher__quals__j_e_i_A
   public ExternalComponentDispatcher createInstance(final ContextManager contextManager) {
     final ExternalComponentDispatcher instance = new ExternalComponentDispatcher();
     setIncompleteInstance(instance);
-    final ComponentFunctionLocator ExternalComponentDispatcher_functionLocator = (ComponentFunctionLocator) contextManager.getInstance("Type_factory__o_d_d_c_c_f_ComponentFunctionLocator__quals__j_e_i_Any_j_e_i_Default");
-    ExternalComponentDispatcher_ComponentFunctionLocator_functionLocator(instance, ExternalComponentDispatcher_functionLocator);
     final ExternalComponentMessageHelper ExternalComponentDispatcher_messageHelper = (ExternalComponentMessageHelper) contextManager.getInstance("Producer_factory__o_d_d_e_ExternalComponentMessageHelper__quals__j_e_i_Any_j_e_i_Default");
     registerDependentScopedReference(instance, ExternalComponentDispatcher_messageHelper);
     ExternalComponentDispatcher_ExternalComponentMessageHelper_messageHelper(instance, ExternalComponentDispatcher_messageHelper);
+    final ComponentFunctionLocator ExternalComponentDispatcher_functionLocator = (ComponentFunctionLocator) contextManager.getInstance("Type_factory__o_d_d_c_c_f_ComponentFunctionLocator__quals__j_e_i_Any_j_e_i_Default");
+    ExternalComponentDispatcher_ComponentFunctionLocator_functionLocator(instance, ExternalComponentDispatcher_functionLocator);
     setIncompleteInstance(null);
     return instance;
   }

@@ -39,13 +39,13 @@ public class Type_factory__o_u_c_w_p_i_StaticWorkbenchPanelView__quals__j_e_i_An
     setIncompleteInstance(instance);
     final LayoutSelection AbstractWorkbenchPanelView_layoutSelection = (LayoutSelection) contextManager.getInstance("Type_factory__o_u_c_w_LayoutSelection__quals__j_e_i_Any_j_e_i_Default");
     AbstractWorkbenchPanelView_LayoutSelection_layoutSelection(instance, AbstractWorkbenchPanelView_layoutSelection);
-    final PlaceManagerImpl StaticWorkbenchPanelView_placeManager = (PlaceManagerImpl) contextManager.getInstance("Type_factory__o_u_c_m_PlaceManagerImpl__quals__j_e_i_Any_j_e_i_Default");
-    StaticWorkbenchPanelView_PlaceManager_placeManager(instance, StaticWorkbenchPanelView_placeManager);
     final StaticFocusedResizePanel StaticWorkbenchPanelView_panel = (StaticFocusedResizePanel) contextManager.getInstance("ExtensionProvided_factory__o_u_c_w_w_p_StaticFocusedResizePanel__quals__j_e_i_Any_j_e_i_Default");
     registerDependentScopedReference(instance, StaticWorkbenchPanelView_panel);
     StaticWorkbenchPanelView_StaticFocusedResizePanel_panel(instance, StaticWorkbenchPanelView_panel);
     final PanelManagerImpl AbstractWorkbenchPanelView_panelManager = (PanelManagerImpl) contextManager.getInstance("Type_factory__o_u_c_w_PanelManagerImpl__quals__j_e_i_Any_j_e_i_Default");
     AbstractWorkbenchPanelView_PanelManager_panelManager(instance, AbstractWorkbenchPanelView_panelManager);
+    final PlaceManagerImpl StaticWorkbenchPanelView_placeManager = (PlaceManagerImpl) contextManager.getInstance("Type_factory__o_u_c_m_PlaceManagerImpl__quals__j_e_i_Any_j_e_i_Default");
+    StaticWorkbenchPanelView_PlaceManager_placeManager(instance, StaticWorkbenchPanelView_placeManager);
     setIncompleteInstance(null);
     return instance;
   }

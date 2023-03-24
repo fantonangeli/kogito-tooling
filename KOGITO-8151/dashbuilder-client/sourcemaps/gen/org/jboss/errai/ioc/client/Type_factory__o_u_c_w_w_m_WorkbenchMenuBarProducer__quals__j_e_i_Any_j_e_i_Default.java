@@ -202,10 +202,10 @@ public class Type_factory__o_u_c_w_w_m_WorkbenchMenuBarProducer__quals__j_e_i_An
   }
 
   public WorkbenchMenuBarProducer createInstance(final ContextManager contextManager) {
-    final PerspectiveManager _perspectiveManager_0 = (PerspectiveManagerImpl) contextManager.getInstance("Type_factory__o_u_c_m_PerspectiveManagerImpl__quals__j_e_i_Any_j_e_i_Default");
-    final PlaceManager _placeManager_1 = (PlaceManagerImpl) contextManager.getInstance("Type_factory__o_u_c_m_PlaceManagerImpl__quals__j_e_i_Any_j_e_i_Default");
     final View _view_3 = (WorkbenchMenuBarView) contextManager.getInstance("Type_factory__o_u_c_v_p_m_WorkbenchMenuBarView__quals__j_e_i_Any_j_e_i_Default");
     final ActivityManager _activityManager_2 = (ActivityManagerImpl) contextManager.getInstance("Type_factory__o_u_c_m_ActivityManagerImpl__quals__j_e_i_Any_j_e_i_Default");
+    final PerspectiveManager _perspectiveManager_0 = (PerspectiveManagerImpl) contextManager.getInstance("Type_factory__o_u_c_m_PerspectiveManagerImpl__quals__j_e_i_Any_j_e_i_Default");
+    final PlaceManager _placeManager_1 = (PlaceManagerImpl) contextManager.getInstance("Type_factory__o_u_c_m_PlaceManagerImpl__quals__j_e_i_Any_j_e_i_Default");
     final WorkbenchMenuBarProducer instance = new WorkbenchMenuBarProducer(_perspectiveManager_0, _placeManager_1, _activityManager_2, _view_3);
     setIncompleteInstance(instance);
     setIncompleteInstance(null);

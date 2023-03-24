@@ -162,12 +162,12 @@ public class Type_factory__o_u_e_p_c_p_e_g_PerspectiveEditorGenerator__quals__j_
 
   public PerspectiveEditorGenerator createInstance(final ContextManager contextManager) {
     final ActivityBeansCache _activityBeansCache_1 = (ActivityBeansCache) contextManager.getInstance("Type_factory__o_u_c_m_ActivityBeansCache__quals__j_e_i_Any_j_e_i_Default");
-    final SyncBeanManager _beanManager_0 = (SyncBeanManager) contextManager.getInstance("Producer_factory__o_j_e_i_c_c_SyncBeanManager__quals__j_e_i_Any_j_e_i_Default");
     final LayoutGenerator _layoutGenerator_2 = (BootstrapLayoutGenerator) contextManager.getInstance("Type_factory__o_u_e_l_e_c_g_BootstrapLayoutGenerator__quals__j_e_i_Any_j_e_i_Default");
+    final SyncBeanManager _beanManager_0 = (SyncBeanManager) contextManager.getInstance("Producer_factory__o_j_e_i_c_c_SyncBeanManager__quals__j_e_i_Any_j_e_i_Default");
     final Caller<PerspectiveServices> _perspectiveServices_3 = (Caller) contextManager.getContextualInstance("ContextualProvider_factory__o_j_e_c_c_a_Caller__quals__Universal", new Class[] { PerspectiveServices.class }, new Annotation[] { });
     final PerspectiveEditorGenerator instance = new PerspectiveEditorGenerator(_beanManager_0, _activityBeansCache_1, _layoutGenerator_2, _perspectiveServices_3);
-    registerDependentScopedReference(instance, _beanManager_0);
     registerDependentScopedReference(instance, _layoutGenerator_2);
+    registerDependentScopedReference(instance, _beanManager_0);
     registerDependentScopedReference(instance, _perspectiveServices_3);
     setIncompleteInstance(instance);
     setIncompleteInstance(null);

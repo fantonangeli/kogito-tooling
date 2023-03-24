@@ -23,11 +23,11 @@ public class Type_factory__o_d_c_c_e_ToggleSwitchEditor__quals__j_e_i_Any_j_e_i_
   }
 
   public ToggleSwitchEditor createInstance(final ContextManager contextManager) {
-    final View _view_0 = (ToggleSwitchEditorView) contextManager.getInstance("Type_factory__o_d_c_c_e_ToggleSwitchEditorView__quals__j_e_i_Any_j_e_i_Default");
     final Event<ValueChangeEvent<Boolean>> _valueChangeEvent_1 = (Event) contextManager.getContextualInstance("ContextualProvider_factory__j_e_e_Event__quals__Universal", new Class[] { ValueChangeEvent.class }, new Annotation[] { });
+    final View _view_0 = (ToggleSwitchEditorView) contextManager.getInstance("Type_factory__o_d_c_c_e_ToggleSwitchEditorView__quals__j_e_i_Any_j_e_i_Default");
     final ToggleSwitchEditor instance = new ToggleSwitchEditor(_view_0, _valueChangeEvent_1);
-    registerDependentScopedReference(instance, _view_0);
     registerDependentScopedReference(instance, _valueChangeEvent_1);
+    registerDependentScopedReference(instance, _view_0);
     setIncompleteInstance(instance);
     setIncompleteInstance(null);
     return instance;

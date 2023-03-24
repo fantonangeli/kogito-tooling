@@ -19,13 +19,13 @@ public class Type_factory__o_d_d_c_w_s_SourceCodeEditor__quals__j_e_i_Any_j_e_i_
   }
 
   public SourceCodeEditor createInstance(final ContextManager contextManager) {
+    final JsValidator _jsValidator_2 = (DefaultJsValidator) contextManager.getInstance("Type_factory__o_d_d_c_w_s_DefaultJsValidator__quals__j_e_i_Any_j_e_i_Default");
     final View _view_0 = (SourceCodeEditorView) contextManager.getInstance("Type_factory__o_d_d_c_w_s_SourceCodeEditorView__quals__j_e_i_Any_j_e_i_Default");
     final HtmlValidator _htmlValidator_1 = (DefaultHtmlValidator) contextManager.getInstance("Type_factory__o_d_d_c_w_s_DefaultHtmlValidator__quals__j_e_i_Any_j_e_i_Default");
-    final JsValidator _jsValidator_2 = (DefaultJsValidator) contextManager.getInstance("Type_factory__o_d_d_c_w_s_DefaultJsValidator__quals__j_e_i_Any_j_e_i_Default");
     final SourceCodeEditor instance = new SourceCodeEditor(_view_0, _htmlValidator_1, _jsValidator_2);
+    registerDependentScopedReference(instance, _jsValidator_2);
     registerDependentScopedReference(instance, _view_0);
     registerDependentScopedReference(instance, _htmlValidator_1);
-    registerDependentScopedReference(instance, _jsValidator_2);
     setIncompleteInstance(instance);
     setIncompleteInstance(null);
     return instance;

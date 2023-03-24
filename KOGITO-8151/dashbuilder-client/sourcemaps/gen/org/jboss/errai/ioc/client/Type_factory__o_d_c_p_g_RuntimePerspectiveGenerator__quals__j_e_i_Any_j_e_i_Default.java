@@ -88,14 +88,14 @@ public class Type_factory__o_d_c_p_g_RuntimePerspectiveGenerator__quals__j_e_i_A
   public RuntimePerspectiveGenerator createInstance(final ContextManager contextManager) {
     final RuntimePerspectiveGenerator instance = new RuntimePerspectiveGenerator();
     setIncompleteInstance(instance);
-    final BootstrapLayoutGenerator RuntimePerspectiveGenerator_layoutGenerator = (BootstrapLayoutGenerator) contextManager.getInstance("Type_factory__o_u_e_l_e_c_g_BootstrapLayoutGenerator__quals__j_e_i_Any_j_e_i_Default");
-    registerDependentScopedReference(instance, RuntimePerspectiveGenerator_layoutGenerator);
-    RuntimePerspectiveGenerator_LayoutGenerator_layoutGenerator(instance, RuntimePerspectiveGenerator_layoutGenerator);
     final SyncBeanManager RuntimePerspectiveGenerator_beanManager = (SyncBeanManager) contextManager.getInstance("Producer_factory__o_j_e_i_c_c_SyncBeanManager__quals__j_e_i_Any_j_e_i_Default");
     registerDependentScopedReference(instance, RuntimePerspectiveGenerator_beanManager);
     RuntimePerspectiveGenerator_SyncBeanManager_beanManager(instance, RuntimePerspectiveGenerator_beanManager);
     final ActivityBeansCache RuntimePerspectiveGenerator_activityBeansCache = (ActivityBeansCache) contextManager.getInstance("Type_factory__o_u_c_m_ActivityBeansCache__quals__j_e_i_Any_j_e_i_Default");
     RuntimePerspectiveGenerator_ActivityBeansCache_activityBeansCache(instance, RuntimePerspectiveGenerator_activityBeansCache);
+    final BootstrapLayoutGenerator RuntimePerspectiveGenerator_layoutGenerator = (BootstrapLayoutGenerator) contextManager.getInstance("Type_factory__o_u_e_l_e_c_g_BootstrapLayoutGenerator__quals__j_e_i_Any_j_e_i_Default");
+    registerDependentScopedReference(instance, RuntimePerspectiveGenerator_layoutGenerator);
+    RuntimePerspectiveGenerator_LayoutGenerator_layoutGenerator(instance, RuntimePerspectiveGenerator_layoutGenerator);
     setIncompleteInstance(null);
     return instance;
   }

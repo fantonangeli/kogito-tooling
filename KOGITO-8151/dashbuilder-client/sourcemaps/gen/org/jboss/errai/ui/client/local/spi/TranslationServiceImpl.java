@@ -21,16 +21,16 @@ public class TranslationServiceImpl extends TranslationService { public interfac
   public interface org_uberfire_ext_plugin_client_resources_i18n_Constants_ja_properties extends MessageBundle, ClientBundle { @Source("org/uberfire/ext/plugin/client/resources/i18n/Constants_ja.properties") public TextResource getContents(); }
   public interface org_uberfire_ext_editor_commons_client_resources_i18n_Constants_ja_properties extends MessageBundle, ClientBundle { @Source("org/uberfire/ext/editor/commons/client/resources/i18n/Constants_ja.properties") public TextResource getContents(); }
   public interface org_uberfire_client_views_pfly_resources_i18n_Constants_ja_properties extends MessageBundle, ClientBundle { @Source("org/uberfire/client/views/pfly/resources/i18n/Constants_ja.properties") public TextResource getContents(); }
-  public interface org_dashbuilder_displayer_client_resources_i18n_CommonConstants_es_properties extends MessageBundle, ClientBundle { @Source("org/dashbuilder/displayer/client/resources/i18n/CommonConstants_es.properties") public TextResource getContents(); }
   public interface org_uberfire_ext_editor_commons_client_resources_i18n_Constants_es_properties extends MessageBundle, ClientBundle { @Source("org/uberfire/ext/editor/commons/client/resources/i18n/Constants_es.properties") public TextResource getContents(); }
   public interface org_uberfire_client_views_pfly_resources_i18n_Constants_es_properties extends MessageBundle, ClientBundle { @Source("org/uberfire/client/views/pfly/resources/i18n/Constants_es.properties") public TextResource getContents(); }
   public interface org_uberfire_ext_plugin_client_resources_i18n_Constants_es_properties extends MessageBundle, ClientBundle { @Source("org/uberfire/ext/plugin/client/resources/i18n/Constants_es.properties") public TextResource getContents(); }
+  public interface org_dashbuilder_displayer_client_resources_i18n_CommonConstants_es_properties extends MessageBundle, ClientBundle { @Source("org/dashbuilder/displayer/client/resources/i18n/CommonConstants_es.properties") public TextResource getContents(); }
   public interface org_dashbuilder_displayer_client_resources_i18n_CommonConstants_de_properties extends MessageBundle, ClientBundle { @Source("org/dashbuilder/displayer/client/resources/i18n/CommonConstants_de.properties") public TextResource getContents(); }
   public interface org_dashbuilder_displayer_client_resources_i18n_CommonConstants_zh_CN_properties extends MessageBundle, ClientBundle { @Source("org/dashbuilder/displayer/client/resources/i18n/CommonConstants_zh_CN.properties") public TextResource getContents(); }
+  public interface org_uberfire_client_views_pfly_resources_i18n_Constants_zh_CN_properties extends MessageBundle, ClientBundle { @Source("org/uberfire/client/views/pfly/resources/i18n/Constants_zh_CN.properties") public TextResource getContents(); }
   public interface org_uberfire_ext_plugin_client_resources_i18n_Constants_default_properties extends MessageBundle, ClientBundle { @Source("org/uberfire/ext/plugin/client/resources/i18n/Constants_default.properties") public TextResource getContents(); }
   public interface org_uberfire_client_views_pfly_resources_i18n_Constants_default_properties extends MessageBundle, ClientBundle { @Source("org/uberfire/client/views/pfly/resources/i18n/Constants_default.properties") public TextResource getContents(); }
   public interface org_uberfire_ext_editor_commons_client_resources_i18n_Constants_default_properties extends MessageBundle, ClientBundle { @Source("org/uberfire/ext/editor/commons/client/resources/i18n/Constants_default.properties") public TextResource getContents(); }
-  public interface org_uberfire_client_views_pfly_resources_i18n_Constants_zh_CN_properties extends MessageBundle, ClientBundle { @Source("org/uberfire/client/views/pfly/resources/i18n/Constants_zh_CN.properties") public TextResource getContents(); }
   public interface org_dashbuilder_displayer_client_resources_i18n_CommonConstants_properties extends MessageBundle, ClientBundle { @Source("org/dashbuilder/displayer/client/resources/i18n/CommonConstants.properties") public TextResource getContents(); }
   public TranslationServiceImpl() {
     registerTranslation("WednesdayShort", "", null);
@@ -178,26 +178,26 @@ public class TranslationServiceImpl extends TranslationService { public interfac
     registerPropertiesBundle(var13.getContents().getText(), "ja");
     org_uberfire_client_views_pfly_resources_i18n_Constants_ja_properties var14 = GWT.create(org_uberfire_client_views_pfly_resources_i18n_Constants_ja_properties.class);
     registerPropertiesBundle(var14.getContents().getText(), "ja");
-    org_dashbuilder_displayer_client_resources_i18n_CommonConstants_es_properties var15 = GWT.create(org_dashbuilder_displayer_client_resources_i18n_CommonConstants_es_properties.class);
+    org_uberfire_ext_editor_commons_client_resources_i18n_Constants_es_properties var15 = GWT.create(org_uberfire_ext_editor_commons_client_resources_i18n_Constants_es_properties.class);
     registerPropertiesBundle(var15.getContents().getText(), "es");
-    org_uberfire_ext_editor_commons_client_resources_i18n_Constants_es_properties var16 = GWT.create(org_uberfire_ext_editor_commons_client_resources_i18n_Constants_es_properties.class);
+    org_uberfire_client_views_pfly_resources_i18n_Constants_es_properties var16 = GWT.create(org_uberfire_client_views_pfly_resources_i18n_Constants_es_properties.class);
     registerPropertiesBundle(var16.getContents().getText(), "es");
-    org_uberfire_client_views_pfly_resources_i18n_Constants_es_properties var17 = GWT.create(org_uberfire_client_views_pfly_resources_i18n_Constants_es_properties.class);
+    org_uberfire_ext_plugin_client_resources_i18n_Constants_es_properties var17 = GWT.create(org_uberfire_ext_plugin_client_resources_i18n_Constants_es_properties.class);
     registerPropertiesBundle(var17.getContents().getText(), "es");
-    org_uberfire_ext_plugin_client_resources_i18n_Constants_es_properties var18 = GWT.create(org_uberfire_ext_plugin_client_resources_i18n_Constants_es_properties.class);
+    org_dashbuilder_displayer_client_resources_i18n_CommonConstants_es_properties var18 = GWT.create(org_dashbuilder_displayer_client_resources_i18n_CommonConstants_es_properties.class);
     registerPropertiesBundle(var18.getContents().getText(), "es");
     org_dashbuilder_displayer_client_resources_i18n_CommonConstants_de_properties var19 = GWT.create(org_dashbuilder_displayer_client_resources_i18n_CommonConstants_de_properties.class);
     registerPropertiesBundle(var19.getContents().getText(), "de");
     org_dashbuilder_displayer_client_resources_i18n_CommonConstants_zh_CN_properties var20 = GWT.create(org_dashbuilder_displayer_client_resources_i18n_CommonConstants_zh_CN_properties.class);
     registerPropertiesBundle(var20.getContents().getText(), "zh_CN");
-    org_uberfire_ext_plugin_client_resources_i18n_Constants_default_properties var21 = GWT.create(org_uberfire_ext_plugin_client_resources_i18n_Constants_default_properties.class);
-    registerPropertiesBundle(var21.getContents().getText(), null);
-    org_uberfire_client_views_pfly_resources_i18n_Constants_default_properties var22 = GWT.create(org_uberfire_client_views_pfly_resources_i18n_Constants_default_properties.class);
+    org_uberfire_client_views_pfly_resources_i18n_Constants_zh_CN_properties var21 = GWT.create(org_uberfire_client_views_pfly_resources_i18n_Constants_zh_CN_properties.class);
+    registerPropertiesBundle(var21.getContents().getText(), "zh_CN");
+    org_uberfire_ext_plugin_client_resources_i18n_Constants_default_properties var22 = GWT.create(org_uberfire_ext_plugin_client_resources_i18n_Constants_default_properties.class);
     registerPropertiesBundle(var22.getContents().getText(), null);
-    org_uberfire_ext_editor_commons_client_resources_i18n_Constants_default_properties var23 = GWT.create(org_uberfire_ext_editor_commons_client_resources_i18n_Constants_default_properties.class);
+    org_uberfire_client_views_pfly_resources_i18n_Constants_default_properties var23 = GWT.create(org_uberfire_client_views_pfly_resources_i18n_Constants_default_properties.class);
     registerPropertiesBundle(var23.getContents().getText(), null);
-    org_uberfire_client_views_pfly_resources_i18n_Constants_zh_CN_properties var24 = GWT.create(org_uberfire_client_views_pfly_resources_i18n_Constants_zh_CN_properties.class);
-    registerPropertiesBundle(var24.getContents().getText(), "zh_CN");
+    org_uberfire_ext_editor_commons_client_resources_i18n_Constants_default_properties var24 = GWT.create(org_uberfire_ext_editor_commons_client_resources_i18n_Constants_default_properties.class);
+    registerPropertiesBundle(var24.getContents().getText(), null);
     org_dashbuilder_displayer_client_resources_i18n_CommonConstants_properties var25 = GWT.create(org_dashbuilder_displayer_client_resources_i18n_CommonConstants_properties.class);
     registerPropertiesBundle(var25.getContents().getText(), null);
   }

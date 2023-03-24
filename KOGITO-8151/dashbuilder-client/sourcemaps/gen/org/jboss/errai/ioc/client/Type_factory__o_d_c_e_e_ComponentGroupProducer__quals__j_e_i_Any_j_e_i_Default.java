@@ -123,12 +123,12 @@ public class Type_factory__o_d_c_e_e_ComponentGroupProducer__quals__j_e_i_Any_j_
   }
 
   public ComponentGroupProducer createInstance(final ContextManager contextManager) {
-    final Caller<ComponentService> _externalComponentService_0 = (Caller) contextManager.getContextualInstance("ContextualProvider_factory__o_j_e_c_c_a_Caller__quals__Universal", new Class[] { ComponentService.class }, new Annotation[] { });
     final SyncBeanManager _beanManager_1 = (SyncBeanManager) contextManager.getInstance("Producer_factory__o_j_e_i_c_c_SyncBeanManager__quals__j_e_i_Any_j_e_i_Default");
     final LayoutDragComponentPalette _layoutDragComponentPalette_2 = (LayoutComponentPalettePresenter) contextManager.getInstance("Type_factory__o_u_e_l_e_c_w_LayoutComponentPalettePresenter__quals__j_e_i_Any_j_e_i_Default");
+    final Caller<ComponentService> _externalComponentService_0 = (Caller) contextManager.getContextualInstance("ContextualProvider_factory__o_j_e_c_c_a_Caller__quals__Universal", new Class[] { ComponentService.class }, new Annotation[] { });
     final ComponentGroupProducer instance = new ComponentGroupProducer(_externalComponentService_0, _beanManager_1, _layoutDragComponentPalette_2);
-    registerDependentScopedReference(instance, _externalComponentService_0);
     registerDependentScopedReference(instance, _beanManager_1);
+    registerDependentScopedReference(instance, _externalComponentService_0);
     setIncompleteInstance(instance);
     setIncompleteInstance(null);
     return instance;

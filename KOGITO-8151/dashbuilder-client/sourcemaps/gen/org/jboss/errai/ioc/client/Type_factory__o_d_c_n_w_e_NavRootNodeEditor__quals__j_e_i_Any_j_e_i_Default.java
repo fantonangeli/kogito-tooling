@@ -25,19 +25,19 @@ public class Type_factory__o_d_c_n_w_e_NavRootNodeEditor__quals__j_e_i_Any_j_e_i
   }
 
   public NavRootNodeEditor createInstance(final ContextManager contextManager) {
-    final PlaceManager _placeManager_2 = (PlaceManagerImpl) contextManager.getInstance("Type_factory__o_u_c_m_PlaceManagerImpl__quals__j_e_i_Any_j_e_i_Default");
-    final PerspectivePluginManager _perspectivePluginManager_4 = (RuntimePerspectivePluginManager) contextManager.getInstance("Type_factory__o_d_c_p_RuntimePerspectivePluginManager__quals__j_e_i_Any_j_e_i_Default");
-    final NavRootNodeEditorView _view_0 = (NavRootNodeEditorView) contextManager.getInstance("Type_factory__o_d_c_n_w_e_NavRootNodeEditorView__quals__j_e_i_Any_j_e_i_Default");
-    final Event<NavItemEditStartedEvent> _navItemEditStartedEvent_5 = (Event) contextManager.getContextualInstance("ContextualProvider_factory__j_e_e_Event__quals__Universal", new Class[] { NavItemEditStartedEvent.class }, new Annotation[] { });
-    final Event<NavItemEditCancelledEvent> _navItemEditCancelledEvent_6 = (Event) contextManager.getContextualInstance("ContextualProvider_factory__j_e_e_Event__quals__Universal", new Class[] { NavItemEditCancelledEvent.class }, new Annotation[] { });
     final TargetPerspectiveEditor _targetPerspectiveEditor_3 = (TargetPerspectiveEditor) contextManager.getInstance("Type_factory__o_d_c_n_w_e_TargetPerspectiveEditor__quals__j_e_i_Any_j_e_i_Default");
     final SyncBeanManager _beanManager_1 = (SyncBeanManager) contextManager.getInstance("Producer_factory__o_j_e_i_c_c_SyncBeanManager__quals__j_e_i_Any_j_e_i_Default");
+    final PerspectivePluginManager _perspectivePluginManager_4 = (RuntimePerspectivePluginManager) contextManager.getInstance("Type_factory__o_d_c_p_RuntimePerspectivePluginManager__quals__j_e_i_Any_j_e_i_Default");
+    final NavRootNodeEditorView _view_0 = (NavRootNodeEditorView) contextManager.getInstance("Type_factory__o_d_c_n_w_e_NavRootNodeEditorView__quals__j_e_i_Any_j_e_i_Default");
+    final PlaceManager _placeManager_2 = (PlaceManagerImpl) contextManager.getInstance("Type_factory__o_u_c_m_PlaceManagerImpl__quals__j_e_i_Any_j_e_i_Default");
+    final Event<NavItemEditStartedEvent> _navItemEditStartedEvent_5 = (Event) contextManager.getContextualInstance("ContextualProvider_factory__j_e_e_Event__quals__Universal", new Class[] { NavItemEditStartedEvent.class }, new Annotation[] { });
+    final Event<NavItemEditCancelledEvent> _navItemEditCancelledEvent_6 = (Event) contextManager.getContextualInstance("ContextualProvider_factory__j_e_e_Event__quals__Universal", new Class[] { NavItemEditCancelledEvent.class }, new Annotation[] { });
     final NavRootNodeEditor instance = new NavRootNodeEditor(_view_0, _beanManager_1, _placeManager_2, _targetPerspectiveEditor_3, _perspectivePluginManager_4, _navItemEditStartedEvent_5, _navItemEditCancelledEvent_6);
+    registerDependentScopedReference(instance, _targetPerspectiveEditor_3);
+    registerDependentScopedReference(instance, _beanManager_1);
     registerDependentScopedReference(instance, _view_0);
     registerDependentScopedReference(instance, _navItemEditStartedEvent_5);
     registerDependentScopedReference(instance, _navItemEditCancelledEvent_6);
-    registerDependentScopedReference(instance, _targetPerspectiveEditor_3);
-    registerDependentScopedReference(instance, _beanManager_1);
     setIncompleteInstance(instance);
     setIncompleteInstance(null);
     return instance;

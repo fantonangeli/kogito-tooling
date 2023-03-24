@@ -127,10 +127,10 @@ public class Type_factory__o_d_c_e_ExternalDataSetClientProvider__quals__j_e_i_A
     setIncompleteInstance(instance);
     final ClientDataSetManager ExternalDataSetClientProvider_clientDataSetManager = (ClientDataSetManager) contextManager.getInstance("Type_factory__o_d_d_c_ClientDataSetManager__quals__j_e_i_Any_j_e_i_Default");
     ExternalDataSetClientProvider_ClientDataSetManager_clientDataSetManager(instance, ExternalDataSetClientProvider_clientDataSetManager);
-    final CSVParser ExternalDataSetClientProvider_csvParser = (CSVParser) contextManager.getInstance("Type_factory__o_d_c_e_CSVParser__quals__j_e_i_Any_j_e_i_Default");
-    ExternalDataSetClientProvider_CSVParser_csvParser(instance, ExternalDataSetClientProvider_csvParser);
     final ExternalDataCallbackCoordinator ExternalDataSetClientProvider_dataSetCallbackCoordinator = (ExternalDataCallbackCoordinator) contextManager.getInstance("Type_factory__o_d_c_e_ExternalDataCallbackCoordinator__quals__j_e_i_Any_j_e_i_Default");
     ExternalDataSetClientProvider_ExternalDataCallbackCoordinator_dataSetCallbackCoordinator(instance, ExternalDataSetClientProvider_dataSetCallbackCoordinator);
+    final CSVParser ExternalDataSetClientProvider_csvParser = (CSVParser) contextManager.getInstance("Type_factory__o_d_c_e_CSVParser__quals__j_e_i_Any_j_e_i_Default");
+    ExternalDataSetClientProvider_CSVParser_csvParser(instance, ExternalDataSetClientProvider_csvParser);
     setIncompleteInstance(null);
     return instance;
   }
@@ -153,19 +153,19 @@ public class Type_factory__o_d_c_e_ExternalDataSetClientProvider__quals__j_e_i_A
     instance.@org.dashbuilder.client.external.ExternalDataSetClientProvider::clientDataSetManager = value;
   }-*/;
 
-  native static CSVParser ExternalDataSetClientProvider_CSVParser_csvParser(ExternalDataSetClientProvider instance) /*-{
-    return instance.@org.dashbuilder.client.external.ExternalDataSetClientProvider::csvParser;
-  }-*/;
-
-  native static void ExternalDataSetClientProvider_CSVParser_csvParser(ExternalDataSetClientProvider instance, CSVParser value) /*-{
-    instance.@org.dashbuilder.client.external.ExternalDataSetClientProvider::csvParser = value;
-  }-*/;
-
   native static ExternalDataCallbackCoordinator ExternalDataSetClientProvider_ExternalDataCallbackCoordinator_dataSetCallbackCoordinator(ExternalDataSetClientProvider instance) /*-{
     return instance.@org.dashbuilder.client.external.ExternalDataSetClientProvider::dataSetCallbackCoordinator;
   }-*/;
 
   native static void ExternalDataSetClientProvider_ExternalDataCallbackCoordinator_dataSetCallbackCoordinator(ExternalDataSetClientProvider instance, ExternalDataCallbackCoordinator value) /*-{
     instance.@org.dashbuilder.client.external.ExternalDataSetClientProvider::dataSetCallbackCoordinator = value;
+  }-*/;
+
+  native static CSVParser ExternalDataSetClientProvider_CSVParser_csvParser(ExternalDataSetClientProvider instance) /*-{
+    return instance.@org.dashbuilder.client.external.ExternalDataSetClientProvider::csvParser;
+  }-*/;
+
+  native static void ExternalDataSetClientProvider_CSVParser_csvParser(ExternalDataSetClientProvider instance, CSVParser value) /*-{
+    instance.@org.dashbuilder.client.external.ExternalDataSetClientProvider::csvParser = value;
   }-*/;
 }

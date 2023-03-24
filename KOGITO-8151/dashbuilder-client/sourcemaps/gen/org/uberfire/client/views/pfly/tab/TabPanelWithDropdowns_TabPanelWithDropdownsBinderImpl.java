@@ -1,4 +1,4 @@
-// .ui.xml template last modified: 1678262273585
+// .ui.xml template last modified: 1679645348046
 package org.uberfire.client.views.pfly.tab;
 
 import com.google.gwt.core.client.GWT;

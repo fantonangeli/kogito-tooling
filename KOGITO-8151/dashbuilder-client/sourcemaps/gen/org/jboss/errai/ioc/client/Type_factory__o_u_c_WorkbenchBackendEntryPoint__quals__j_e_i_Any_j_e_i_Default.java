@@ -18,8 +18,8 @@ public class Type_factory__o_u_c_WorkbenchBackendEntryPoint__quals__j_e_i_Any_j_
 
   public WorkbenchBackendEntryPoint createInstance(final ContextManager contextManager) {
     final WorkbenchServicesProxy _workbenchServices_2 = (WorkbenchServicesProxyClientImpl) contextManager.getInstance("Type_factory__o_u_c_w_WorkbenchServicesProxyClientImpl__quals__j_e_i_Any_j_e_i_Default");
-    final Logger _logger_0 = (Logger) contextManager.getInstance("ExtensionProvided_factory__o_s_Logger__quals__Universal_1");
     final ErrorPopupPresenter _errorPopupPresenter_3 = (ErrorPopupPresenter) contextManager.getInstance("Type_factory__o_u_c_w_w_c_ErrorPopupPresenter__quals__j_e_i_Any_j_e_i_Default");
+    final Logger _logger_0 = (Logger) contextManager.getInstance("ExtensionProvided_factory__o_s_Logger__quals__Universal_1");
     final ClientMessageBus _bus_1 = (ClientMessageBus) contextManager.getInstance("Producer_factory__o_j_e_b_c_a_ClientMessageBus__quals__j_e_i_Any_j_e_i_Default");
     final WorkbenchBackendEntryPoint instance = new WorkbenchBackendEntryPoint(_logger_0, _bus_1, _workbenchServices_2, _errorPopupPresenter_3);
     registerDependentScopedReference(instance, _workbenchServices_2);

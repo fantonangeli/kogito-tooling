@@ -36,12 +36,12 @@ public class Type_factory__o_u_c_v_p_m_m_c_ChildContextMenuItemView__quals__j_e_
   public ChildContextMenuItemView createInstance(final ContextManager contextManager) {
     final ChildContextMenuItemView instance = new ChildContextMenuItemView();
     setIncompleteInstance(instance);
-    final Anchor ChildContextMenuItemView_item = (Anchor) contextManager.getInstance("ExtensionProvided_factory__o_j_e_c_c_d_Anchor__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
-    registerDependentScopedReference(instance, ChildContextMenuItemView_item);
-    ChildContextMenuItemView_Anchor_item(instance, ChildContextMenuItemView_item);
     final ListItem ChildContextMenuItemView_container = (ListItem) contextManager.getInstance("ExtensionProvided_factory__o_j_e_c_c_d_ListItem__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
     registerDependentScopedReference(instance, ChildContextMenuItemView_container);
     ChildContextMenuItemView_ListItem_container(instance, ChildContextMenuItemView_container);
+    final Anchor ChildContextMenuItemView_item = (Anchor) contextManager.getInstance("ExtensionProvided_factory__o_j_e_c_c_d_Anchor__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
+    registerDependentScopedReference(instance, ChildContextMenuItemView_item);
+    ChildContextMenuItemView_Anchor_item(instance, ChildContextMenuItemView_item);
     o_u_c_v_p_m_m_c_ChildContextMenuItemViewTemplateResource templateForChildContextMenuItemView = GWT.create(o_u_c_v_p_m_m_c_ChildContextMenuItemViewTemplateResource.class);
     Element parentElementForTemplateOfChildContextMenuItemView = TemplateUtil.getRootTemplateParentElement(templateForChildContextMenuItemView.getContents().getText(), "org/uberfire/client/views/pfly/menu/megamenu/contextmenuitem/ChildContextMenuItemView.html", "");
     TemplateUtil.translateTemplate("org/uberfire/client/views/pfly/menu/megamenu/contextmenuitem/ChildContextMenuItemView.html", TemplateUtil.getRootTemplateElement(parentElementForTemplateOfChildContextMenuItemView));

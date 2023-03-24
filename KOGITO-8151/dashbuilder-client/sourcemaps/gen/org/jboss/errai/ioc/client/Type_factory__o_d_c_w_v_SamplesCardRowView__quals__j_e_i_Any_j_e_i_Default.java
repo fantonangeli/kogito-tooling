@@ -45,12 +45,12 @@ public class Type_factory__o_d_c_w_v_SamplesCardRowView__quals__j_e_i_Any_j_e_i_
   public SamplesCardRowView createInstance(final ContextManager contextManager) {
     final SamplesCardRowView instance = new SamplesCardRowView();
     setIncompleteInstance(instance);
-    final HTMLDivElement SamplesCardRowView_samplesRowLine = (HTMLDivElement) contextManager.getInstance("ExtensionProvided_factory__e_d_HTMLDivElement__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
-    registerDependentScopedReference(instance, SamplesCardRowView_samplesRowLine);
-    SamplesCardRowView_HTMLDivElement_samplesRowLine(instance, SamplesCardRowView_samplesRowLine);
     final HTMLDivElement SamplesCardRowView_samplesCardRowContainer = (HTMLDivElement) contextManager.getInstance("ExtensionProvided_factory__e_d_HTMLDivElement__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
     registerDependentScopedReference(instance, SamplesCardRowView_samplesCardRowContainer);
     SamplesCardRowView_HTMLDivElement_samplesCardRowContainer(instance, SamplesCardRowView_samplesCardRowContainer);
+    final HTMLDivElement SamplesCardRowView_samplesRowLine = (HTMLDivElement) contextManager.getInstance("ExtensionProvided_factory__e_d_HTMLDivElement__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
+    registerDependentScopedReference(instance, SamplesCardRowView_samplesRowLine);
+    SamplesCardRowView_HTMLDivElement_samplesRowLine(instance, SamplesCardRowView_samplesRowLine);
     final HTMLHeadingElement SamplesCardRowView_rowTitle = (HTMLHeadingElement) contextManager.getInstance("ExtensionProvided_factory__e_d_HTMLHeadingElement__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
     registerDependentScopedReference(instance, SamplesCardRowView_rowTitle);
     SamplesCardRowView_HTMLHeadingElement_rowTitle(instance, SamplesCardRowView_rowTitle);

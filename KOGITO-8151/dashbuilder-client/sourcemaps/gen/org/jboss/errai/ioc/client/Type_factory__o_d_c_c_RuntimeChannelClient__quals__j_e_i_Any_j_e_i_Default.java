@@ -77,12 +77,12 @@ public class Type_factory__o_d_c_c_RuntimeChannelClient__quals__j_e_i_Any_j_e_i_
   public RuntimeChannelClient createInstance(final ContextManager contextManager) {
     final RuntimeChannelClient instance = new RuntimeChannelClient();
     setIncompleteInstance(instance);
-    final Event RuntimeChannelClient_removedModelEvent = (Event) contextManager.getContextualInstance("ContextualProvider_factory__j_e_e_Event__quals__Universal", new Class[] { RemovedRuntimeModelEvent.class }, new Annotation[] { });
-    registerDependentScopedReference(instance, RuntimeChannelClient_removedModelEvent);
-    RuntimeChannelClient_Event_removedModelEvent(instance, RuntimeChannelClient_removedModelEvent);
     final Event RuntimeChannelClient_updatedModelEvent = (Event) contextManager.getContextualInstance("ContextualProvider_factory__j_e_e_Event__quals__Universal", new Class[] { UpdatedRuntimeModelEvent.class }, new Annotation[] { });
     registerDependentScopedReference(instance, RuntimeChannelClient_updatedModelEvent);
     RuntimeChannelClient_Event_updatedModelEvent(instance, RuntimeChannelClient_updatedModelEvent);
+    final Event RuntimeChannelClient_removedModelEvent = (Event) contextManager.getContextualInstance("ContextualProvider_factory__j_e_e_Event__quals__Universal", new Class[] { RemovedRuntimeModelEvent.class }, new Annotation[] { });
+    registerDependentScopedReference(instance, RuntimeChannelClient_removedModelEvent);
+    RuntimeChannelClient_Event_removedModelEvent(instance, RuntimeChannelClient_removedModelEvent);
     final RuntimeClientLoader RuntimeChannelClient_loader = (RuntimeClientLoader) contextManager.getInstance("Type_factory__o_d_c_RuntimeClientLoader__quals__j_e_i_Any_j_e_i_Default");
     RuntimeChannelClient_RuntimeClientLoader_loader(instance, RuntimeChannelClient_loader);
     setIncompleteInstance(null);

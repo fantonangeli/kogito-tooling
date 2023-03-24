@@ -34,18 +34,18 @@ public class Type_factory__o_d_d_c_w_DataSetLookupEditor__quals__j_e_i_Any_j_e_i
   }
 
   public DataSetLookupEditor createInstance(final ContextManager contextManager) {
-    final DataSetGroupDateEditor _groupDateEditor_3 = (DataSetGroupDateEditor) contextManager.getInstance("Type_factory__o_d_d_c_w_g_DataSetGroupDateEditor__quals__j_e_i_Any_j_e_i_Default");
     final SyncBeanManager _beanManager_1 = (SyncBeanManager) contextManager.getInstance("Producer_factory__o_j_e_i_c_c_SyncBeanManager__quals__j_e_i_Any_j_e_i_Default");
-    final DataSetFilterEditor _filterEditor_2 = (DataSetFilterEditor) contextManager.getInstance("Type_factory__o_d_d_c_w_f_DataSetFilterEditor__quals__j_e_i_Any_j_e_i_Default");
-    final DataSetClientServices _clientServices_4 = (RuntimeDataSetClientServices) contextManager.getInstance("Type_factory__o_d_c_s_RuntimeDataSetClientServices__quals__j_e_i_Any_j_e_i_Default");
     final Event<DataSetLookupChangedEvent> _event_5 = (Event) contextManager.getContextualInstance("ContextualProvider_factory__j_e_e_Event__quals__Universal", new Class[] { DataSetLookupChangedEvent.class }, new Annotation[] { });
     final View _view_0 = (DataSetLookupEditorView) contextManager.getInstance("Type_factory__o_d_d_c_w_DataSetLookupEditorView__quals__j_e_i_Any_j_e_i_Default");
+    final DataSetFilterEditor _filterEditor_2 = (DataSetFilterEditor) contextManager.getInstance("Type_factory__o_d_d_c_w_f_DataSetFilterEditor__quals__j_e_i_Any_j_e_i_Default");
+    final DataSetClientServices _clientServices_4 = (RuntimeDataSetClientServices) contextManager.getInstance("Type_factory__o_d_c_s_RuntimeDataSetClientServices__quals__j_e_i_Any_j_e_i_Default");
+    final DataSetGroupDateEditor _groupDateEditor_3 = (DataSetGroupDateEditor) contextManager.getInstance("Type_factory__o_d_d_c_w_g_DataSetGroupDateEditor__quals__j_e_i_Any_j_e_i_Default");
     final DataSetLookupEditor instance = new DataSetLookupEditor(_view_0, _beanManager_1, _filterEditor_2, _groupDateEditor_3, _clientServices_4, _event_5);
-    registerDependentScopedReference(instance, _groupDateEditor_3);
     registerDependentScopedReference(instance, _beanManager_1);
-    registerDependentScopedReference(instance, _filterEditor_2);
     registerDependentScopedReference(instance, _event_5);
     registerDependentScopedReference(instance, _view_0);
+    registerDependentScopedReference(instance, _filterEditor_2);
+    registerDependentScopedReference(instance, _groupDateEditor_3);
     setIncompleteInstance(instance);
     thisInstance.setReference(instance, "onFilterChangedSubscription", CDI.subscribeLocal("org.dashbuilder.displayer.client.events.DataSetFilterChangedEvent", new AbstractCDIEventCallback<DataSetFilterChangedEvent>() {
       public void fireEvent(final DataSetFilterChangedEvent event) {

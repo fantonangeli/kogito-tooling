@@ -128,16 +128,16 @@ public class Type_factory__o_d_c_RuntimeEntryPoint__quals__j_e_i_Any_j_e_i_Defau
   public RuntimeEntryPoint createInstance(final ContextManager contextManager) {
     final RuntimeEntryPoint instance = new RuntimeEntryPoint();
     setIncompleteInstance(instance);
-    final RuntimeClientLoader RuntimeEntryPoint_modelLoader = (RuntimeClientLoader) contextManager.getInstance("Type_factory__o_d_c_RuntimeClientLoader__quals__j_e_i_Any_j_e_i_Default");
-    RuntimeEntryPoint_RuntimeClientLoader_modelLoader(instance, RuntimeEntryPoint_modelLoader);
+    final PlaceManagerImpl RuntimeEntryPoint_placeManager = (PlaceManagerImpl) contextManager.getInstance("Type_factory__o_u_c_m_PlaceManagerImpl__quals__j_e_i_Any_j_e_i_Default");
+    RuntimeEntryPoint_PlaceManager_placeManager(instance, RuntimeEntryPoint_placeManager);
     final RuntimeChannelClient RuntimeEntryPoint_runtimeChannelClient = (RuntimeChannelClient) contextManager.getInstance("Type_factory__o_d_c_c_RuntimeChannelClient__quals__j_e_i_Any_j_e_i_Default");
     RuntimeEntryPoint_RuntimeChannelClient_runtimeChannelClient(instance, RuntimeEntryPoint_runtimeChannelClient);
     final RuntimeCommunication RuntimeEntryPoint_runtimeCommunication = (RuntimeCommunication) contextManager.getInstance("Type_factory__o_d_c_RuntimeCommunication__quals__j_e_i_Any_j_e_i_Default");
     RuntimeEntryPoint_RuntimeCommunication_runtimeCommunication(instance, RuntimeEntryPoint_runtimeCommunication);
     final Workbench RuntimeEntryPoint_workbench = (Workbench) contextManager.getInstance("Type_factory__o_u_c_w_Workbench__quals__j_e_i_Any_j_e_i_Default");
     RuntimeEntryPoint_Workbench_workbench(instance, RuntimeEntryPoint_workbench);
-    final PlaceManagerImpl RuntimeEntryPoint_placeManager = (PlaceManagerImpl) contextManager.getInstance("Type_factory__o_u_c_m_PlaceManagerImpl__quals__j_e_i_Any_j_e_i_Default");
-    RuntimeEntryPoint_PlaceManager_placeManager(instance, RuntimeEntryPoint_placeManager);
+    final RuntimeClientLoader RuntimeEntryPoint_modelLoader = (RuntimeClientLoader) contextManager.getInstance("Type_factory__o_d_c_RuntimeClientLoader__quals__j_e_i_Any_j_e_i_Default");
+    RuntimeEntryPoint_RuntimeClientLoader_modelLoader(instance, RuntimeEntryPoint_modelLoader);
     final DefaultRuntimeErrorCallback RuntimeEntryPoint_defaultRuntimeErrorCallback = (DefaultRuntimeErrorCallback) contextManager.getInstance("Type_factory__o_d_c_e_DefaultRuntimeErrorCallback__quals__j_e_i_Any_j_e_i_Default");
     registerDependentScopedReference(instance, RuntimeEntryPoint_defaultRuntimeErrorCallback);
     RuntimeEntryPoint_DefaultRuntimeErrorCallback_defaultRuntimeErrorCallback(instance, RuntimeEntryPoint_defaultRuntimeErrorCallback);

@@ -47,18 +47,18 @@ public class Type_factory__o_d_c_w_v_SampleCardView__quals__j_e_i_Any_j_e_i_Defa
   public SampleCardView createInstance(final ContextManager contextManager) {
     final SampleCardView instance = new SampleCardView();
     setIncompleteInstance(instance);
-    final HTMLAnchorElement SampleCardView_sampleImportLink = (HTMLAnchorElement) contextManager.getInstance("ExtensionProvided_factory__e_d_HTMLAnchorElement__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
-    registerDependentScopedReference(instance, SampleCardView_sampleImportLink);
-    SampleCardView_HTMLAnchorElement_sampleImportLink(instance, SampleCardView_sampleImportLink);
-    final HTMLDivElement SampleCardView_sampleNameDiv = (HTMLDivElement) contextManager.getInstance("ExtensionProvided_factory__e_d_HTMLDivElement__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
-    registerDependentScopedReference(instance, SampleCardView_sampleNameDiv);
-    SampleCardView_HTMLDivElement_sampleNameDiv(instance, SampleCardView_sampleNameDiv);
     final HTMLAnchorElement SampleCardView_sampleUrlLink = (HTMLAnchorElement) contextManager.getInstance("ExtensionProvided_factory__e_d_HTMLAnchorElement__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
     registerDependentScopedReference(instance, SampleCardView_sampleUrlLink);
     SampleCardView_HTMLAnchorElement_sampleUrlLink(instance, SampleCardView_sampleUrlLink);
+    final HTMLDivElement SampleCardView_sampleNameDiv = (HTMLDivElement) contextManager.getInstance("ExtensionProvided_factory__e_d_HTMLDivElement__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
+    registerDependentScopedReference(instance, SampleCardView_sampleNameDiv);
+    SampleCardView_HTMLDivElement_sampleNameDiv(instance, SampleCardView_sampleNameDiv);
     final HTMLDivElement SampleCardView_sampleCardContainer = (HTMLDivElement) contextManager.getInstance("ExtensionProvided_factory__e_d_HTMLDivElement__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
     registerDependentScopedReference(instance, SampleCardView_sampleCardContainer);
     SampleCardView_HTMLDivElement_sampleCardContainer(instance, SampleCardView_sampleCardContainer);
+    final HTMLAnchorElement SampleCardView_sampleImportLink = (HTMLAnchorElement) contextManager.getInstance("ExtensionProvided_factory__e_d_HTMLAnchorElement__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
+    registerDependentScopedReference(instance, SampleCardView_sampleImportLink);
+    SampleCardView_HTMLAnchorElement_sampleImportLink(instance, SampleCardView_sampleImportLink);
     final HTMLAnchorElement SampleCardView_sampleEditLink = (HTMLAnchorElement) contextManager.getInstance("ExtensionProvided_factory__e_d_HTMLAnchorElement__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
     registerDependentScopedReference(instance, SampleCardView_sampleEditLink);
     SampleCardView_HTMLAnchorElement_sampleEditLink(instance, SampleCardView_sampleEditLink);

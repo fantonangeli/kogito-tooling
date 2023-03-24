@@ -96,8 +96,8 @@ public class Type_factory__o_d_d_c_p_DisplayerPrototypes__quals__j_e_i_Any_j_e_i
   }
 
   public DisplayerPrototypes createInstance(final ContextManager contextManager) {
-    final DataSetPrototypes _dataSetPrototypes_0 = (DataSetPrototypes) contextManager.getInstance("Type_factory__o_d_d_c_p_DataSetPrototypes__quals__j_e_i_Any_j_e_i_Default");
     final UUIDGenerator _uuidGenerator_1 = (ClientUUIDGenerator) contextManager.getInstance("Type_factory__o_d_d_c_u_ClientUUIDGenerator__quals__j_e_i_Any_j_e_i_Default");
+    final DataSetPrototypes _dataSetPrototypes_0 = (DataSetPrototypes) contextManager.getInstance("Type_factory__o_d_d_c_p_DataSetPrototypes__quals__j_e_i_Any_j_e_i_Default");
     final DisplayerPrototypes instance = new DisplayerPrototypes(_dataSetPrototypes_0, _uuidGenerator_1);
     setIncompleteInstance(instance);
     setIncompleteInstance(null);

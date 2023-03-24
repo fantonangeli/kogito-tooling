@@ -18,11 +18,11 @@ public class Type_factory__o_d_d_c_w_g_DataSetGroupDateEditor__quals__j_e_i_Any_
   }
 
   public DataSetGroupDateEditor createInstance(final ContextManager contextManager) {
-    final View _view_0 = (DataSetGroupDateEditorView) contextManager.getInstance("Type_factory__o_d_d_c_w_g_DataSetGroupDateEditorView__quals__j_e_i_Any_j_e_i_Default");
     final Event<DataSetGroupDateChanged> _changeEvent_1 = (Event) contextManager.getContextualInstance("ContextualProvider_factory__j_e_e_Event__quals__Universal", new Class[] { DataSetGroupDateChanged.class }, new Annotation[] { });
+    final View _view_0 = (DataSetGroupDateEditorView) contextManager.getInstance("Type_factory__o_d_d_c_w_g_DataSetGroupDateEditorView__quals__j_e_i_Any_j_e_i_Default");
     final DataSetGroupDateEditor instance = new DataSetGroupDateEditor(_view_0, _changeEvent_1);
-    registerDependentScopedReference(instance, _view_0);
     registerDependentScopedReference(instance, _changeEvent_1);
+    registerDependentScopedReference(instance, _view_0);
     setIncompleteInstance(instance);
     setIncompleteInstance(null);
     return instance;

@@ -48,12 +48,12 @@ public class Type_factory__o_d_c_s_v_ContentErrorScreenView__quals__j_e_i_Any_j_
     final HTMLPreElement ContentErrorScreenView_errorContentText = (HTMLPreElement) contextManager.getInstance("ExtensionProvided_factory__e_d_HTMLPreElement__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
     registerDependentScopedReference(instance, ContentErrorScreenView_errorContentText);
     ContentErrorScreenView_HTMLPreElement_errorContentText(instance, ContentErrorScreenView_errorContentText);
-    final HTMLDivElement ContentErrorScreenView_errorContentRoot = (HTMLDivElement) contextManager.getInstance("ExtensionProvided_factory__e_d_HTMLDivElement__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
-    registerDependentScopedReference(instance, ContentErrorScreenView_errorContentRoot);
-    ContentErrorScreenView_HTMLDivElement_errorContentRoot(instance, ContentErrorScreenView_errorContentRoot);
     final HTMLDivElement ContentErrorScreenView_errorContentScreenTitle = (HTMLDivElement) contextManager.getInstance("ExtensionProvided_factory__e_d_HTMLDivElement__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
     registerDependentScopedReference(instance, ContentErrorScreenView_errorContentScreenTitle);
     ContentErrorScreenView_HTMLDivElement_errorContentScreenTitle(instance, ContentErrorScreenView_errorContentScreenTitle);
+    final HTMLDivElement ContentErrorScreenView_errorContentRoot = (HTMLDivElement) contextManager.getInstance("ExtensionProvided_factory__e_d_HTMLDivElement__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
+    registerDependentScopedReference(instance, ContentErrorScreenView_errorContentRoot);
+    ContentErrorScreenView_HTMLDivElement_errorContentRoot(instance, ContentErrorScreenView_errorContentRoot);
     o_d_c_s_v_ContentErrorScreenViewTemplateResource templateForContentErrorScreenView = GWT.create(o_d_c_s_v_ContentErrorScreenViewTemplateResource.class);
     Element parentElementForTemplateOfContentErrorScreenView = TemplateUtil.getRootTemplateParentElement(templateForContentErrorScreenView.getContents().getText(), "org/dashbuilder/client/screens/view/ContentErrorScreenView.html", "");
     TemplateUtil.translateTemplate("org/dashbuilder/client/screens/view/ContentErrorScreenView.html", TemplateUtil.getRootTemplateElement(parentElementForTemplateOfContentErrorScreenView));

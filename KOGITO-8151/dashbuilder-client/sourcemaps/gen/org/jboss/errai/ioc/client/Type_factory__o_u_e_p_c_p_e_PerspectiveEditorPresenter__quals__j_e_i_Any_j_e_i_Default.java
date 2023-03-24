@@ -49,54 +49,54 @@ public class Type_factory__o_u_e_p_c_p_e_PerspectiveEditorPresenter__quals__j_e_
   public PerspectiveEditorPresenter createInstance(final ContextManager contextManager) {
     final PerspectiveEditorPresenter instance = new PerspectiveEditorPresenter();
     setIncompleteInstance(instance);
-    final BasicFileMenuBuilderImpl BaseEditor_menuBuilder = (BasicFileMenuBuilderImpl) contextManager.getInstance("Type_factory__o_u_e_e_c_c_m_BasicFileMenuBuilderImpl__quals__j_e_i_Any_j_e_i_Default");
-    registerDependentScopedReference(instance, BaseEditor_menuBuilder);
-    BaseEditor_BasicFileMenuBuilder_menuBuilder(instance, BaseEditor_menuBuilder);
-    final PerspectiveLayoutPluginResourceType PerspectiveEditorPresenter_resourceType = (PerspectiveLayoutPluginResourceType) contextManager.getInstance("Type_factory__o_u_e_p_c_t_PerspectiveLayoutPluginResourceType__quals__j_e_i_Any_j_e_i_Default");
-    PerspectiveEditorPresenter_PerspectiveLayoutPluginResourceType_resourceType(instance, PerspectiveEditorPresenter_resourceType);
-    final LayoutComponentPalettePresenter PerspectiveEditorPresenter_layoutDragComponentPalette = (LayoutComponentPalettePresenter) contextManager.getInstance("Type_factory__o_u_e_l_e_c_w_LayoutComponentPalettePresenter__quals__j_e_i_Any_j_e_i_Default");
-    PerspectiveEditorPresenter_LayoutDragComponentPalette_layoutDragComponentPalette(instance, PerspectiveEditorPresenter_layoutDragComponentPalette);
-    final Caller PerspectiveEditorPresenter_perspectiveServices = (Caller) contextManager.getContextualInstance("ContextualProvider_factory__o_j_e_c_c_a_Caller__quals__Universal", new Class[] { PerspectiveServices.class }, new Annotation[] { });
-    registerDependentScopedReference(instance, PerspectiveEditorPresenter_perspectiveServices);
-    PerspectiveEditorPresenter_Caller_perspectiveServices(instance, PerspectiveEditorPresenter_perspectiveServices);
-    final SaveAndRenameCommandBuilder BaseEditor_saveAndRenameCommandBuilder = (SaveAndRenameCommandBuilder) contextManager.getInstance("Type_factory__o_u_e_e_c_c_m_c_SaveAndRenameCommandBuilder__quals__j_e_i_Any_j_e_i_Default");
-    registerDependentScopedReference(instance, BaseEditor_saveAndRenameCommandBuilder);
-    BaseEditor_SaveAndRenameCommandBuilder_saveAndRenameCommandBuilder(instance, BaseEditor_saveAndRenameCommandBuilder);
-    final Promises BaseEditor_promises = (Promises) contextManager.getInstance("Type_factory__o_u_c_p_Promises__quals__j_e_i_Any_j_e_i_Default");
-    registerDependentScopedReference(instance, BaseEditor_promises);
-    BaseEditor_Promises_promises(instance, BaseEditor_promises);
     final PerspectiveEditorView PerspectiveEditorPresenter_perspectiveEditorView = (PerspectiveEditorView) contextManager.getInstance("Type_factory__o_u_e_p_c_p_e_PerspectiveEditorView__quals__j_e_i_Any_j_e_i_Default");
     registerDependentScopedReference(instance, PerspectiveEditorPresenter_perspectiveEditorView);
     PerspectiveEditorPresenter_View_perspectiveEditorView(instance, PerspectiveEditorPresenter_perspectiveEditorView);
-    final DownloadMenuItemBuilder BaseEditor_downloadMenuItemBuilder = (DownloadMenuItemBuilder) contextManager.getInstance("Type_factory__o_u_e_e_c_c_m_DownloadMenuItemBuilder__quals__j_e_i_Any_j_e_i_Default");
-    registerDependentScopedReference(instance, BaseEditor_downloadMenuItemBuilder);
-    BaseEditor_DownloadMenuItemBuilder_downloadMenuItemBuilder(instance, BaseEditor_downloadMenuItemBuilder);
-    final DeletePopUpPresenter BaseEditor_deletePopUpPresenter = (DeletePopUpPresenter) contextManager.getInstance("Type_factory__o_u_e_e_c_c_f_p_DeletePopUpPresenter__quals__j_e_i_Any_j_e_i_Default");
-    BaseEditor_DeletePopUpPresenter_deletePopUpPresenter(instance, BaseEditor_deletePopUpPresenter);
-    final PerspectiveEditorSettings PerspectiveEditorPresenter_perspectiveEditorSettings = (PerspectiveEditorSettings) contextManager.getInstance("Type_factory__o_u_e_p_c_p_e_l_e_PerspectiveEditorSettings__quals__j_e_i_Any_j_e_i_Default");
-    PerspectiveEditorPresenter_PerspectiveEditorSettings_perspectiveEditorSettings(instance, PerspectiveEditorPresenter_perspectiveEditorSettings);
+    final SaveAndRenameCommandBuilder BaseEditor_saveAndRenameCommandBuilder = (SaveAndRenameCommandBuilder) contextManager.getInstance("Type_factory__o_u_e_e_c_c_m_c_SaveAndRenameCommandBuilder__quals__j_e_i_Any_j_e_i_Default");
+    registerDependentScopedReference(instance, BaseEditor_saveAndRenameCommandBuilder);
+    BaseEditor_SaveAndRenameCommandBuilder_saveAndRenameCommandBuilder(instance, BaseEditor_saveAndRenameCommandBuilder);
+    final LayoutComponentPalettePresenter PerspectiveEditorPresenter_layoutDragComponentPalette = (LayoutComponentPalettePresenter) contextManager.getInstance("Type_factory__o_u_e_l_e_c_w_LayoutComponentPalettePresenter__quals__j_e_i_Any_j_e_i_Default");
+    PerspectiveEditorPresenter_LayoutDragComponentPalette_layoutDragComponentPalette(instance, PerspectiveEditorPresenter_layoutDragComponentPalette);
     final ManagedInstance BaseEditor_menuBuilderManagedInstance = (ManagedInstance) contextManager.getContextualInstance("ContextualProvider_factory__o_j_e_i_c_a_ManagedInstance__quals__Universal", new Class[] { BasicFileMenuBuilder.class }, new Annotation[] { });
     registerDependentScopedReference(instance, BaseEditor_menuBuilderManagedInstance);
     BaseEditor_ManagedInstance_menuBuilderManagedInstance(instance, BaseEditor_menuBuilderManagedInstance);
-    final PlaceManagerImpl BaseEditor_placeManager = (PlaceManagerImpl) contextManager.getInstance("Type_factory__o_u_c_m_PlaceManagerImpl__quals__j_e_i_Any_j_e_i_Default");
-    BaseEditor_PlaceManager_placeManager(instance, BaseEditor_placeManager);
-    final Event BaseEditor_notification = (Event) contextManager.getContextualInstance("ContextualProvider_factory__j_e_e_Event__quals__Universal", new Class[] { NotificationEvent.class }, new Annotation[] { });
-    registerDependentScopedReference(instance, BaseEditor_notification);
-    BaseEditor_Event_notification(instance, BaseEditor_notification);
-    final Event BaseEditor_changeTitleNotification = (Event) contextManager.getContextualInstance("ContextualProvider_factory__j_e_e_Event__quals__Universal", new Class[] { ChangeTitleWidgetEvent.class }, new Annotation[] { });
-    registerDependentScopedReference(instance, BaseEditor_changeTitleNotification);
-    BaseEditor_Event_changeTitleNotification(instance, BaseEditor_changeTitleNotification);
-    final LayoutEditorPluginImpl PerspectiveEditorPresenter_layoutEditorPlugin = (LayoutEditorPluginImpl) contextManager.getInstance("Type_factory__o_u_e_l_e_c_LayoutEditorPluginImpl__quals__j_e_i_Any_j_e_i_Default");
-    registerDependentScopedReference(instance, PerspectiveEditorPresenter_layoutEditorPlugin);
-    PerspectiveEditorPresenter_LayoutEditorPlugin_layoutEditorPlugin(instance, PerspectiveEditorPresenter_layoutEditorPlugin);
-    final SyncBeanManager PerspectiveEditorPresenter_beanManager = (SyncBeanManager) contextManager.getInstance("Producer_factory__o_j_e_i_c_c_SyncBeanManager__quals__j_e_i_Any_j_e_i_Default");
-    registerDependentScopedReference(instance, PerspectiveEditorPresenter_beanManager);
-    PerspectiveEditorPresenter_SyncBeanManager_beanManager(instance, PerspectiveEditorPresenter_beanManager);
-    final DefaultFileNameValidator BaseEditor_fileNameValidator = (DefaultFileNameValidator) contextManager.getInstance("Type_factory__o_u_e_e_c_c_v_DefaultFileNameValidator__quals__j_e_i_Any_j_e_i_Default");
-    BaseEditor_DefaultFileNameValidator_fileNameValidator(instance, BaseEditor_fileNameValidator);
+    final DownloadMenuItemBuilder BaseEditor_downloadMenuItemBuilder = (DownloadMenuItemBuilder) contextManager.getInstance("Type_factory__o_u_e_e_c_c_m_DownloadMenuItemBuilder__quals__j_e_i_Any_j_e_i_Default");
+    registerDependentScopedReference(instance, BaseEditor_downloadMenuItemBuilder);
+    BaseEditor_DownloadMenuItemBuilder_downloadMenuItemBuilder(instance, BaseEditor_downloadMenuItemBuilder);
+    final PerspectiveLayoutPluginResourceType PerspectiveEditorPresenter_resourceType = (PerspectiveLayoutPluginResourceType) contextManager.getInstance("Type_factory__o_u_e_p_c_t_PerspectiveLayoutPluginResourceType__quals__j_e_i_Any_j_e_i_Default");
+    PerspectiveEditorPresenter_PerspectiveLayoutPluginResourceType_resourceType(instance, PerspectiveEditorPresenter_resourceType);
+    final DeletePopUpPresenter BaseEditor_deletePopUpPresenter = (DeletePopUpPresenter) contextManager.getInstance("Type_factory__o_u_e_e_c_c_f_p_DeletePopUpPresenter__quals__j_e_i_Any_j_e_i_Default");
+    BaseEditor_DeletePopUpPresenter_deletePopUpPresenter(instance, BaseEditor_deletePopUpPresenter);
+    final Promises BaseEditor_promises = (Promises) contextManager.getInstance("Type_factory__o_u_c_p_Promises__quals__j_e_i_Any_j_e_i_Default");
+    registerDependentScopedReference(instance, BaseEditor_promises);
+    BaseEditor_Promises_promises(instance, BaseEditor_promises);
     final Event PerspectiveEditorPresenter_perspectiveEditorFocusEvent = (Event) contextManager.getContextualInstance("ContextualProvider_factory__j_e_e_Event__quals__Universal", new Class[] { PerspectiveEditorFocusEvent.class }, new Annotation[] { });
     registerDependentScopedReference(instance, PerspectiveEditorPresenter_perspectiveEditorFocusEvent);
     PerspectiveEditorPresenter_Event_perspectiveEditorFocusEvent(instance, PerspectiveEditorPresenter_perspectiveEditorFocusEvent);
+    final DefaultFileNameValidator BaseEditor_fileNameValidator = (DefaultFileNameValidator) contextManager.getInstance("Type_factory__o_u_e_e_c_c_v_DefaultFileNameValidator__quals__j_e_i_Any_j_e_i_Default");
+    BaseEditor_DefaultFileNameValidator_fileNameValidator(instance, BaseEditor_fileNameValidator);
+    final LayoutEditorPluginImpl PerspectiveEditorPresenter_layoutEditorPlugin = (LayoutEditorPluginImpl) contextManager.getInstance("Type_factory__o_u_e_l_e_c_LayoutEditorPluginImpl__quals__j_e_i_Any_j_e_i_Default");
+    registerDependentScopedReference(instance, PerspectiveEditorPresenter_layoutEditorPlugin);
+    PerspectiveEditorPresenter_LayoutEditorPlugin_layoutEditorPlugin(instance, PerspectiveEditorPresenter_layoutEditorPlugin);
+    final Event BaseEditor_changeTitleNotification = (Event) contextManager.getContextualInstance("ContextualProvider_factory__j_e_e_Event__quals__Universal", new Class[] { ChangeTitleWidgetEvent.class }, new Annotation[] { });
+    registerDependentScopedReference(instance, BaseEditor_changeTitleNotification);
+    BaseEditor_Event_changeTitleNotification(instance, BaseEditor_changeTitleNotification);
+    final PerspectiveEditorSettings PerspectiveEditorPresenter_perspectiveEditorSettings = (PerspectiveEditorSettings) contextManager.getInstance("Type_factory__o_u_e_p_c_p_e_l_e_PerspectiveEditorSettings__quals__j_e_i_Any_j_e_i_Default");
+    PerspectiveEditorPresenter_PerspectiveEditorSettings_perspectiveEditorSettings(instance, PerspectiveEditorPresenter_perspectiveEditorSettings);
+    final PlaceManagerImpl BaseEditor_placeManager = (PlaceManagerImpl) contextManager.getInstance("Type_factory__o_u_c_m_PlaceManagerImpl__quals__j_e_i_Any_j_e_i_Default");
+    BaseEditor_PlaceManager_placeManager(instance, BaseEditor_placeManager);
+    final Caller PerspectiveEditorPresenter_perspectiveServices = (Caller) contextManager.getContextualInstance("ContextualProvider_factory__o_j_e_c_c_a_Caller__quals__Universal", new Class[] { PerspectiveServices.class }, new Annotation[] { });
+    registerDependentScopedReference(instance, PerspectiveEditorPresenter_perspectiveServices);
+    PerspectiveEditorPresenter_Caller_perspectiveServices(instance, PerspectiveEditorPresenter_perspectiveServices);
+    final SyncBeanManager PerspectiveEditorPresenter_beanManager = (SyncBeanManager) contextManager.getInstance("Producer_factory__o_j_e_i_c_c_SyncBeanManager__quals__j_e_i_Any_j_e_i_Default");
+    registerDependentScopedReference(instance, PerspectiveEditorPresenter_beanManager);
+    PerspectiveEditorPresenter_SyncBeanManager_beanManager(instance, PerspectiveEditorPresenter_beanManager);
+    final Event BaseEditor_notification = (Event) contextManager.getContextualInstance("ContextualProvider_factory__j_e_e_Event__quals__Universal", new Class[] { NotificationEvent.class }, new Annotation[] { });
+    registerDependentScopedReference(instance, BaseEditor_notification);
+    BaseEditor_Event_notification(instance, BaseEditor_notification);
+    final BasicFileMenuBuilderImpl BaseEditor_menuBuilder = (BasicFileMenuBuilderImpl) contextManager.getInstance("Type_factory__o_u_e_e_c_c_m_BasicFileMenuBuilderImpl__quals__j_e_i_Any_j_e_i_Default");
+    registerDependentScopedReference(instance, BaseEditor_menuBuilder);
+    BaseEditor_BasicFileMenuBuilder_menuBuilder(instance, BaseEditor_menuBuilder);
     final PluginNameValidator PerspectiveEditorPresenter_pluginNameValidator = (PluginNameValidator) contextManager.getInstance("Type_factory__o_u_e_p_c_v_PluginNameValidator__quals__j_e_i_Any_j_e_i_Default");
     PerspectiveEditorPresenter_PluginNameValidator_pluginNameValidator(instance, PerspectiveEditorPresenter_pluginNameValidator);
     thisInstance.setReference(instance, "onPlugInDeletedSubscription", CDI.subscribe("org.uberfire.ext.plugin.event.PluginDeleted", new AbstractCDIEventCallback<PluginDeleted>() {
@@ -129,14 +129,6 @@ public class Type_factory__o_u_e_p_c_p_e_PerspectiveEditorPresenter__quals__j_e_
     instance.@org.uberfire.ext.editor.commons.client.BaseEditor::placeManager = value;
   }-*/;
 
-  native static Event BaseEditor_Event_notification(BaseEditor instance) /*-{
-    return instance.@org.uberfire.ext.editor.commons.client.BaseEditor::notification;
-  }-*/;
-
-  native static void BaseEditor_Event_notification(BaseEditor instance, Event<NotificationEvent> value) /*-{
-    instance.@org.uberfire.ext.editor.commons.client.BaseEditor::notification = value;
-  }-*/;
-
   native static SyncBeanManager PerspectiveEditorPresenter_SyncBeanManager_beanManager(PerspectiveEditorPresenter instance) /*-{
     return instance.@org.uberfire.ext.plugin.client.perspective.editor.PerspectiveEditorPresenter::beanManager;
   }-*/;
@@ -145,12 +137,12 @@ public class Type_factory__o_u_e_p_c_p_e_PerspectiveEditorPresenter__quals__j_e_
     instance.@org.uberfire.ext.plugin.client.perspective.editor.PerspectiveEditorPresenter::beanManager = value;
   }-*/;
 
-  native static BasicFileMenuBuilder BaseEditor_BasicFileMenuBuilder_menuBuilder(BaseEditor instance) /*-{
-    return instance.@org.uberfire.ext.editor.commons.client.BaseEditor::menuBuilder;
+  native static Event BaseEditor_Event_notification(BaseEditor instance) /*-{
+    return instance.@org.uberfire.ext.editor.commons.client.BaseEditor::notification;
   }-*/;
 
-  native static void BaseEditor_BasicFileMenuBuilder_menuBuilder(BaseEditor instance, BasicFileMenuBuilder value) /*-{
-    instance.@org.uberfire.ext.editor.commons.client.BaseEditor::menuBuilder = value;
+  native static void BaseEditor_Event_notification(BaseEditor instance, Event<NotificationEvent> value) /*-{
+    instance.@org.uberfire.ext.editor.commons.client.BaseEditor::notification = value;
   }-*/;
 
   native static SaveAndRenameCommandBuilder BaseEditor_SaveAndRenameCommandBuilder_saveAndRenameCommandBuilder(BaseEditor instance) /*-{
@@ -159,6 +151,14 @@ public class Type_factory__o_u_e_p_c_p_e_PerspectiveEditorPresenter__quals__j_e_
 
   native static void BaseEditor_SaveAndRenameCommandBuilder_saveAndRenameCommandBuilder(BaseEditor instance, SaveAndRenameCommandBuilder<LayoutTemplate, DefaultMetadata> value) /*-{
     instance.@org.uberfire.ext.editor.commons.client.BaseEditor::saveAndRenameCommandBuilder = value;
+  }-*/;
+
+  native static BasicFileMenuBuilder BaseEditor_BasicFileMenuBuilder_menuBuilder(BaseEditor instance) /*-{
+    return instance.@org.uberfire.ext.editor.commons.client.BaseEditor::menuBuilder;
+  }-*/;
+
+  native static void BaseEditor_BasicFileMenuBuilder_menuBuilder(BaseEditor instance, BasicFileMenuBuilder value) /*-{
+    instance.@org.uberfire.ext.editor.commons.client.BaseEditor::menuBuilder = value;
   }-*/;
 
   native static Caller PerspectiveEditorPresenter_Caller_perspectiveServices(PerspectiveEditorPresenter instance) /*-{

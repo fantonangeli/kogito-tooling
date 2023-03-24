@@ -88,10 +88,10 @@ public class Type_factory__o_d_c_p_JSONRuntimeModelClientParser__quals__j_e_i_An
   public JSONRuntimeModelClientParser createInstance(final ContextManager contextManager) {
     final JSONRuntimeModelClientParser instance = new JSONRuntimeModelClientParser();
     setIncompleteInstance(instance);
-    final PropertyReplacementService JSONRuntimeModelClientParser_replaceService = (PropertyReplacementService) contextManager.getInstance("Type_factory__o_d_c_p_PropertyReplacementService__quals__j_e_i_Any_j_e_i_Default");
-    JSONRuntimeModelClientParser_PropertyReplacementService_replaceService(instance, JSONRuntimeModelClientParser_replaceService);
     final GlobalDisplayerSettingsImpl JSONRuntimeModelClientParser_globalDisplayerSettings = (GlobalDisplayerSettingsImpl) contextManager.getInstance("Type_factory__o_d_d_c_GlobalDisplayerSettingsImpl__quals__j_e_i_Any_j_e_i_Default");
     JSONRuntimeModelClientParser_GlobalDisplayerSettings_globalDisplayerSettings(instance, JSONRuntimeModelClientParser_globalDisplayerSettings);
+    final PropertyReplacementService JSONRuntimeModelClientParser_replaceService = (PropertyReplacementService) contextManager.getInstance("Type_factory__o_d_c_p_PropertyReplacementService__quals__j_e_i_Any_j_e_i_Default");
+    JSONRuntimeModelClientParser_PropertyReplacementService_replaceService(instance, JSONRuntimeModelClientParser_replaceService);
     setIncompleteInstance(null);
     return instance;
   }
