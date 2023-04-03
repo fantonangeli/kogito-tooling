@@ -53,6 +53,7 @@ describe("Serverless workflow editor - Basic operations tests", () => {
     let swfTextEditor = new SwfTextEditorTestHelper(editorWebViews[0]);
     let swfEditor = new SwfEditorTestHelper(editorWebViews[1]);
 
+    await new Promise((resolve) => setTimeout(resolve, 2000));
     expect((await swfEditor.getAllNodeIds()).length).equal(6);
 
     let textEditor = await swfTextEditor.getSwfTextEditor();
