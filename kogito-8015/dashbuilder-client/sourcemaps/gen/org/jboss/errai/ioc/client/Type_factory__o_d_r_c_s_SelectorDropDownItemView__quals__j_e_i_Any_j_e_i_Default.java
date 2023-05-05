@@ -49,9 +49,6 @@ public class Type_factory__o_d_r_c_s_SelectorDropDownItemView__quals__j_e_i_Any_
   public SelectorDropDownItemView createInstance(final ContextManager contextManager) {
     final SelectorDropDownItemView instance = new SelectorDropDownItemView();
     setIncompleteInstance(instance);
-    final Span SelectorDropDownItemView_itemText = (Span) contextManager.getInstance("ExtensionProvided_factory__o_j_e_c_c_d_Span__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
-    registerDependentScopedReference(instance, SelectorDropDownItemView_itemText);
-    SelectorDropDownItemView_Span_itemText(instance, SelectorDropDownItemView_itemText);
     final ListItem SelectorDropDownItemView_item = (ListItem) contextManager.getInstance("ExtensionProvided_factory__o_j_e_c_c_d_ListItem__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
     registerDependentScopedReference(instance, SelectorDropDownItemView_item);
     SelectorDropDownItemView_ListItem_item(instance, SelectorDropDownItemView_item);
@@ -61,6 +58,9 @@ public class Type_factory__o_d_r_c_s_SelectorDropDownItemView__quals__j_e_i_Any_
     final Span SelectorDropDownItemView_itemIcon = (Span) contextManager.getInstance("ExtensionProvided_factory__o_j_e_c_c_d_Span__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
     registerDependentScopedReference(instance, SelectorDropDownItemView_itemIcon);
     SelectorDropDownItemView_Span_itemIcon(instance, SelectorDropDownItemView_itemIcon);
+    final Span SelectorDropDownItemView_itemText = (Span) contextManager.getInstance("ExtensionProvided_factory__o_j_e_c_c_d_Span__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
+    registerDependentScopedReference(instance, SelectorDropDownItemView_itemText);
+    SelectorDropDownItemView_Span_itemText(instance, SelectorDropDownItemView_itemText);
     o_d_r_c_s_SelectorDropDownItemViewTemplateResource templateForSelectorDropDownItemView = GWT.create(o_d_r_c_s_SelectorDropDownItemViewTemplateResource.class);
     Element parentElementForTemplateOfSelectorDropDownItemView = TemplateUtil.getRootTemplateParentElement(templateForSelectorDropDownItemView.getContents().getText(), "org/dashbuilder/renderer/client/selector/SelectorDropDownItemView.html", "");
     TemplateUtil.translateTemplate("org/dashbuilder/renderer/client/selector/SelectorDropDownItemView.html", TemplateUtil.getRootTemplateElement(parentElementForTemplateOfSelectorDropDownItemView));

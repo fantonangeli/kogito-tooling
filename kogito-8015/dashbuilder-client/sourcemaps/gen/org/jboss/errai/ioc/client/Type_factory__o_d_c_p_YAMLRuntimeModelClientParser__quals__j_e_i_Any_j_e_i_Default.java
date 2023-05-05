@@ -96,10 +96,10 @@ public class Type_factory__o_d_c_p_YAMLRuntimeModelClientParser__quals__j_e_i_An
   public YAMLRuntimeModelClientParser createInstance(final ContextManager contextManager) {
     final YAMLRuntimeModelClientParser instance = new YAMLRuntimeModelClientParser();
     setIncompleteInstance(instance);
-    final PropertyReplacementService YAMLRuntimeModelClientParser_replacementService = (PropertyReplacementService) contextManager.getInstance("Type_factory__o_d_c_p_PropertyReplacementService__quals__j_e_i_Any_j_e_i_Default");
-    YAMLRuntimeModelClientParser_PropertyReplacementService_replacementService(instance, YAMLRuntimeModelClientParser_replacementService);
     final JSONRuntimeModelClientParser YAMLRuntimeModelClientParser_jsonParser = (JSONRuntimeModelClientParser) contextManager.getInstance("Type_factory__o_d_c_p_JSONRuntimeModelClientParser__quals__j_e_i_Any_j_e_i_Default");
     YAMLRuntimeModelClientParser_JSONRuntimeModelClientParser_jsonParser(instance, YAMLRuntimeModelClientParser_jsonParser);
+    final PropertyReplacementService YAMLRuntimeModelClientParser_replacementService = (PropertyReplacementService) contextManager.getInstance("Type_factory__o_d_c_p_PropertyReplacementService__quals__j_e_i_Any_j_e_i_Default");
+    YAMLRuntimeModelClientParser_PropertyReplacementService_replacementService(instance, YAMLRuntimeModelClientParser_replacementService);
     setIncompleteInstance(null);
     return instance;
   }

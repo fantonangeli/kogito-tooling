@@ -36,12 +36,12 @@ public class Type_factory__o_d_c_s_v_NotFoundScreenView__quals__j_e_i_Any_j_e_i_
   public NotFoundScreenView createInstance(final ContextManager contextManager) {
     final NotFoundScreenView instance = new NotFoundScreenView();
     setIncompleteInstance(instance);
-    final HTMLDivElement NotFoundScreenView_root = (HTMLDivElement) contextManager.getInstance("ExtensionProvided_factory__e_d_HTMLDivElement__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
-    registerDependentScopedReference(instance, NotFoundScreenView_root);
-    NotFoundScreenView_HTMLDivElement_root(instance, NotFoundScreenView_root);
     final HTMLParagraphElement NotFoundScreenView_subTitle = (HTMLParagraphElement) contextManager.getInstance("ExtensionProvided_factory__e_d_HTMLParagraphElement__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
     registerDependentScopedReference(instance, NotFoundScreenView_subTitle);
     NotFoundScreenView_HTMLParagraphElement_subTitle(instance, NotFoundScreenView_subTitle);
+    final HTMLDivElement NotFoundScreenView_root = (HTMLDivElement) contextManager.getInstance("ExtensionProvided_factory__e_d_HTMLDivElement__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
+    registerDependentScopedReference(instance, NotFoundScreenView_root);
+    NotFoundScreenView_HTMLDivElement_root(instance, NotFoundScreenView_root);
     o_d_c_s_v_NotFoundScreenViewTemplateResource templateForNotFoundScreenView = GWT.create(o_d_c_s_v_NotFoundScreenViewTemplateResource.class);
     Element parentElementForTemplateOfNotFoundScreenView = TemplateUtil.getRootTemplateParentElement(templateForNotFoundScreenView.getContents().getText(), "org/dashbuilder/client/screens/view/NotFoundScreenView.html", "");
     TemplateUtil.translateTemplate("org/dashbuilder/client/screens/view/NotFoundScreenView.html", TemplateUtil.getRootTemplateElement(parentElementForTemplateOfNotFoundScreenView));

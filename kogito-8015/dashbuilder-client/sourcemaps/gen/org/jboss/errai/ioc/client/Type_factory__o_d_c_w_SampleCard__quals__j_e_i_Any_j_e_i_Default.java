@@ -23,10 +23,10 @@ public class Type_factory__o_d_c_w_SampleCard__quals__j_e_i_Any_j_e_i_Default ex
     final SampleCardView SampleCard_view = (SampleCardView) contextManager.getInstance("Type_factory__o_d_c_w_v_SampleCardView__quals__j_e_i_Any_j_e_i_Default");
     registerDependentScopedReference(instance, SampleCard_view);
     SampleCard_View_view(instance, SampleCard_view);
-    final PlaceManagerImpl SampleCard_placeManager = (PlaceManagerImpl) contextManager.getInstance("Type_factory__o_u_c_m_PlaceManagerImpl__quals__j_e_i_Any_j_e_i_Default");
-    SampleCard_PlaceManager_placeManager(instance, SampleCard_placeManager);
     final RouterScreen SampleCard_routerScreen = (RouterScreen) contextManager.getInstance("Type_factory__o_d_c_s_RouterScreen__quals__j_e_i_Any_j_e_i_Default");
     SampleCard_RouterScreen_routerScreen(instance, SampleCard_routerScreen);
+    final PlaceManagerImpl SampleCard_placeManager = (PlaceManagerImpl) contextManager.getInstance("Type_factory__o_u_c_m_PlaceManagerImpl__quals__j_e_i_Any_j_e_i_Default");
+    SampleCard_PlaceManager_placeManager(instance, SampleCard_placeManager);
     setIncompleteInstance(null);
     return instance;
   }

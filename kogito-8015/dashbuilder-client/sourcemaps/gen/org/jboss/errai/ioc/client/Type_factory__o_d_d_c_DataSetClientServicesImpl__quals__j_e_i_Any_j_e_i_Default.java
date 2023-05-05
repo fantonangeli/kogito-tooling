@@ -232,21 +232,21 @@ public class Type_factory__o_d_d_c_DataSetClientServicesImpl__quals__j_e_i_Any_j
   }
 
   public DataSetClientServicesImpl createInstance(final ContextManager contextManager) {
-    final Event<DataSetPushOkEvent> _dataSetPushOkEvent_4 = (Event) contextManager.getContextualInstance("ContextualProvider_factory__j_e_e_Event__quals__Universal", new Class[] { DataSetPushOkEvent.class }, new Annotation[] { });
-    final AggregateFunctionManager _aggregateFunctionManager_1 = (AggregateFunctionManagerImpl) contextManager.getInstance("Type_factory__o_d_d_e_f_AggregateFunctionManagerImpl__quals__j_e_i_Any_j_e_i_Default");
-    final Caller<DataSetLookupServices> _dataSetLookupServices_6 = (Caller) contextManager.getContextualInstance("ContextualProvider_factory__o_j_e_c_c_a_Caller__quals__Universal", new Class[] { DataSetLookupServices.class }, new Annotation[] { });
-    final IntervalBuilderLocator _intervalBuilderLocator_2 = (ClientIntervalBuilderLocator) contextManager.getInstance("Type_factory__o_d_d_c_e_ClientIntervalBuilderLocator__quals__j_e_i_Any_j_e_i_Default");
-    final Event<DataSetPushingEvent> _dataSetPushingEvent_3 = (Event) contextManager.getContextualInstance("ContextualProvider_factory__j_e_e_Event__quals__Universal", new Class[] { DataSetPushingEvent.class }, new Annotation[] { });
     final Event<DataSetModifiedEvent> _dataSetModifiedEvent_5 = (Event) contextManager.getContextualInstance("ContextualProvider_factory__j_e_e_Event__quals__Universal", new Class[] { DataSetModifiedEvent.class }, new Annotation[] { });
-    final ClientDataSetManager _clientDataSetManager_0 = (ClientDataSetManager) contextManager.getInstance("Type_factory__o_d_d_c_ClientDataSetManager__quals__j_e_i_Any_j_e_i_Default");
+    final AggregateFunctionManager _aggregateFunctionManager_1 = (AggregateFunctionManagerImpl) contextManager.getInstance("Type_factory__o_d_d_e_f_AggregateFunctionManagerImpl__quals__j_e_i_Any_j_e_i_Default");
+    final IntervalBuilderLocator _intervalBuilderLocator_2 = (ClientIntervalBuilderLocator) contextManager.getInstance("Type_factory__o_d_d_c_e_ClientIntervalBuilderLocator__quals__j_e_i_Any_j_e_i_Default");
     final Caller<DataSetDefServices> _dataSetDefServices_7 = (Caller) contextManager.getContextualInstance("ContextualProvider_factory__o_j_e_c_c_a_Caller__quals__Universal", new Class[] { DataSetDefServices.class }, new Annotation[] { });
+    final Caller<DataSetLookupServices> _dataSetLookupServices_6 = (Caller) contextManager.getContextualInstance("ContextualProvider_factory__o_j_e_c_c_a_Caller__quals__Universal", new Class[] { DataSetLookupServices.class }, new Annotation[] { });
+    final Event<DataSetPushingEvent> _dataSetPushingEvent_3 = (Event) contextManager.getContextualInstance("ContextualProvider_factory__j_e_e_Event__quals__Universal", new Class[] { DataSetPushingEvent.class }, new Annotation[] { });
+    final Event<DataSetPushOkEvent> _dataSetPushOkEvent_4 = (Event) contextManager.getContextualInstance("ContextualProvider_factory__j_e_e_Event__quals__Universal", new Class[] { DataSetPushOkEvent.class }, new Annotation[] { });
+    final ClientDataSetManager _clientDataSetManager_0 = (ClientDataSetManager) contextManager.getInstance("Type_factory__o_d_d_c_ClientDataSetManager__quals__j_e_i_Any_j_e_i_Default");
     final DataSetClientServicesImpl instance = new DataSetClientServicesImpl(_clientDataSetManager_0, _aggregateFunctionManager_1, _intervalBuilderLocator_2, _dataSetPushingEvent_3, _dataSetPushOkEvent_4, _dataSetModifiedEvent_5, _dataSetLookupServices_6, _dataSetDefServices_7);
-    registerDependentScopedReference(instance, _dataSetPushOkEvent_4);
+    registerDependentScopedReference(instance, _dataSetModifiedEvent_5);
     registerDependentScopedReference(instance, _aggregateFunctionManager_1);
+    registerDependentScopedReference(instance, _dataSetDefServices_7);
     registerDependentScopedReference(instance, _dataSetLookupServices_6);
     registerDependentScopedReference(instance, _dataSetPushingEvent_3);
-    registerDependentScopedReference(instance, _dataSetModifiedEvent_5);
-    registerDependentScopedReference(instance, _dataSetDefServices_7);
+    registerDependentScopedReference(instance, _dataSetPushOkEvent_4);
     setIncompleteInstance(instance);
     setIncompleteInstance(null);
     return instance;

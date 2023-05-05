@@ -742,7 +742,7 @@ public class BootstrapperImpl implements Bootstrapper {
     CDIEventTypeLookup.get().addLookup("org.dashbuilder.dataset.events.DataSetStaleEvent", "java.lang.Object");
   }
 
-  private void registerFactories0(final Context org_jboss_errai_ioc_client_container_DependentScopeContext_context, final Context org_jboss_errai_ioc_client_container_ApplicationScopedContext_context) {
+  private void registerFactories0(final Context org_jboss_errai_ioc_client_container_ApplicationScopedContext_context, final Context org_jboss_errai_ioc_client_container_DependentScopeContext_context) {
     org_jboss_errai_ioc_client_container_ApplicationScopedContext_context.registerFactory((Factory<ScreenLayoutDragComponent>) GWT.create(Type_factory__o_d_c_n_w_ScreenLayoutDragComponent__quals__j_e_i_Any_j_e_i_Default.class));
     org_jboss_errai_ioc_client_container_DependentScopeContext_context.registerFactory((Factory<ExternalComponentPresenter>) GWT.create(Type_factory__o_d_d_c_w_ExternalComponentPresenter__quals__j_e_i_Any_j_e_i_Default.class));
     org_jboss_errai_ioc_client_container_ApplicationScopedContext_context.registerFactory((Factory<ClientDataSetMetadataJSONMarshaller>) GWT.create(Type_factory__o_d_c_m_ClientDataSetMetadataJSONMarshaller__quals__j_e_i_Any_j_e_i_Default.class));
@@ -1106,22 +1106,22 @@ public class BootstrapperImpl implements Bootstrapper {
     org_jboss_errai_ioc_client_container_DependentScopeContext_context.registerFactory((Factory<LayoutPanelView>) GWT.create(Type_factory__o_u_c_w_p_i_LayoutPanelView__quals__j_e_i_Any_j_e_i_Default_j_i_Named.class));
   }
 
-  private void registerFactories(final Context org_jboss_errai_ioc_client_container_DependentScopeContext_context, final Context org_jboss_errai_ioc_client_container_ApplicationScopedContext_context) {
-    registerFactories0(org_jboss_errai_ioc_client_container_DependentScopeContext_context, org_jboss_errai_ioc_client_container_ApplicationScopedContext_context);
+  private void registerFactories(final Context org_jboss_errai_ioc_client_container_ApplicationScopedContext_context, final Context org_jboss_errai_ioc_client_container_DependentScopeContext_context) {
+    registerFactories0(org_jboss_errai_ioc_client_container_ApplicationScopedContext_context, org_jboss_errai_ioc_client_container_DependentScopeContext_context);
   }
 
   // The main IOC bootstrap method.
   public ContextManager bootstrapContainer() {
-    final Context org_jboss_errai_ioc_client_container_DependentScopeContext_context = new DependentScopeContext();
     final Context org_jboss_errai_ioc_client_container_ApplicationScopedContext_context = new ApplicationScopedContext();
+    final Context org_jboss_errai_ioc_client_container_DependentScopeContext_context = new DependentScopeContext();
     logger.debug("Registering factories with contexts.");
     long start = System.currentTimeMillis();
-    registerFactories(org_jboss_errai_ioc_client_container_DependentScopeContext_context, org_jboss_errai_ioc_client_container_ApplicationScopedContext_context);
+    registerFactories(org_jboss_errai_ioc_client_container_ApplicationScopedContext_context, org_jboss_errai_ioc_client_container_DependentScopeContext_context);
     logger.debug("Registered 361 factories in {}ms", System.currentTimeMillis() - start);
     logger.debug("Adding contexts to context manager...");
     start = System.currentTimeMillis();
-    contextManager.addContext(org_jboss_errai_ioc_client_container_DependentScopeContext_context);
     contextManager.addContext(org_jboss_errai_ioc_client_container_ApplicationScopedContext_context);
+    contextManager.addContext(org_jboss_errai_ioc_client_container_DependentScopeContext_context);
     logger.debug("Added 2 contexts in {}ms", System.currentTimeMillis() - start);
     logger.debug("Calling finishInit on ContextManager");
     start = System.currentTimeMillis();

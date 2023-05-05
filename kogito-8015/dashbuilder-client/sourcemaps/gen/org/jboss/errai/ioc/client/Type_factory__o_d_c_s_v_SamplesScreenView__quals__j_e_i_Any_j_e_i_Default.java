@@ -50,6 +50,15 @@ public class Type_factory__o_d_c_s_v_SamplesScreenView__quals__j_e_i_Any_j_e_i_D
   public SamplesScreenView createInstance(final ContextManager contextManager) {
     final SamplesScreenView instance = new SamplesScreenView();
     setIncompleteInstance(instance);
+    final HTMLDivElement SamplesScreenView_samplesScreenRoot = (HTMLDivElement) contextManager.getInstance("ExtensionProvided_factory__e_d_HTMLDivElement__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
+    registerDependentScopedReference(instance, SamplesScreenView_samplesScreenRoot);
+    SamplesScreenView_HTMLDivElement_samplesScreenRoot(instance, SamplesScreenView_samplesScreenRoot);
+    final HTMLDivElement SamplesScreenView_samplesCategoriesNav = (HTMLDivElement) contextManager.getInstance("ExtensionProvided_factory__e_d_HTMLDivElement__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
+    registerDependentScopedReference(instance, SamplesScreenView_samplesCategoriesNav);
+    SamplesScreenView_HTMLDivElement_samplesCategoriesNav(instance, SamplesScreenView_samplesCategoriesNav);
+    final HTMLDivElement SamplesScreenView_rowsContainer = (HTMLDivElement) contextManager.getInstance("ExtensionProvided_factory__e_d_HTMLDivElement__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
+    registerDependentScopedReference(instance, SamplesScreenView_rowsContainer);
+    SamplesScreenView_HTMLDivElement_rowsContainer(instance, SamplesScreenView_rowsContainer);
     final HTMLButtonElement SamplesScreenView_toggleCategoriesNavigation = (HTMLButtonElement) contextManager.getInstance("ExtensionProvided_factory__e_d_HTMLButtonElement__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
     registerDependentScopedReference(instance, SamplesScreenView_toggleCategoriesNavigation);
     SamplesScreenView_HTMLButtonElement_toggleCategoriesNavigation(instance, SamplesScreenView_toggleCategoriesNavigation);
@@ -66,15 +75,6 @@ public class Type_factory__o_d_c_s_v_SamplesScreenView__quals__j_e_i_Any_j_e_i_D
     } });
     registerDependentScopedReference(instance, SamplesScreenView_samplesCategoriesGroup);
     SamplesScreenView_HTMLElement_samplesCategoriesGroup(instance, SamplesScreenView_samplesCategoriesGroup);
-    final HTMLDivElement SamplesScreenView_samplesCategoriesNav = (HTMLDivElement) contextManager.getInstance("ExtensionProvided_factory__e_d_HTMLDivElement__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
-    registerDependentScopedReference(instance, SamplesScreenView_samplesCategoriesNav);
-    SamplesScreenView_HTMLDivElement_samplesCategoriesNav(instance, SamplesScreenView_samplesCategoriesNav);
-    final HTMLDivElement SamplesScreenView_samplesScreenRoot = (HTMLDivElement) contextManager.getInstance("ExtensionProvided_factory__e_d_HTMLDivElement__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
-    registerDependentScopedReference(instance, SamplesScreenView_samplesScreenRoot);
-    SamplesScreenView_HTMLDivElement_samplesScreenRoot(instance, SamplesScreenView_samplesScreenRoot);
-    final HTMLDivElement SamplesScreenView_rowsContainer = (HTMLDivElement) contextManager.getInstance("ExtensionProvided_factory__e_d_HTMLDivElement__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
-    registerDependentScopedReference(instance, SamplesScreenView_rowsContainer);
-    SamplesScreenView_HTMLDivElement_rowsContainer(instance, SamplesScreenView_rowsContainer);
     o_d_c_s_v_SamplesScreenViewTemplateResource templateForSamplesScreenView = GWT.create(o_d_c_s_v_SamplesScreenViewTemplateResource.class);
     Element parentElementForTemplateOfSamplesScreenView = TemplateUtil.getRootTemplateParentElement(templateForSamplesScreenView.getContents().getText(), "org/dashbuilder/client/screens/view/SamplesScreenView.html", "");
     TemplateUtil.translateTemplate("org/dashbuilder/client/screens/view/SamplesScreenView.html", TemplateUtil.getRootTemplateElement(parentElementForTemplateOfSamplesScreenView));
