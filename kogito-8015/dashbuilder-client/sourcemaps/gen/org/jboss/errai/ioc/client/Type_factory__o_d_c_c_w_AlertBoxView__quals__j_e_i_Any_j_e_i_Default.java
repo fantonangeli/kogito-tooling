@@ -39,18 +39,18 @@ public class Type_factory__o_d_c_c_w_AlertBoxView__quals__j_e_i_Any_j_e_i_Defaul
   public AlertBoxView createInstance(final ContextManager contextManager) {
     final AlertBoxView instance = new AlertBoxView();
     setIncompleteInstance(instance);
-    final Span AlertBoxView_alertMessage = (Span) contextManager.getInstance("ExtensionProvided_factory__o_j_e_c_c_d_Span__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
-    registerDependentScopedReference(instance, AlertBoxView_alertMessage);
-    AlertBoxView_Span_alertMessage(instance, AlertBoxView_alertMessage);
-    final Button AlertBoxView_closeButton = (Button) contextManager.getInstance("ExtensionProvided_factory__o_j_e_c_c_d_Button__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
-    registerDependentScopedReference(instance, AlertBoxView_closeButton);
-    AlertBoxView_Button_closeButton(instance, AlertBoxView_closeButton);
     final Div AlertBoxView_alertDiv = (Div) contextManager.getInstance("ExtensionProvided_factory__o_j_e_c_c_d_Div__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
     registerDependentScopedReference(instance, AlertBoxView_alertDiv);
     AlertBoxView_Div_alertDiv(instance, AlertBoxView_alertDiv);
     final Span AlertBoxView_alertIcon = (Span) contextManager.getInstance("ExtensionProvided_factory__o_j_e_c_c_d_Span__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
     registerDependentScopedReference(instance, AlertBoxView_alertIcon);
     AlertBoxView_Span_alertIcon(instance, AlertBoxView_alertIcon);
+    final Span AlertBoxView_alertMessage = (Span) contextManager.getInstance("ExtensionProvided_factory__o_j_e_c_c_d_Span__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
+    registerDependentScopedReference(instance, AlertBoxView_alertMessage);
+    AlertBoxView_Span_alertMessage(instance, AlertBoxView_alertMessage);
+    final Button AlertBoxView_closeButton = (Button) contextManager.getInstance("ExtensionProvided_factory__o_j_e_c_c_d_Button__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
+    registerDependentScopedReference(instance, AlertBoxView_closeButton);
+    AlertBoxView_Button_closeButton(instance, AlertBoxView_closeButton);
     o_d_c_c_w_AlertBoxViewTemplateResource templateForAlertBoxView = GWT.create(o_d_c_c_w_AlertBoxViewTemplateResource.class);
     Element parentElementForTemplateOfAlertBoxView = TemplateUtil.getRootTemplateParentElement(templateForAlertBoxView.getContents().getText(), "org/dashbuilder/common/client/widgets/AlertBoxView.html", "");
     TemplateUtil.translateTemplate("org/dashbuilder/common/client/widgets/AlertBoxView.html", TemplateUtil.getRootTemplateElement(parentElementForTemplateOfAlertBoxView));

@@ -140,19 +140,6 @@ public class Type_factory__o_d_r_c_c_c_m_w_MapTooltip__quals__j_e_i_Any_j_e_i_De
   public MapTooltip createInstance(final ContextManager contextManager) {
     final MapTooltip instance = new MapTooltip();
     setIncompleteInstance(instance);
-    final HTMLElement MapTooltip_lblTooltipCategory = (HTMLElement) contextManager.getContextualInstance("ContextualProvider_factory__e_d_HTMLElement__quals__Universal", new Class[] { }, new Annotation[] { new Named() {
-        public Class annotationType() {
-          return Named.class;
-        }
-        public String toString() {
-          return "@javax.inject.Named(value=span)";
-        }
-        public String value() {
-          return "span";
-        }
-    } });
-    registerDependentScopedReference(instance, MapTooltip_lblTooltipCategory);
-    MapTooltip_HTMLElement_lblTooltipCategory(instance, MapTooltip_lblTooltipCategory);
     final HTMLElement MapTooltip_lblTooltipTitle = (HTMLElement) contextManager.getContextualInstance("ContextualProvider_factory__e_d_HTMLElement__quals__Universal", new Class[] { }, new Annotation[] { new Named() {
         public Class annotationType() {
           return Named.class;
@@ -166,6 +153,22 @@ public class Type_factory__o_d_r_c_c_c_m_w_MapTooltip__quals__j_e_i_Any_j_e_i_De
     } });
     registerDependentScopedReference(instance, MapTooltip_lblTooltipTitle);
     MapTooltip_HTMLElement_lblTooltipTitle(instance, MapTooltip_lblTooltipTitle);
+    final HTMLElement MapTooltip_lblTooltipCategory = (HTMLElement) contextManager.getContextualInstance("ContextualProvider_factory__e_d_HTMLElement__quals__Universal", new Class[] { }, new Annotation[] { new Named() {
+        public Class annotationType() {
+          return Named.class;
+        }
+        public String toString() {
+          return "@javax.inject.Named(value=span)";
+        }
+        public String value() {
+          return "span";
+        }
+    } });
+    registerDependentScopedReference(instance, MapTooltip_lblTooltipCategory);
+    MapTooltip_HTMLElement_lblTooltipCategory(instance, MapTooltip_lblTooltipCategory);
+    final HTMLDivElement MapTooltip_mapTooltipContainer = (HTMLDivElement) contextManager.getInstance("ExtensionProvided_factory__e_d_HTMLDivElement__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
+    registerDependentScopedReference(instance, MapTooltip_mapTooltipContainer);
+    MapTooltip_HTMLDivElement_mapTooltipContainer(instance, MapTooltip_mapTooltipContainer);
     final HTMLElement MapTooltip_lblTooltipValue = (HTMLElement) contextManager.getContextualInstance("ContextualProvider_factory__e_d_HTMLElement__quals__Universal", new Class[] { }, new Annotation[] { new Named() {
         public Class annotationType() {
           return Named.class;
@@ -179,9 +182,6 @@ public class Type_factory__o_d_r_c_c_c_m_w_MapTooltip__quals__j_e_i_Any_j_e_i_De
     } });
     registerDependentScopedReference(instance, MapTooltip_lblTooltipValue);
     MapTooltip_HTMLElement_lblTooltipValue(instance, MapTooltip_lblTooltipValue);
-    final HTMLDivElement MapTooltip_mapTooltipContainer = (HTMLDivElement) contextManager.getInstance("ExtensionProvided_factory__e_d_HTMLDivElement__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
-    registerDependentScopedReference(instance, MapTooltip_mapTooltipContainer);
-    MapTooltip_HTMLDivElement_mapTooltipContainer(instance, MapTooltip_mapTooltipContainer);
     o_d_r_c_c_c_m_w_MapTooltipTemplateResource templateForMapTooltip = GWT.create(o_d_r_c_c_c_m_w_MapTooltipTemplateResource.class);
     Element parentElementForTemplateOfMapTooltip = TemplateUtil.getRootTemplateParentElement(templateForMapTooltip.getContents().getText(), "org/dashbuilder/renderer/c3/client/charts/map/widgets/MapTooltip.html", "");
     TemplateUtil.translateTemplate("org/dashbuilder/renderer/c3/client/charts/map/widgets/MapTooltip.html", TemplateUtil.getRootTemplateElement(parentElementForTemplateOfMapTooltip));

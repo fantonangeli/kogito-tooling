@@ -179,11 +179,11 @@ public class Type_factory__o_d_c_s_DashboardsListScreen__quals__j_e_i_Any_j_e_i_
     DashboardsListScreen_RouterScreen_router(instance, DashboardsListScreen_router);
     final RuntimeClientLoader DashboardsListScreen_clientLoader = (RuntimeClientLoader) contextManager.getInstance("Type_factory__o_d_c_RuntimeClientLoader__quals__j_e_i_Any_j_e_i_Default");
     DashboardsListScreen_RuntimeClientLoader_clientLoader(instance, DashboardsListScreen_clientLoader);
+    final PerspectiveManagerImpl DashboardsListScreen_perspectiveManager = (PerspectiveManagerImpl) contextManager.getInstance("Type_factory__o_u_c_m_PerspectiveManagerImpl__quals__j_e_i_Any_j_e_i_Default");
+    DashboardsListScreen_PerspectiveManager_perspectiveManager(instance, DashboardsListScreen_perspectiveManager);
     final DashboardsListScreenView DashboardsListScreen_view = (DashboardsListScreenView) contextManager.getInstance("Type_factory__o_d_c_s_v_DashboardsListScreenView__quals__j_e_i_Any_j_e_i_Default");
     registerDependentScopedReference(instance, DashboardsListScreen_view);
     DashboardsListScreen_View_view(instance, DashboardsListScreen_view);
-    final PerspectiveManagerImpl DashboardsListScreen_perspectiveManager = (PerspectiveManagerImpl) contextManager.getInstance("Type_factory__o_u_c_m_PerspectiveManagerImpl__quals__j_e_i_Any_j_e_i_Default");
-    DashboardsListScreen_PerspectiveManager_perspectiveManager(instance, DashboardsListScreen_perspectiveManager);
     final ManagedInstance DashboardsListScreen_dashboardCardInstance = (ManagedInstance) contextManager.getContextualInstance("ContextualProvider_factory__o_j_e_i_c_a_ManagedInstance__quals__Universal", new Class[] { DashboardCard.class }, new Annotation[] { });
     registerDependentScopedReference(instance, DashboardsListScreen_dashboardCardInstance);
     DashboardsListScreen_ManagedInstance_dashboardCardInstance(instance, DashboardsListScreen_dashboardCardInstance);

@@ -54,9 +54,6 @@ public class Type_factory__o_d_d_c_w_ExternalComponentView__quals__j_e_i_Any_j_e
   public ExternalComponentView createInstance(final ContextManager contextManager) {
     final ExternalComponentView instance = new ExternalComponentView();
     setIncompleteInstance(instance);
-    final HTMLParagraphElement ExternalComponentView_configurationDetails = (HTMLParagraphElement) contextManager.getInstance("ExtensionProvided_factory__e_d_HTMLParagraphElement__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
-    registerDependentScopedReference(instance, ExternalComponentView_configurationDetails);
-    ExternalComponentView_HTMLParagraphElement_configurationDetails(instance, ExternalComponentView_configurationDetails);
     final HTMLDivElement ExternalComponentView_configurationIssueRoot = (HTMLDivElement) contextManager.getInstance("ExtensionProvided_factory__e_d_HTMLDivElement__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
     registerDependentScopedReference(instance, ExternalComponentView_configurationIssueRoot);
     ExternalComponentView_HTMLDivElement_configurationIssueRoot(instance, ExternalComponentView_configurationIssueRoot);
@@ -69,6 +66,9 @@ public class Type_factory__o_d_d_c_w_ExternalComponentView__quals__j_e_i_Any_j_e
     final HTMLIFrameElement ExternalComponentView_externalComponentIFrame = (HTMLIFrameElement) contextManager.getInstance("ExtensionProvided_factory__e_d_HTMLIFrameElement__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
     registerDependentScopedReference(instance, ExternalComponentView_externalComponentIFrame);
     ExternalComponentView_HTMLIFrameElement_externalComponentIFrame(instance, ExternalComponentView_externalComponentIFrame);
+    final HTMLParagraphElement ExternalComponentView_configurationDetails = (HTMLParagraphElement) contextManager.getInstance("ExtensionProvided_factory__e_d_HTMLParagraphElement__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
+    registerDependentScopedReference(instance, ExternalComponentView_configurationDetails);
+    ExternalComponentView_HTMLParagraphElement_configurationDetails(instance, ExternalComponentView_configurationDetails);
     o_d_d_c_w_ExternalComponentViewTemplateResource templateForExternalComponentView = GWT.create(o_d_d_c_w_ExternalComponentViewTemplateResource.class);
     Element parentElementForTemplateOfExternalComponentView = TemplateUtil.getRootTemplateParentElement(templateForExternalComponentView.getContents().getText(), "org/dashbuilder/displayer/client/widgets/ExternalComponentView.html", "");
     TemplateUtil.translateTemplate("org/dashbuilder/displayer/client/widgets/ExternalComponentView.html", TemplateUtil.getRootTemplateElement(parentElementForTemplateOfExternalComponentView));

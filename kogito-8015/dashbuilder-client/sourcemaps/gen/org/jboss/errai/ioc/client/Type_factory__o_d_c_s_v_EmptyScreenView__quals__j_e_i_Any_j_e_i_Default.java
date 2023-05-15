@@ -59,12 +59,12 @@ public class Type_factory__o_d_c_s_v_EmptyScreenView__quals__j_e_i_Any_j_e_i_Def
     final HTMLDivElement EmptyScreenView_uploadContainer = (HTMLDivElement) contextManager.getInstance("ExtensionProvided_factory__e_d_HTMLDivElement__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
     registerDependentScopedReference(instance, EmptyScreenView_uploadContainer);
     EmptyScreenView_HTMLDivElement_uploadContainer(instance, EmptyScreenView_uploadContainer);
-    final HTMLDivElement EmptyScreenView_trySamplesContainer = (HTMLDivElement) contextManager.getInstance("ExtensionProvided_factory__e_d_HTMLDivElement__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
-    registerDependentScopedReference(instance, EmptyScreenView_trySamplesContainer);
-    EmptyScreenView_HTMLDivElement_trySamplesContainer(instance, EmptyScreenView_trySamplesContainer);
     final HTMLDivElement EmptyScreenView_emptyImport = (HTMLDivElement) contextManager.getInstance("ExtensionProvided_factory__e_d_HTMLDivElement__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
     registerDependentScopedReference(instance, EmptyScreenView_emptyImport);
     EmptyScreenView_HTMLDivElement_emptyImport(instance, EmptyScreenView_emptyImport);
+    final HTMLDivElement EmptyScreenView_trySamplesContainer = (HTMLDivElement) contextManager.getInstance("ExtensionProvided_factory__e_d_HTMLDivElement__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
+    registerDependentScopedReference(instance, EmptyScreenView_trySamplesContainer);
+    EmptyScreenView_HTMLDivElement_trySamplesContainer(instance, EmptyScreenView_trySamplesContainer);
     o_d_c_s_v_EmptyScreenViewTemplateResource templateForEmptyScreenView = GWT.create(o_d_c_s_v_EmptyScreenViewTemplateResource.class);
     Element parentElementForTemplateOfEmptyScreenView = TemplateUtil.getRootTemplateParentElement(templateForEmptyScreenView.getContents().getText(), "org/dashbuilder/client/screens/view/EmptyScreenView.html", "");
     TemplateUtil.translateTemplate("org/dashbuilder/client/screens/view/EmptyScreenView.html", TemplateUtil.getRootTemplateElement(parentElementForTemplateOfEmptyScreenView));
