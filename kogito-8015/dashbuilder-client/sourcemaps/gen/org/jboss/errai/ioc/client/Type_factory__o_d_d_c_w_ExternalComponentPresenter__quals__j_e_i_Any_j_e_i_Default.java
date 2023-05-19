@@ -19,11 +19,11 @@ public class Type_factory__o_d_d_c_w_ExternalComponentPresenter__quals__j_e_i_An
   public ExternalComponentPresenter createInstance(final ContextManager contextManager) {
     final ExternalComponentPresenter instance = new ExternalComponentPresenter();
     setIncompleteInstance(instance);
-    final ExternalComponentDispatcher ExternalComponentPresenter_dispatcher = (ExternalComponentDispatcher) contextManager.getInstance("Type_factory__o_d_d_c_c_ExternalComponentDispatcher__quals__j_e_i_Any_j_e_i_Default");
-    ExternalComponentPresenter_ExternalComponentDispatcher_dispatcher(instance, ExternalComponentPresenter_dispatcher);
     final ExternalComponentView ExternalComponentPresenter_view = (ExternalComponentView) contextManager.getInstance("Type_factory__o_d_d_c_w_ExternalComponentView__quals__j_e_i_Any_j_e_i_Default");
     registerDependentScopedReference(instance, ExternalComponentPresenter_view);
     ExternalComponentPresenter_View_view(instance, ExternalComponentPresenter_view);
+    final ExternalComponentDispatcher ExternalComponentPresenter_dispatcher = (ExternalComponentDispatcher) contextManager.getInstance("Type_factory__o_d_d_c_c_ExternalComponentDispatcher__quals__j_e_i_Any_j_e_i_Default");
+    ExternalComponentPresenter_ExternalComponentDispatcher_dispatcher(instance, ExternalComponentPresenter_dispatcher);
     final ExternalComponentMessageHelper ExternalComponentPresenter_messageHelper = (ExternalComponentMessageHelper) contextManager.getInstance("Producer_factory__o_d_d_e_ExternalComponentMessageHelper__quals__j_e_i_Any_j_e_i_Default");
     registerDependentScopedReference(instance, ExternalComponentPresenter_messageHelper);
     ExternalComponentPresenter_ExternalComponentMessageHelper_messageHelper(instance, ExternalComponentPresenter_messageHelper);

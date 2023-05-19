@@ -27,11 +27,11 @@ public class Type_factory__o_u_c_w_w_d_CompassDropController__quals__j_e_i_Any_j
     CompassDropController_PanelManager_panelManager(instance, CompassDropController_panelManager);
     final WorkbenchDragAndDropManager CompassDropController_dndManager = (WorkbenchDragAndDropManager) contextManager.getInstance("Type_factory__o_u_c_w_w_d_WorkbenchDragAndDropManager__quals__j_e_i_Any_j_e_i_Default");
     CompassDropController_WorkbenchDragAndDropManager_dndManager(instance, CompassDropController_dndManager);
-    final CompassWidgetImpl CompassDropController_compass = (CompassWidgetImpl) contextManager.getInstance("Type_factory__o_u_c_v_p_d_CompassWidgetImpl__quals__j_e_i_Any_j_e_i_Default");
-    CompassDropController_CompassWidget_compass(instance, CompassDropController_compass);
     final Event CompassDropController_workbenchPartDroppedEvent = (Event) contextManager.getContextualInstance("ContextualProvider_factory__j_e_e_Event__quals__Universal", new Class[] { DropPlaceEvent.class }, new Annotation[] { });
     registerDependentScopedReference(instance, CompassDropController_workbenchPartDroppedEvent);
     CompassDropController_Event_workbenchPartDroppedEvent(instance, CompassDropController_workbenchPartDroppedEvent);
+    final CompassWidgetImpl CompassDropController_compass = (CompassWidgetImpl) contextManager.getInstance("Type_factory__o_u_c_v_p_d_CompassWidgetImpl__quals__j_e_i_Any_j_e_i_Default");
+    CompassDropController_CompassWidget_compass(instance, CompassDropController_compass);
     setIncompleteInstance(null);
     return instance;
   }

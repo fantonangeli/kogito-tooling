@@ -47,18 +47,18 @@ public class Type_factory__o_d_c_n_w_NavDropDownWidgetView__quals__j_e_i_Any_j_e
   public NavDropDownWidgetView createInstance(final ContextManager contextManager) {
     final NavDropDownWidgetView instance = new NavDropDownWidgetView();
     setIncompleteInstance(instance);
-    final Anchor NavDropDownWidgetView_dropDownAnchor = (Anchor) contextManager.getInstance("ExtensionProvided_factory__o_j_e_c_c_d_Anchor__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
-    registerDependentScopedReference(instance, NavDropDownWidgetView_dropDownAnchor);
-    NavDropDownWidgetView_Anchor_dropDownAnchor(instance, NavDropDownWidgetView_dropDownAnchor);
-    final UnorderedList NavDropDownWidgetView_dropDownMenu = (UnorderedList) contextManager.getInstance("ExtensionProvided_factory__o_j_e_c_c_d_UnorderedList__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
-    registerDependentScopedReference(instance, NavDropDownWidgetView_dropDownMenu);
-    NavDropDownWidgetView_UnorderedList_dropDownMenu(instance, NavDropDownWidgetView_dropDownMenu);
-    final ListItem NavDropDownWidgetView_dropDownItem = (ListItem) contextManager.getInstance("ExtensionProvided_factory__o_j_e_c_c_d_ListItem__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
-    registerDependentScopedReference(instance, NavDropDownWidgetView_dropDownItem);
-    NavDropDownWidgetView_ListItem_dropDownItem(instance, NavDropDownWidgetView_dropDownItem);
     final Span NavDropDownWidgetView_dropDownName = (Span) contextManager.getInstance("ExtensionProvided_factory__o_j_e_c_c_d_Span__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
     registerDependentScopedReference(instance, NavDropDownWidgetView_dropDownName);
     NavDropDownWidgetView_Span_dropDownName(instance, NavDropDownWidgetView_dropDownName);
+    final Anchor NavDropDownWidgetView_dropDownAnchor = (Anchor) contextManager.getInstance("ExtensionProvided_factory__o_j_e_c_c_d_Anchor__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
+    registerDependentScopedReference(instance, NavDropDownWidgetView_dropDownAnchor);
+    NavDropDownWidgetView_Anchor_dropDownAnchor(instance, NavDropDownWidgetView_dropDownAnchor);
+    final ListItem NavDropDownWidgetView_dropDownItem = (ListItem) contextManager.getInstance("ExtensionProvided_factory__o_j_e_c_c_d_ListItem__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
+    registerDependentScopedReference(instance, NavDropDownWidgetView_dropDownItem);
+    NavDropDownWidgetView_ListItem_dropDownItem(instance, NavDropDownWidgetView_dropDownItem);
+    final UnorderedList NavDropDownWidgetView_dropDownMenu = (UnorderedList) contextManager.getInstance("ExtensionProvided_factory__o_j_e_c_c_d_UnorderedList__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
+    registerDependentScopedReference(instance, NavDropDownWidgetView_dropDownMenu);
+    NavDropDownWidgetView_UnorderedList_dropDownMenu(instance, NavDropDownWidgetView_dropDownMenu);
     o_d_c_n_w_NavDropDownWidgetViewTemplateResource templateForNavDropDownWidgetView = GWT.create(o_d_c_n_w_NavDropDownWidgetViewTemplateResource.class);
     Element parentElementForTemplateOfNavDropDownWidgetView = TemplateUtil.getRootTemplateParentElement(templateForNavDropDownWidgetView.getContents().getText(), "org/dashbuilder/client/navigation/widget/NavDropDownWidgetView.html", "");
     TemplateUtil.translateTemplate("org/dashbuilder/client/navigation/widget/NavDropDownWidgetView.html", TemplateUtil.getRootTemplateElement(parentElementForTemplateOfNavDropDownWidgetView));
