@@ -66,12 +66,12 @@ public class Type_factory__o_d_c_n_w_NavMenuBarWidgetView__quals__j_e_i_Any_j_e_
     } });
     registerDependentScopedReference(instance, NavMenuBarWidgetView_nav);
     NavMenuBarWidgetView_HTMLElement_nav(instance, NavMenuBarWidgetView_nav);
-    final Div NavMenuBarWidgetView_mainDiv = (Div) contextManager.getInstance("ExtensionProvided_factory__o_j_e_c_c_d_Div__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
-    registerDependentScopedReference(instance, NavMenuBarWidgetView_mainDiv);
-    NavMenuBarWidgetView_Div_mainDiv(instance, NavMenuBarWidgetView_mainDiv);
     final UnorderedList NavMenuBarWidgetView_navBar = (UnorderedList) contextManager.getInstance("ExtensionProvided_factory__o_j_e_c_c_d_UnorderedList__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
     registerDependentScopedReference(instance, NavMenuBarWidgetView_navBar);
     NavMenuBarWidgetView_UnorderedList_navBar(instance, NavMenuBarWidgetView_navBar);
+    final Div NavMenuBarWidgetView_mainDiv = (Div) contextManager.getInstance("ExtensionProvided_factory__o_j_e_c_c_d_Div__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
+    registerDependentScopedReference(instance, NavMenuBarWidgetView_mainDiv);
+    NavMenuBarWidgetView_Div_mainDiv(instance, NavMenuBarWidgetView_mainDiv);
     o_d_c_n_w_NavMenuBarWidgetViewTemplateResource templateForNavMenuBarWidgetView = GWT.create(o_d_c_n_w_NavMenuBarWidgetViewTemplateResource.class);
     Element parentElementForTemplateOfNavMenuBarWidgetView = TemplateUtil.getRootTemplateParentElement(templateForNavMenuBarWidgetView.getContents().getText(), "org/dashbuilder/client/navigation/widget/NavMenuBarWidgetView.html", "");
     TemplateUtil.translateTemplate("org/dashbuilder/client/navigation/widget/NavMenuBarWidgetView.html", TemplateUtil.getRootTemplateElement(parentElementForTemplateOfNavMenuBarWidgetView));

@@ -162,10 +162,10 @@ public class Type_factory__o_u_c_m_ActivityManagerImpl__quals__j_e_i_Any_j_e_i_D
     final SyncBeanManager ActivityManagerImpl_iocManager = (SyncBeanManager) contextManager.getInstance("Producer_factory__o_j_e_i_c_c_SyncBeanManager__quals__j_e_i_Any_j_e_i_Default");
     registerDependentScopedReference(instance, ActivityManagerImpl_iocManager);
     ActivityManagerImpl_SyncBeanManager_iocManager(instance, ActivityManagerImpl_iocManager);
-    final ActivityBeansCache ActivityManagerImpl_activityBeansCache = (ActivityBeansCache) contextManager.getInstance("Type_factory__o_u_c_m_ActivityBeansCache__quals__j_e_i_Any_j_e_i_Default");
-    ActivityManagerImpl_ActivityBeansCache_activityBeansCache(instance, ActivityManagerImpl_activityBeansCache);
     final ActivityLifecycleErrorHandler ActivityManagerImpl_lifecycleErrorHandler = (ActivityLifecycleErrorHandler) contextManager.getInstance("Type_factory__o_u_c_m_ActivityLifecycleErrorHandler__quals__j_e_i_Any_j_e_i_Default");
     ActivityManagerImpl_ActivityLifecycleErrorHandler_lifecycleErrorHandler(instance, ActivityManagerImpl_lifecycleErrorHandler);
+    final ActivityBeansCache ActivityManagerImpl_activityBeansCache = (ActivityBeansCache) contextManager.getInstance("Type_factory__o_u_c_m_ActivityBeansCache__quals__j_e_i_Any_j_e_i_Default");
+    ActivityManagerImpl_ActivityBeansCache_activityBeansCache(instance, ActivityManagerImpl_activityBeansCache);
     setIncompleteInstance(null);
     return instance;
   }

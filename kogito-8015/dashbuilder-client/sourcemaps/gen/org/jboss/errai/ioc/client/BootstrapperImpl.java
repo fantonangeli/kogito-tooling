@@ -332,6 +332,7 @@ import org.uberfire.ext.layout.editor.client.infra.LayoutDragComponentHelper;
 import org.uberfire.ext.layout.editor.client.infra.LayoutEditorCssHelper;
 import org.uberfire.ext.plugin.client.RuntimePluginsEntryPoint;
 import org.uberfire.ext.plugin.client.perspective.editor.layout.editor.HTMLLayoutDragComponent;
+import org.uberfire.ext.plugin.client.perspective.editor.layout.editor.MarkdownLayoutDragComponent;
 import org.uberfire.ext.plugin.client.perspective.editor.layout.editor.TargetDivDragComponent;
 import org.uberfire.ext.plugin.client.resources.i18n.PerspectiveEditorPaletteI18nImpl;
 import org.uberfire.ext.widgets.common.client.CommonsEntryPoint;
@@ -707,6 +708,7 @@ public class BootstrapperImpl implements Bootstrapper {
   public abstract class JsType_factory__o_u_w_m_CompassPosition__quals__Universal extends Factory<CompassPosition> { }
   public abstract class Type_factory__o_u_c_m_ActivityManagerImpl__quals__j_e_i_Any_j_e_i_Default extends Factory<ActivityManagerImpl> { }
   public abstract class Type_factory__o_d_r_c_c_C3Renderer__quals__j_e_i_Any_j_e_i_Default extends Factory<C3Renderer> { }
+  public abstract class Type_factory__o_u_e_p_c_p_e_l_e_MarkdownLayoutDragComponent__quals__j_e_i_Any_j_e_i_Default extends Factory<MarkdownLayoutDragComponent> { }
   public abstract class Type_factory__o_d_c_n_w_NavDropDownWidget__quals__j_e_i_Any_j_e_i_Default extends Factory<NavDropDownWidget> { }
   public abstract class Type_factory__o_j_e_i_c_l_i_StateChangeImpl__quals__j_e_i_Any_j_e_i_Default extends Factory<StateChangeImpl> { }
   public abstract class Provider_factory__o_j_e_b_c_a_m_RequestDispatcher__quals__j_e_i_Any_j_e_i_Default extends Factory<RequestDispatcher> { }
@@ -1081,6 +1083,7 @@ public class BootstrapperImpl implements Bootstrapper {
     org_jboss_errai_ioc_client_container_DependentScopeContext_context.registerFactory((Factory<CompassPosition>) GWT.create(JsType_factory__o_u_w_m_CompassPosition__quals__Universal.class));
     org_jboss_errai_ioc_client_container_ApplicationScopedContext_context.registerFactory((Factory<ActivityManagerImpl>) GWT.create(Type_factory__o_u_c_m_ActivityManagerImpl__quals__j_e_i_Any_j_e_i_Default.class));
     org_jboss_errai_ioc_client_container_ApplicationScopedContext_context.registerFactory((Factory<C3Renderer>) GWT.create(Type_factory__o_d_r_c_c_C3Renderer__quals__j_e_i_Any_j_e_i_Default.class));
+    org_jboss_errai_ioc_client_container_DependentScopeContext_context.registerFactory((Factory<MarkdownLayoutDragComponent>) GWT.create(Type_factory__o_u_e_p_c_p_e_l_e_MarkdownLayoutDragComponent__quals__j_e_i_Any_j_e_i_Default.class));
     org_jboss_errai_ioc_client_container_DependentScopeContext_context.registerFactory((Factory<NavDropDownWidget>) GWT.create(Type_factory__o_d_c_n_w_NavDropDownWidget__quals__j_e_i_Any_j_e_i_Default.class));
     org_jboss_errai_ioc_client_container_DependentScopeContext_context.registerFactory((Factory<StateChangeImpl>) GWT.create(Type_factory__o_j_e_i_c_l_i_StateChangeImpl__quals__j_e_i_Any_j_e_i_Default.class));
     org_jboss_errai_ioc_client_container_DependentScopeContext_context.registerFactory((Factory<RequestDispatcher>) GWT.create(Provider_factory__o_j_e_b_c_a_m_RequestDispatcher__quals__j_e_i_Any_j_e_i_Default.class));
@@ -1120,7 +1123,7 @@ public class BootstrapperImpl implements Bootstrapper {
     logger.debug("Registering factories with contexts.");
     long start = System.currentTimeMillis();
     registerFactories(org_jboss_errai_ioc_client_container_DependentScopeContext_context, org_jboss_errai_ioc_client_container_ApplicationScopedContext_context);
-    logger.debug("Registered 362 factories in {}ms", System.currentTimeMillis() - start);
+    logger.debug("Registered 363 factories in {}ms", System.currentTimeMillis() - start);
     logger.debug("Adding contexts to context manager...");
     start = System.currentTimeMillis();
     contextManager.addContext(org_jboss_errai_ioc_client_container_DependentScopeContext_context);

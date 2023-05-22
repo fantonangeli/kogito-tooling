@@ -24,8 +24,8 @@ public class Type_factory__o_d_d_c_w_DisplayerViewer__quals__j_e_i_Any_j_e_i_Def
   }
 
   public DisplayerViewer createInstance(final ContextManager contextManager) {
-    final RendererSelector _rendererSelector_1 = (RendererSelector) contextManager.getInstance("Type_factory__o_d_d_c_w_RendererSelector__quals__j_e_i_Any_j_e_i_Default");
     final DisplayerLocator _displayerLocator_0 = (DisplayerLocator) contextManager.getInstance("Type_factory__o_d_d_c_DisplayerLocator__quals__j_e_i_Any_j_e_i_Default");
+    final RendererSelector _rendererSelector_1 = (RendererSelector) contextManager.getInstance("Type_factory__o_d_d_c_w_RendererSelector__quals__j_e_i_Any_j_e_i_Default");
     final DisplayerViewer instance = new DisplayerViewer(_displayerLocator_0, _rendererSelector_1);
     registerDependentScopedReference(instance, _rendererSelector_1);
     setIncompleteInstance(instance);

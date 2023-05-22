@@ -124,10 +124,10 @@ public class Type_factory__o_d_c_e_ExternalDataSetClientProvider__quals__j_e_i_A
   public ExternalDataSetClientProvider createInstance(final ContextManager contextManager) {
     final ExternalDataSetClientProvider instance = new ExternalDataSetClientProvider();
     setIncompleteInstance(instance);
-    final ClientDataSetManager ExternalDataSetClientProvider_clientDataSetManager = (ClientDataSetManager) contextManager.getInstance("Type_factory__o_d_d_c_ClientDataSetManager__quals__j_e_i_Any_j_e_i_Default");
-    ExternalDataSetClientProvider_ClientDataSetManager_clientDataSetManager(instance, ExternalDataSetClientProvider_clientDataSetManager);
     final ExternalDataCallbackCoordinator ExternalDataSetClientProvider_dataSetCallbackCoordinator = (ExternalDataCallbackCoordinator) contextManager.getInstance("Type_factory__o_d_c_e_ExternalDataCallbackCoordinator__quals__j_e_i_Any_j_e_i_Default");
     ExternalDataSetClientProvider_ExternalDataCallbackCoordinator_dataSetCallbackCoordinator(instance, ExternalDataSetClientProvider_dataSetCallbackCoordinator);
+    final ClientDataSetManager ExternalDataSetClientProvider_clientDataSetManager = (ClientDataSetManager) contextManager.getInstance("Type_factory__o_d_d_c_ClientDataSetManager__quals__j_e_i_Any_j_e_i_Default");
+    ExternalDataSetClientProvider_ClientDataSetManager_clientDataSetManager(instance, ExternalDataSetClientProvider_clientDataSetManager);
     setIncompleteInstance(null);
     return instance;
   }

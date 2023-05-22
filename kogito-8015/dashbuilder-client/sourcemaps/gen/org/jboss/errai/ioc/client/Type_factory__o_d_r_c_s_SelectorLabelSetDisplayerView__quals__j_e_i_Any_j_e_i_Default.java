@@ -41,12 +41,12 @@ public class Type_factory__o_d_r_c_s_SelectorLabelSetDisplayerView__quals__j_e_i
     final Div SelectorLabelSetDisplayerView_containerDiv = (Div) contextManager.getInstance("ExtensionProvided_factory__o_j_e_c_c_d_Div__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
     registerDependentScopedReference(instance, SelectorLabelSetDisplayerView_containerDiv);
     SelectorLabelSetDisplayerView_Div_containerDiv(instance, SelectorLabelSetDisplayerView_containerDiv);
-    final Div SelectorLabelSetDisplayerView_labelSetDiv = (Div) contextManager.getInstance("ExtensionProvided_factory__o_j_e_c_c_d_Div__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
-    registerDependentScopedReference(instance, SelectorLabelSetDisplayerView_labelSetDiv);
-    SelectorLabelSetDisplayerView_Div_labelSetDiv(instance, SelectorLabelSetDisplayerView_labelSetDiv);
     final Span SelectorLabelSetDisplayerView_titleSpan = (Span) contextManager.getInstance("ExtensionProvided_factory__o_j_e_c_c_d_Span__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
     registerDependentScopedReference(instance, SelectorLabelSetDisplayerView_titleSpan);
     SelectorLabelSetDisplayerView_Span_titleSpan(instance, SelectorLabelSetDisplayerView_titleSpan);
+    final Div SelectorLabelSetDisplayerView_labelSetDiv = (Div) contextManager.getInstance("ExtensionProvided_factory__o_j_e_c_c_d_Div__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
+    registerDependentScopedReference(instance, SelectorLabelSetDisplayerView_labelSetDiv);
+    SelectorLabelSetDisplayerView_Div_labelSetDiv(instance, SelectorLabelSetDisplayerView_labelSetDiv);
     final Span SelectorLabelSetDisplayerView_noDataSpan = (Span) contextManager.getInstance("ExtensionProvided_factory__o_j_e_c_c_d_Span__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
     registerDependentScopedReference(instance, SelectorLabelSetDisplayerView_noDataSpan);
     SelectorLabelSetDisplayerView_Span_noDataSpan(instance, SelectorLabelSetDisplayerView_noDataSpan);
