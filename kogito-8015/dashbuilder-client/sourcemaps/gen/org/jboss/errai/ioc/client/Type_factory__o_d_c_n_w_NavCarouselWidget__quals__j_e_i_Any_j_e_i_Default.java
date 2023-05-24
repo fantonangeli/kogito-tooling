@@ -27,9 +27,9 @@ public class Type_factory__o_d_c_n_w_NavCarouselWidget__quals__j_e_i_Any_j_e_i_D
   }
 
   public NavCarouselWidget createInstance(final ContextManager contextManager) {
+    final NavigationManager _navigationManager_1 = (NavigationManagerImpl) contextManager.getInstance("Type_factory__o_d_c_n_i_NavigationManagerImpl__quals__j_e_i_Any_j_e_i_Default");
     final PerspectivePluginManager _perspectivePluginManager_2 = (RuntimePerspectivePluginManager) contextManager.getInstance("Type_factory__o_d_c_p_RuntimePerspectivePluginManager__quals__j_e_i_Any_j_e_i_Default");
     final View _view_0 = (NavCarouselWidgetView) contextManager.getInstance("Type_factory__o_d_c_n_w_NavCarouselWidgetView__quals__j_e_i_Any_j_e_i_Default");
-    final NavigationManager _navigationManager_1 = (NavigationManagerImpl) contextManager.getInstance("Type_factory__o_d_c_n_i_NavigationManagerImpl__quals__j_e_i_Any_j_e_i_Default");
     final NavCarouselWidget instance = new NavCarouselWidget(_view_0, _navigationManager_1, _perspectivePluginManager_2);
     registerDependentScopedReference(instance, _view_0);
     setIncompleteInstance(instance);

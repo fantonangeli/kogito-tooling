@@ -85,10 +85,10 @@ public class Type_factory__o_d_d_c_ClientSettings__quals__j_e_i_Any_j_e_i_Defaul
   public ClientSettings createInstance(final ContextManager contextManager) {
     final ClientSettings instance = new ClientSettings();
     setIncompleteInstance(instance);
-    final RendererManager ClientSettings_rendererManager = (RendererManager) contextManager.getInstance("Type_factory__o_d_d_c_RendererManager__quals__j_e_i_Any_j_e_i_Default");
-    ClientSettings_RendererManager_rendererManager(instance, ClientSettings_rendererManager);
     final RuntimeDataSetClientServices ClientSettings_dataSetClientServices = (RuntimeDataSetClientServices) contextManager.getInstance("Type_factory__o_d_c_s_RuntimeDataSetClientServices__quals__j_e_i_Any_j_e_i_Default");
     ClientSettings_DataSetClientServices_dataSetClientServices(instance, ClientSettings_dataSetClientServices);
+    final RendererManager ClientSettings_rendererManager = (RendererManager) contextManager.getInstance("Type_factory__o_d_d_c_RendererManager__quals__j_e_i_Any_j_e_i_Default");
+    ClientSettings_RendererManager_rendererManager(instance, ClientSettings_rendererManager);
     setIncompleteInstance(null);
     return instance;
   }

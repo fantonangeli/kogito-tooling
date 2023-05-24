@@ -27,27 +27,27 @@ public class Type_factory__o_u_c_w_Workbench__quals__j_e_i_Any_j_e_i_Default ext
   public Workbench createInstance(final ContextManager contextManager) {
     final Workbench instance = new Workbench();
     setIncompleteInstance(instance);
-    final LayoutSelection Workbench_layoutSelection = (LayoutSelection) contextManager.getInstance("Type_factory__o_u_c_w_LayoutSelection__quals__j_e_i_Any_j_e_i_Default");
-    Workbench_LayoutSelection_layoutSelection(instance, Workbench_layoutSelection);
     final Logger Workbench_logger = (Logger) contextManager.getInstance("ExtensionProvided_factory__o_s_Logger__quals__Universal");
     registerDependentScopedReference(instance, Workbench_logger);
     Workbench_Logger_logger(instance, Workbench_logger);
-    final ActivityBeansCache Workbench_activityBeansCache = (ActivityBeansCache) contextManager.getInstance("Type_factory__o_u_c_m_ActivityBeansCache__quals__j_e_i_Any_j_e_i_Default");
-    Workbench_ActivityBeansCache_activityBeansCache(instance, Workbench_activityBeansCache);
-    final Event Workbench_appReady = (Event) contextManager.getContextualInstance("ContextualProvider_factory__j_e_e_Event__quals__Universal", new Class[] { ApplicationReadyEvent.class }, new Annotation[] { });
-    registerDependentScopedReference(instance, Workbench_appReady);
-    Workbench_Event_appReady(instance, Workbench_appReady);
     final SyncBeanManager Workbench_iocManager = (SyncBeanManager) contextManager.getInstance("Producer_factory__o_j_e_i_c_c_SyncBeanManager__quals__j_e_i_Any_j_e_i_Default");
     registerDependentScopedReference(instance, Workbench_iocManager);
     Workbench_SyncBeanManager_iocManager(instance, Workbench_iocManager);
+    final Event Workbench_appReady = (Event) contextManager.getContextualInstance("ContextualProvider_factory__j_e_e_Event__quals__Universal", new Class[] { ApplicationReadyEvent.class }, new Annotation[] { });
+    registerDependentScopedReference(instance, Workbench_appReady);
+    Workbench_Event_appReady(instance, Workbench_appReady);
+    final ActivityBeansCache Workbench_activityBeansCache = (ActivityBeansCache) contextManager.getInstance("Type_factory__o_u_c_m_ActivityBeansCache__quals__j_e_i_Any_j_e_i_Default");
+    Workbench_ActivityBeansCache_activityBeansCache(instance, Workbench_activityBeansCache);
+    final PlaceManagerImpl Workbench_placeManager = (PlaceManagerImpl) contextManager.getInstance("Type_factory__o_u_c_m_PlaceManagerImpl__quals__j_e_i_Any_j_e_i_Default");
+    Workbench_PlaceManager_placeManager(instance, Workbench_placeManager);
+    final LayoutSelection Workbench_layoutSelection = (LayoutSelection) contextManager.getInstance("Type_factory__o_u_c_w_LayoutSelection__quals__j_e_i_Any_j_e_i_Default");
+    Workbench_LayoutSelection_layoutSelection(instance, Workbench_layoutSelection);
     final ClientMessageBus Workbench_bus = (ClientMessageBus) contextManager.getInstance("Producer_factory__o_j_e_b_c_a_ClientMessageBus__quals__j_e_i_Any_j_e_i_Default");
     registerDependentScopedReference(instance, Workbench_bus);
     Workbench_ClientMessageBus_bus(instance, Workbench_bus);
     final ManagedInstance Workbench_workbenchCustomStandalonePerspectiveDefinition = (ManagedInstance) contextManager.getContextualInstance("ContextualProvider_factory__o_j_e_i_c_a_ManagedInstance__quals__Universal", new Class[] { WorkbenchCustomStandalonePerspectiveDefinition.class }, new Annotation[] { });
     registerDependentScopedReference(instance, Workbench_workbenchCustomStandalonePerspectiveDefinition);
     Workbench_ManagedInstance_workbenchCustomStandalonePerspectiveDefinition(instance, Workbench_workbenchCustomStandalonePerspectiveDefinition);
-    final PlaceManagerImpl Workbench_placeManager = (PlaceManagerImpl) contextManager.getInstance("Type_factory__o_u_c_m_PlaceManagerImpl__quals__j_e_i_Any_j_e_i_Default");
-    Workbench_PlaceManager_placeManager(instance, Workbench_placeManager);
     InitVotes.registerOneTimeInitCallback(new Runnable() {
       public void run() {
         Workbench_afterInit(instance);

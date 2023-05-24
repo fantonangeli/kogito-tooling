@@ -48,15 +48,15 @@ public class Type_factory__o_d_c_n_w_NavCarouselWidgetView__quals__j_e_i_Any_j_e
     final NavCarouselWidgetView instance = new NavCarouselWidgetView(_alertBox_0);
     registerDependentScopedReference(instance, _alertBox_0);
     setIncompleteInstance(instance);
+    final Div NavCarouselWidgetView_slidesDiv = (Div) contextManager.getInstance("ExtensionProvided_factory__o_j_e_c_c_d_Div__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
+    registerDependentScopedReference(instance, NavCarouselWidgetView_slidesDiv);
+    NavCarouselWidgetView_Div_slidesDiv(instance, NavCarouselWidgetView_slidesDiv);
     final Div NavCarouselWidgetView_mainDiv = (Div) contextManager.getInstance("ExtensionProvided_factory__o_j_e_c_c_d_Div__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
     registerDependentScopedReference(instance, NavCarouselWidgetView_mainDiv);
     NavCarouselWidgetView_Div_mainDiv(instance, NavCarouselWidgetView_mainDiv);
     final Div NavCarouselWidgetView_carouselDiv = (Div) contextManager.getInstance("ExtensionProvided_factory__o_j_e_c_c_d_Div__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
     registerDependentScopedReference(instance, NavCarouselWidgetView_carouselDiv);
     NavCarouselWidgetView_Div_carouselDiv(instance, NavCarouselWidgetView_carouselDiv);
-    final Div NavCarouselWidgetView_slidesDiv = (Div) contextManager.getInstance("ExtensionProvided_factory__o_j_e_c_c_d_Div__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
-    registerDependentScopedReference(instance, NavCarouselWidgetView_slidesDiv);
-    NavCarouselWidgetView_Div_slidesDiv(instance, NavCarouselWidgetView_slidesDiv);
     o_d_c_n_w_NavCarouselWidgetViewTemplateResource templateForNavCarouselWidgetView = GWT.create(o_d_c_n_w_NavCarouselWidgetViewTemplateResource.class);
     Element parentElementForTemplateOfNavCarouselWidgetView = TemplateUtil.getRootTemplateParentElement(templateForNavCarouselWidgetView.getContents().getText(), "org/dashbuilder/client/navigation/widget/NavCarouselWidgetView.html", "");
     TemplateUtil.translateTemplate("org/dashbuilder/client/navigation/widget/NavCarouselWidgetView.html", TemplateUtil.getRootTemplateElement(parentElementForTemplateOfNavCarouselWidgetView));

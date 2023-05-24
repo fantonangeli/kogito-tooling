@@ -19,14 +19,14 @@ public class Type_factory__o_u_e_l_e_c_g_BootstrapLayoutGenerator__quals__j_e_i_
   public BootstrapLayoutGenerator createInstance(final ContextManager contextManager) {
     final BootstrapLayoutGenerator instance = new BootstrapLayoutGenerator();
     setIncompleteInstance(instance);
+    final Elemental2DomUtil AbstractLayoutGenerator_elemental2Util = (Elemental2DomUtil) contextManager.getInstance("Type_factory__o_j_e_c_c_d_e_Elemental2DomUtil__quals__j_e_i_Any_j_e_i_Default");
+    registerDependentScopedReference(instance, AbstractLayoutGenerator_elemental2Util);
+    AbstractLayoutGenerator_Elemental2DomUtil_elemental2Util(instance, AbstractLayoutGenerator_elemental2Util);
     final BootstrapLayoutGeneratorDriver BootstrapLayoutGenerator_bootstrapDriver = (BootstrapLayoutGeneratorDriver) contextManager.getInstance("Type_factory__o_u_e_l_e_c_g_BootstrapLayoutGeneratorDriver__quals__j_e_i_Any_j_e_i_Default");
     registerDependentScopedReference(instance, BootstrapLayoutGenerator_bootstrapDriver);
     BootstrapLayoutGenerator_BootstrapLayoutGeneratorDriver_bootstrapDriver(instance, BootstrapLayoutGenerator_bootstrapDriver);
     final LayoutEditorCssHelper AbstractLayoutGenerator_cssPropertiesHelper = (LayoutEditorCssHelper) contextManager.getInstance("Type_factory__o_u_e_l_e_c_i_LayoutEditorCssHelper__quals__j_e_i_Any_j_e_i_Default");
     AbstractLayoutGenerator_LayoutEditorCssHelper_cssPropertiesHelper(instance, AbstractLayoutGenerator_cssPropertiesHelper);
-    final Elemental2DomUtil AbstractLayoutGenerator_elemental2Util = (Elemental2DomUtil) contextManager.getInstance("Type_factory__o_j_e_c_c_d_e_Elemental2DomUtil__quals__j_e_i_Any_j_e_i_Default");
-    registerDependentScopedReference(instance, AbstractLayoutGenerator_elemental2Util);
-    AbstractLayoutGenerator_Elemental2DomUtil_elemental2Util(instance, AbstractLayoutGenerator_elemental2Util);
     setIncompleteInstance(null);
     return instance;
   }
@@ -39,19 +39,19 @@ public class Type_factory__o_u_e_l_e_c_g_BootstrapLayoutGenerator__quals__j_e_i_
     instance.@org.uberfire.ext.layout.editor.client.generator.AbstractLayoutGenerator::cssPropertiesHelper = value;
   }-*/;
 
-  native static BootstrapLayoutGeneratorDriver BootstrapLayoutGenerator_BootstrapLayoutGeneratorDriver_bootstrapDriver(BootstrapLayoutGenerator instance) /*-{
-    return instance.@org.uberfire.ext.layout.editor.client.generator.BootstrapLayoutGenerator::bootstrapDriver;
-  }-*/;
-
-  native static void BootstrapLayoutGenerator_BootstrapLayoutGeneratorDriver_bootstrapDriver(BootstrapLayoutGenerator instance, BootstrapLayoutGeneratorDriver value) /*-{
-    instance.@org.uberfire.ext.layout.editor.client.generator.BootstrapLayoutGenerator::bootstrapDriver = value;
-  }-*/;
-
   native static Elemental2DomUtil AbstractLayoutGenerator_Elemental2DomUtil_elemental2Util(AbstractLayoutGenerator instance) /*-{
     return instance.@org.uberfire.ext.layout.editor.client.generator.AbstractLayoutGenerator::elemental2Util;
   }-*/;
 
   native static void AbstractLayoutGenerator_Elemental2DomUtil_elemental2Util(AbstractLayoutGenerator instance, Elemental2DomUtil value) /*-{
     instance.@org.uberfire.ext.layout.editor.client.generator.AbstractLayoutGenerator::elemental2Util = value;
+  }-*/;
+
+  native static BootstrapLayoutGeneratorDriver BootstrapLayoutGenerator_BootstrapLayoutGeneratorDriver_bootstrapDriver(BootstrapLayoutGenerator instance) /*-{
+    return instance.@org.uberfire.ext.layout.editor.client.generator.BootstrapLayoutGenerator::bootstrapDriver;
+  }-*/;
+
+  native static void BootstrapLayoutGenerator_BootstrapLayoutGeneratorDriver_bootstrapDriver(BootstrapLayoutGenerator instance, BootstrapLayoutGeneratorDriver value) /*-{
+    instance.@org.uberfire.ext.layout.editor.client.generator.BootstrapLayoutGenerator::bootstrapDriver = value;
   }-*/;
 }

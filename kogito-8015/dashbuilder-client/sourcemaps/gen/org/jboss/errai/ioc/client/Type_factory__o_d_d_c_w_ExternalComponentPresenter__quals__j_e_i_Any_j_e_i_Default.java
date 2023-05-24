@@ -19,14 +19,14 @@ public class Type_factory__o_d_d_c_w_ExternalComponentPresenter__quals__j_e_i_An
   public ExternalComponentPresenter createInstance(final ContextManager contextManager) {
     final ExternalComponentPresenter instance = new ExternalComponentPresenter();
     setIncompleteInstance(instance);
-    final ExternalComponentMessageHelper ExternalComponentPresenter_messageHelper = (ExternalComponentMessageHelper) contextManager.getInstance("Producer_factory__o_d_d_e_ExternalComponentMessageHelper__quals__j_e_i_Any_j_e_i_Default");
-    registerDependentScopedReference(instance, ExternalComponentPresenter_messageHelper);
-    ExternalComponentPresenter_ExternalComponentMessageHelper_messageHelper(instance, ExternalComponentPresenter_messageHelper);
-    final ExternalComponentDispatcher ExternalComponentPresenter_dispatcher = (ExternalComponentDispatcher) contextManager.getInstance("Type_factory__o_d_d_c_c_ExternalComponentDispatcher__quals__j_e_i_Any_j_e_i_Default");
-    ExternalComponentPresenter_ExternalComponentDispatcher_dispatcher(instance, ExternalComponentPresenter_dispatcher);
     final ExternalComponentView ExternalComponentPresenter_view = (ExternalComponentView) contextManager.getInstance("Type_factory__o_d_d_c_w_ExternalComponentView__quals__j_e_i_Any_j_e_i_Default");
     registerDependentScopedReference(instance, ExternalComponentPresenter_view);
     ExternalComponentPresenter_View_view(instance, ExternalComponentPresenter_view);
+    final ExternalComponentDispatcher ExternalComponentPresenter_dispatcher = (ExternalComponentDispatcher) contextManager.getInstance("Type_factory__o_d_d_c_c_ExternalComponentDispatcher__quals__j_e_i_Any_j_e_i_Default");
+    ExternalComponentPresenter_ExternalComponentDispatcher_dispatcher(instance, ExternalComponentPresenter_dispatcher);
+    final ExternalComponentMessageHelper ExternalComponentPresenter_messageHelper = (ExternalComponentMessageHelper) contextManager.getInstance("Producer_factory__o_d_d_e_ExternalComponentMessageHelper__quals__j_e_i_Any_j_e_i_Default");
+    registerDependentScopedReference(instance, ExternalComponentPresenter_messageHelper);
+    ExternalComponentPresenter_ExternalComponentMessageHelper_messageHelper(instance, ExternalComponentPresenter_messageHelper);
     setIncompleteInstance(null);
     return instance;
   }
@@ -51,19 +51,19 @@ public class Type_factory__o_d_d_c_w_ExternalComponentPresenter__quals__j_e_i_An
     instance.@org.dashbuilder.displayer.client.widgets.ExternalComponentPresenter::view = value;
   }-*/;
 
-  native static ExternalComponentMessageHelper ExternalComponentPresenter_ExternalComponentMessageHelper_messageHelper(ExternalComponentPresenter instance) /*-{
-    return instance.@org.dashbuilder.displayer.client.widgets.ExternalComponentPresenter::messageHelper;
-  }-*/;
-
-  native static void ExternalComponentPresenter_ExternalComponentMessageHelper_messageHelper(ExternalComponentPresenter instance, ExternalComponentMessageHelper value) /*-{
-    instance.@org.dashbuilder.displayer.client.widgets.ExternalComponentPresenter::messageHelper = value;
-  }-*/;
-
   native static ExternalComponentDispatcher ExternalComponentPresenter_ExternalComponentDispatcher_dispatcher(ExternalComponentPresenter instance) /*-{
     return instance.@org.dashbuilder.displayer.client.widgets.ExternalComponentPresenter::dispatcher;
   }-*/;
 
   native static void ExternalComponentPresenter_ExternalComponentDispatcher_dispatcher(ExternalComponentPresenter instance, ExternalComponentDispatcher value) /*-{
     instance.@org.dashbuilder.displayer.client.widgets.ExternalComponentPresenter::dispatcher = value;
+  }-*/;
+
+  native static ExternalComponentMessageHelper ExternalComponentPresenter_ExternalComponentMessageHelper_messageHelper(ExternalComponentPresenter instance) /*-{
+    return instance.@org.dashbuilder.displayer.client.widgets.ExternalComponentPresenter::messageHelper;
+  }-*/;
+
+  native static void ExternalComponentPresenter_ExternalComponentMessageHelper_messageHelper(ExternalComponentPresenter instance, ExternalComponentMessageHelper value) /*-{
+    instance.@org.dashbuilder.displayer.client.widgets.ExternalComponentPresenter::messageHelper = value;
   }-*/;
 }
