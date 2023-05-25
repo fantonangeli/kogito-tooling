@@ -87,10 +87,10 @@ public class Type_factory__o_d_d_c_DisplayerLocator__quals__j_e_i_Any_j_e_i_Defa
   }
 
   public DisplayerLocator createInstance(final ContextManager contextManager) {
-    final DataSetClientServices _clientServices_0 = (RuntimeDataSetClientServices) contextManager.getInstance("Type_factory__o_d_c_s_RuntimeDataSetClientServices__quals__j_e_i_Any_j_e_i_Default");
     final ValueFormatterRegistry _formatterRegistry_3 = (ValueFormatterRegistry) contextManager.getInstance("Type_factory__o_d_d_c_f_ValueFormatterRegistry__quals__j_e_i_Any_j_e_i_Default");
-    final ClientDataSetManager _clientDataSetManager_1 = (ClientDataSetManager) contextManager.getInstance("Type_factory__o_d_d_c_ClientDataSetManager__quals__j_e_i_Any_j_e_i_Default");
+    final DataSetClientServices _clientServices_0 = (RuntimeDataSetClientServices) contextManager.getInstance("Type_factory__o_d_c_s_RuntimeDataSetClientServices__quals__j_e_i_Any_j_e_i_Default");
     final RendererManager _rendererManager_2 = (RendererManager) contextManager.getInstance("Type_factory__o_d_d_c_RendererManager__quals__j_e_i_Any_j_e_i_Default");
+    final ClientDataSetManager _clientDataSetManager_1 = (ClientDataSetManager) contextManager.getInstance("Type_factory__o_d_d_c_ClientDataSetManager__quals__j_e_i_Any_j_e_i_Default");
     final DisplayerLocator instance = new DisplayerLocator(_clientServices_0, _clientDataSetManager_1, _rendererManager_2, _formatterRegistry_3);
     setIncompleteInstance(instance);
     setIncompleteInstance(null);

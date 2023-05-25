@@ -21,14 +21,14 @@ public class Type_factory__o_d_c_e_DisplayerDragComponent__quals__j_e_i_Any_j_e_
   }
 
   public DisplayerDragComponent createInstance(final ContextManager contextManager) {
-    final PerspectiveCoordinator _perspectiveCoordinator_3 = (PerspectiveCoordinator) contextManager.getInstance("Type_factory__o_d_d_c_PerspectiveCoordinator__quals__j_e_i_Any_j_e_i_Default");
-    final DisplayerViewer _viewer_1 = (DisplayerViewer) contextManager.getInstance("Type_factory__o_d_d_c_w_DisplayerViewer__quals__j_e_i_Any_j_e_i_Default");
     final SyncBeanManager _beanManager_0 = (SyncBeanManager) contextManager.getInstance("Producer_factory__o_j_e_i_c_c_SyncBeanManager__quals__j_e_i_Any_j_e_i_Default");
     final PlaceManager _placeManager_2 = (PlaceManagerImpl) contextManager.getInstance("Type_factory__o_u_c_m_PlaceManagerImpl__quals__j_e_i_Any_j_e_i_Default");
     final GlobalDisplayerSettings _globalDisplayerSettings_4 = (GlobalDisplayerSettingsImpl) contextManager.getInstance("Type_factory__o_d_d_c_GlobalDisplayerSettingsImpl__quals__j_e_i_Any_j_e_i_Default");
+    final PerspectiveCoordinator _perspectiveCoordinator_3 = (PerspectiveCoordinator) contextManager.getInstance("Type_factory__o_d_d_c_PerspectiveCoordinator__quals__j_e_i_Any_j_e_i_Default");
+    final DisplayerViewer _viewer_1 = (DisplayerViewer) contextManager.getInstance("Type_factory__o_d_d_c_w_DisplayerViewer__quals__j_e_i_Any_j_e_i_Default");
     final DisplayerDragComponent instance = new DisplayerDragComponent(_beanManager_0, _viewer_1, _placeManager_2, _perspectiveCoordinator_3, _globalDisplayerSettings_4);
-    registerDependentScopedReference(instance, _viewer_1);
     registerDependentScopedReference(instance, _beanManager_0);
+    registerDependentScopedReference(instance, _viewer_1);
     setIncompleteInstance(instance);
     final DisplayerErrorWidget DisplayerDragComponent_displayError = (DisplayerErrorWidget) contextManager.getInstance("Type_factory__o_d_d_c_w_DisplayerErrorWidget__quals__j_e_i_Any_j_e_i_Default");
     registerDependentScopedReference(instance, DisplayerDragComponent_displayError);

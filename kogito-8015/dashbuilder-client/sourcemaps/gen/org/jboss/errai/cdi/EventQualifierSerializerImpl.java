@@ -27,14 +27,14 @@ public class EventQualifierSerializerImpl extends EventQualifierSerializer { pub
         return SharedAnnotationSerializer.stringify(((ListContainer) anno).value());
       }
     }).build());
-    serializers.put("org.jboss.errai.ui.client.widget.Table", AnnotationPropertyAccessorBuilder.create().with("root", new Function() {
-      public Object apply(final Object anno) {
-        return SharedAnnotationSerializer.stringify(((Table) anno).root());
-      }
-    }).build());
     serializers.put("javax.inject.Named", AnnotationPropertyAccessorBuilder.create().with("value", new Function() {
       public Object apply(final Object anno) {
         return SharedAnnotationSerializer.stringify(((Named) anno).value());
+      }
+    }).build());
+    serializers.put("org.jboss.errai.ui.client.widget.Table", AnnotationPropertyAccessorBuilder.create().with("root", new Function() {
+      public Object apply(final Object anno) {
+        return SharedAnnotationSerializer.stringify(((Table) anno).root());
       }
     }).build());
     serializers.put("org.jboss.errai.ioc.client.api.ReplyTo", AnnotationPropertyAccessorBuilder.create().with("value", new Function() {

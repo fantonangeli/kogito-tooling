@@ -47,15 +47,15 @@ public class Type_factory__o_d_c_n_w_NavItemTileWidgetView__quals__j_e_i_Any_j_e
   public NavItemTileWidgetView createInstance(final ContextManager contextManager) {
     final NavItemTileWidgetView instance = new NavItemTileWidgetView();
     setIncompleteInstance(instance);
+    final Span NavItemTileWidgetView_textSpan = (Span) contextManager.getInstance("ExtensionProvided_factory__o_j_e_c_c_d_Span__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
+    registerDependentScopedReference(instance, NavItemTileWidgetView_textSpan);
+    NavItemTileWidgetView_Span_textSpan(instance, NavItemTileWidgetView_textSpan);
     final Div NavItemTileWidgetView_mainDiv = (Div) contextManager.getInstance("ExtensionProvided_factory__o_j_e_c_c_d_Div__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
     registerDependentScopedReference(instance, NavItemTileWidgetView_mainDiv);
     NavItemTileWidgetView_Div_mainDiv(instance, NavItemTileWidgetView_mainDiv);
     final Div NavItemTileWidgetView_iconDiv = (Div) contextManager.getInstance("ExtensionProvided_factory__o_j_e_c_c_d_Div__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
     registerDependentScopedReference(instance, NavItemTileWidgetView_iconDiv);
     NavItemTileWidgetView_Div_iconDiv(instance, NavItemTileWidgetView_iconDiv);
-    final Span NavItemTileWidgetView_textSpan = (Span) contextManager.getInstance("ExtensionProvided_factory__o_j_e_c_c_d_Span__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
-    registerDependentScopedReference(instance, NavItemTileWidgetView_textSpan);
-    NavItemTileWidgetView_Span_textSpan(instance, NavItemTileWidgetView_textSpan);
     final Span NavItemTileWidgetView_iconSpan = (Span) contextManager.getInstance("ExtensionProvided_factory__o_j_e_c_c_d_Span__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
     registerDependentScopedReference(instance, NavItemTileWidgetView_iconSpan);
     NavItemTileWidgetView_Span_iconSpan(instance, NavItemTileWidgetView_iconSpan);

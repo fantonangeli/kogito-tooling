@@ -145,6 +145,7 @@ import org.jboss.errai.marshalling.client.marshallers.TimestampMarshaller;
   abstract class Marshaller_for_org_dashbuilder_dataset_sort_SortOrder implements GeneratedMarshaller { }
   abstract class Marshaller_for_org_dashbuilder_displayer_Mode implements GeneratedMarshaller { }
   abstract class Marshaller_for_org_dashbuilder_navigation_NavItem_erraiD_Type implements GeneratedMarshaller { }
+  abstract class Marshaller_for_org_dashbuilder_dataset_def_ExternalServiceType implements GeneratedMarshaller { }
   abstract class Marshaller_for_org_dashbuilder_shared_model_DashbuilderRuntimeMode implements GeneratedMarshaller { }
   abstract class Marshaller_for_org_dashbuilder_dataset_date_TimeInstant_erraiD_TimeMode implements GeneratedMarshaller { }
   public MarshallerFactoryImpl() {
@@ -373,6 +374,7 @@ import org.jboss.errai.marshalling.client.marshallers.TimestampMarshaller;
       case "org.dashbuilder.dataset.sort.SortOrder": return putMarshaller(a0, GWT.create(Marshaller_for_org_dashbuilder_dataset_sort_SortOrder.class));
       case "org.dashbuilder.displayer.Mode": return putMarshaller(a0, GWT.create(Marshaller_for_org_dashbuilder_displayer_Mode.class));
       case "org.dashbuilder.navigation.NavItem$Type": return putMarshaller(a0, GWT.create(Marshaller_for_org_dashbuilder_navigation_NavItem_erraiD_Type.class));
+      case "org.dashbuilder.dataset.def.ExternalServiceType": return putMarshaller(a0, GWT.create(Marshaller_for_org_dashbuilder_dataset_def_ExternalServiceType.class));
       case "org.dashbuilder.shared.model.DashbuilderRuntimeMode": return putMarshaller(a0, GWT.create(Marshaller_for_org_dashbuilder_shared_model_DashbuilderRuntimeMode.class));
       case "org.dashbuilder.dataset.date.TimeInstant$TimeMode": return putMarshaller(a0, GWT.create(Marshaller_for_org_dashbuilder_dataset_date_TimeInstant_erraiD_TimeMode.class));
       default: return false;

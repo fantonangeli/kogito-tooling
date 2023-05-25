@@ -23,8 +23,8 @@ public class Type_factory__o_d_r_c_c_c_m_C3MeterChartDisplayer__quals__j_e_i_Any
   }
 
   public C3MeterChartDisplayer createInstance(final ContextManager contextManager) {
-    final C3JsTypesFactory _factory_2 = (C3JsTypesFactory) contextManager.getInstance("Type_factory__o_d_r_c_c_j_C3JsTypesFactory__quals__j_e_i_Any_j_e_i_Default");
     final View _view_0 = (C3MeterView) contextManager.getInstance("Type_factory__o_d_r_c_c_c_m_C3MeterView__quals__j_e_i_Any_j_e_i_Default");
+    final C3JsTypesFactory _factory_2 = (C3JsTypesFactory) contextManager.getInstance("Type_factory__o_d_r_c_c_j_C3JsTypesFactory__quals__j_e_i_Any_j_e_i_Default");
     final FilterLabelSet _filterLabelSet_1 = (FilterLabelSet) contextManager.getInstance("Type_factory__o_d_c_c_w_FilterLabelSet__quals__j_e_i_Any_j_e_i_Default");
     final C3MeterChartDisplayer instance = new C3MeterChartDisplayer(_view_0, _filterLabelSet_1, _factory_2);
     registerDependentScopedReference(instance, _view_0);

@@ -60,12 +60,12 @@ public class Type_factory__o_d_d_c_w_ExternalComponentView__quals__j_e_i_Any_j_e
     final HTMLDivElement ExternalComponentView_configurationIssueRoot = (HTMLDivElement) contextManager.getInstance("ExtensionProvided_factory__e_d_HTMLDivElement__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
     registerDependentScopedReference(instance, ExternalComponentView_configurationIssueRoot);
     ExternalComponentView_HTMLDivElement_configurationIssueRoot(instance, ExternalComponentView_configurationIssueRoot);
-    final HTMLDivElement ExternalComponentView_componentRoot = (HTMLDivElement) contextManager.getInstance("ExtensionProvided_factory__e_d_HTMLDivElement__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
-    registerDependentScopedReference(instance, ExternalComponentView_componentRoot);
-    ExternalComponentView_HTMLDivElement_componentRoot(instance, ExternalComponentView_componentRoot);
     final HTMLIFrameElement ExternalComponentView_externalComponentIFrame = (HTMLIFrameElement) contextManager.getInstance("ExtensionProvided_factory__e_d_HTMLIFrameElement__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
     registerDependentScopedReference(instance, ExternalComponentView_externalComponentIFrame);
     ExternalComponentView_HTMLIFrameElement_externalComponentIFrame(instance, ExternalComponentView_externalComponentIFrame);
+    final HTMLDivElement ExternalComponentView_componentRoot = (HTMLDivElement) contextManager.getInstance("ExtensionProvided_factory__e_d_HTMLDivElement__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
+    registerDependentScopedReference(instance, ExternalComponentView_componentRoot);
+    ExternalComponentView_HTMLDivElement_componentRoot(instance, ExternalComponentView_componentRoot);
     final HTMLParagraphElement ExternalComponentView_configurationDetails = (HTMLParagraphElement) contextManager.getInstance("ExtensionProvided_factory__e_d_HTMLParagraphElement__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
     registerDependentScopedReference(instance, ExternalComponentView_configurationDetails);
     ExternalComponentView_HTMLParagraphElement_configurationDetails(instance, ExternalComponentView_configurationDetails);

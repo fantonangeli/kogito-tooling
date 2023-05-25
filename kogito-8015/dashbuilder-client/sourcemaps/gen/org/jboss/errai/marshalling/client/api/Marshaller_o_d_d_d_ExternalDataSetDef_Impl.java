@@ -6,6 +6,7 @@ import java.util.Set;
 import org.dashbuilder.dataprovider.DataSetProviderType;
 import org.dashbuilder.dataset.def.DataSetDef;
 import org.dashbuilder.dataset.def.ExternalDataSetDef;
+import org.dashbuilder.dataset.def.ExternalServiceType;
 import org.dashbuilder.dataset.filter.DataSetFilter;
 import org.jboss.errai.marshalling.client.Marshalling;
 import org.jboss.errai.marshalling.client.api.json.EJObject;
@@ -17,6 +18,7 @@ public class Marshaller_o_d_d_d_ExternalDataSetDef_Impl implements GeneratedMars
   private Marshaller<String> java_lang_String = Marshalling.getMarshaller(String.class);
   private Marshaller<Boolean> java_lang_Boolean = Marshalling.getMarshaller(Boolean.class);
   private Marshaller<Map> java_util_Map = Marshalling.getMarshaller(Map.class);
+  private Marshaller<ExternalServiceType> org_dashbuilder_dataset_def_ExternalServiceType = null;
   private Marshaller java_lang_Object = Marshalling.getMarshaller(Object.class);
   private Marshaller<List> java_util_List = Marshalling.getMarshaller(List.class);
   private Marshaller<DataSetFilter> org_dashbuilder_dataset_filter_DataSetFilter = null;
@@ -85,6 +87,8 @@ public class Marshaller_o_d_d_d_ExternalDataSetDef_Impl implements GeneratedMars
         a1.resetAssumedTypes();
         break;
         case "accumulate": entity.setAccumulate(java_lang_Boolean.demarshall(objVal, a1));
+        break;
+        case "type": entity.setType(objVal.isObject() != null ? Enum.valueOf(ExternalServiceType.class, objVal.isObject().get("^EnumStringValue").isString().stringValue()) : objVal.isString() != null ? Enum.valueOf(ExternalServiceType.class, objVal.isString().stringValue()) : null);
         break;
         case "UUID": entity.setUUID(java_lang_String.demarshall(objVal, a1));
         break;
@@ -186,10 +190,13 @@ public class Marshaller_o_d_d_d_ExternalDataSetDef_Impl implements GeneratedMars
     if (ref) {
       return prefix + "}";
     }
-    return prefix + ((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((("" + ",\"") + "url") + "\":") + java_lang_String.marshall(a0.getUrl(), a1)) + ",\"") + "dynamic") + "\":") + java_lang_Boolean.marshall(ExternalDataSetDef_boolean_dynamic(a0), a1)) + ",\"") + "expression") + "\":") + java_lang_String.marshall(a0.getExpression(), a1)) + ",\"") + "content") + "\":") + java_lang_String.marshall(a0.getContent(), a1)) + ",\"") + "headers") + "\":") + java_util_Map.marshall(a0.getHeaders(), a1)) + ",\"") + "accumulate") + "\":") + java_lang_Boolean.marshall(ExternalDataSetDef_boolean_accumulate(a0), a1)) + ",\"") + "UUID") + "\":") + java_lang_String.marshall(a0.getUUID(), a1)) + ",\"") + "name") + "\":") + java_lang_String.marshall(a0.getName(), a1)) + ",\"") + "provider") + "\":") + java_lang_Object.marshall(a0.getProvider(), a1)) + ",\"") + "columns") + "\":") + java_util_List.marshall(a0.getColumns(), a1)) + ",\"") + "dataSetFilter") + "\":") + org_dashbuilder_dataset_filter_DataSetFilter.marshall(a0.getDataSetFilter(), a1)) + ",\"") + "isPublic") + "\":") + java_lang_Boolean.marshall(DataSetDef_boolean_isPublic(a0), a1)) + ",\"") + "pushEnabled") + "\":") + java_lang_Boolean.marshall(DataSetDef_boolean_pushEnabled(a0), a1)) + ",\"") + "pushMaxSize") + "\":") + java_lang_Integer.marshall(a0.getPushMaxSize(), a1)) + ",\"") + "cacheEnabled") + "\":") + java_lang_Boolean.marshall(DataSetDef_boolean_cacheEnabled(a0), a1)) + ",\"") + "cacheMaxRows") + "\":") + java_lang_Integer.marshall(a0.getCacheMaxRows(), a1)) + ",\"") + "refreshTime") + "\":") + java_lang_String.marshall(a0.getRefreshTime(), a1)) + ",\"") + "refreshAlways") + "\":") + java_lang_Boolean.marshall(DataSetDef_boolean_refreshAlways(a0), a1)) + ",\"") + "allColumnsEnabled") + "\":") + java_lang_Boolean.marshall(DataSetDef_boolean_allColumnsEnabled(a0), a1)) + ",\"") + "patternMap") + "\":") + java_util_Map.marshall(DataSetDef_Map_patternMap(a0), a1)) + ",\"") + "propertyMap") + "\":") + java_util_Map.marshall(DataSetDef_Map_propertyMap(a0), a1)) + "}");
+    return prefix + ((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((("" + ",\"") + "url") + "\":") + java_lang_String.marshall(a0.getUrl(), a1)) + ",\"") + "dynamic") + "\":") + java_lang_Boolean.marshall(ExternalDataSetDef_boolean_dynamic(a0), a1)) + ",\"") + "expression") + "\":") + java_lang_String.marshall(a0.getExpression(), a1)) + ",\"") + "content") + "\":") + java_lang_String.marshall(a0.getContent(), a1)) + ",\"") + "headers") + "\":") + java_util_Map.marshall(a0.getHeaders(), a1)) + ",\"") + "accumulate") + "\":") + java_lang_Boolean.marshall(ExternalDataSetDef_boolean_accumulate(a0), a1)) + ",\"") + "type") + "\":") + (a0.getType() != null ? ((((((("{\"" + "^EncodedType") + "\":\"") + "org.dashbuilder.dataset.def.ExternalServiceType") + "\",\"") + "^EnumStringValue") + "\":\"") + a0.getType().name()) + "\"}" : "null")) + ",\"") + "UUID") + "\":") + java_lang_String.marshall(a0.getUUID(), a1)) + ",\"") + "name") + "\":") + java_lang_String.marshall(a0.getName(), a1)) + ",\"") + "provider") + "\":") + java_lang_Object.marshall(a0.getProvider(), a1)) + ",\"") + "columns") + "\":") + java_util_List.marshall(a0.getColumns(), a1)) + ",\"") + "dataSetFilter") + "\":") + org_dashbuilder_dataset_filter_DataSetFilter.marshall(a0.getDataSetFilter(), a1)) + ",\"") + "isPublic") + "\":") + java_lang_Boolean.marshall(DataSetDef_boolean_isPublic(a0), a1)) + ",\"") + "pushEnabled") + "\":") + java_lang_Boolean.marshall(DataSetDef_boolean_pushEnabled(a0), a1)) + ",\"") + "pushMaxSize") + "\":") + java_lang_Integer.marshall(a0.getPushMaxSize(), a1)) + ",\"") + "cacheEnabled") + "\":") + java_lang_Boolean.marshall(DataSetDef_boolean_cacheEnabled(a0), a1)) + ",\"") + "cacheMaxRows") + "\":") + java_lang_Integer.marshall(a0.getCacheMaxRows(), a1)) + ",\"") + "refreshTime") + "\":") + java_lang_String.marshall(a0.getRefreshTime(), a1)) + ",\"") + "refreshAlways") + "\":") + java_lang_Boolean.marshall(DataSetDef_boolean_refreshAlways(a0), a1)) + ",\"") + "allColumnsEnabled") + "\":") + java_lang_Boolean.marshall(DataSetDef_boolean_allColumnsEnabled(a0), a1)) + ",\"") + "patternMap") + "\":") + java_util_Map.marshall(DataSetDef_Map_patternMap(a0), a1)) + ",\"") + "propertyMap") + "\":") + java_util_Map.marshall(DataSetDef_Map_propertyMap(a0), a1)) + "}");
   }
 
   private void lazyInit() {
+    if (org_dashbuilder_dataset_def_ExternalServiceType == null) {
+      org_dashbuilder_dataset_def_ExternalServiceType = Marshalling.getMarshaller(ExternalServiceType.class);
+    }
     if (org_dashbuilder_dataset_filter_DataSetFilter == null) {
       org_dashbuilder_dataset_filter_DataSetFilter = Marshalling.getMarshaller(DataSetFilter.class);
     }

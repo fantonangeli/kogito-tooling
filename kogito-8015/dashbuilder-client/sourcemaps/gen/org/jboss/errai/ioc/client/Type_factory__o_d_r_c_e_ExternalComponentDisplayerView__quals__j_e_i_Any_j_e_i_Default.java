@@ -38,12 +38,12 @@ public class Type_factory__o_d_r_c_e_ExternalComponentDisplayerView__quals__j_e_
   public ExternalComponentDisplayerView createInstance(final ContextManager contextManager) {
     final ExternalComponentDisplayerView instance = new ExternalComponentDisplayerView();
     setIncompleteInstance(instance);
-    final Elemental2DomUtil ExternalComponentDisplayerView_domUtil = (Elemental2DomUtil) contextManager.getInstance("Type_factory__o_j_e_c_c_d_e_Elemental2DomUtil__quals__j_e_i_Any_j_e_i_Default");
-    registerDependentScopedReference(instance, ExternalComponentDisplayerView_domUtil);
-    ExternalComponentDisplayerView_Elemental2DomUtil_domUtil(instance, ExternalComponentDisplayerView_domUtil);
     final HTMLDivElement ExternalComponentDisplayerView_externalComponentDisplayerRoot = (HTMLDivElement) contextManager.getInstance("ExtensionProvided_factory__e_d_HTMLDivElement__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
     registerDependentScopedReference(instance, ExternalComponentDisplayerView_externalComponentDisplayerRoot);
     ExternalComponentDisplayerView_HTMLDivElement_externalComponentDisplayerRoot(instance, ExternalComponentDisplayerView_externalComponentDisplayerRoot);
+    final Elemental2DomUtil ExternalComponentDisplayerView_domUtil = (Elemental2DomUtil) contextManager.getInstance("Type_factory__o_j_e_c_c_d_e_Elemental2DomUtil__quals__j_e_i_Any_j_e_i_Default");
+    registerDependentScopedReference(instance, ExternalComponentDisplayerView_domUtil);
+    ExternalComponentDisplayerView_Elemental2DomUtil_domUtil(instance, ExternalComponentDisplayerView_domUtil);
     o_d_r_c_e_ExternalComponentDisplayerViewTemplateResource templateForExternalComponentDisplayerView = GWT.create(o_d_r_c_e_ExternalComponentDisplayerViewTemplateResource.class);
     Element parentElementForTemplateOfExternalComponentDisplayerView = TemplateUtil.getRootTemplateParentElement(templateForExternalComponentDisplayerView.getContents().getText(), "org/dashbuilder/renderer/client/external/ExternalComponentDisplayerView.html", "");
     TemplateUtil.translateTemplate("org/dashbuilder/renderer/client/external/ExternalComponentDisplayerView.html", TemplateUtil.getRootTemplateElement(parentElementForTemplateOfExternalComponentDisplayerView));

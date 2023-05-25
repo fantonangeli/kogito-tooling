@@ -18,12 +18,12 @@ public class Type_factory__o_d_c_e_e_ExternalDragComponent__quals__j_e_i_Any_j_e
   public ExternalDragComponent createInstance(final ContextManager contextManager) {
     final ExternalDragComponent instance = new ExternalDragComponent();
     setIncompleteInstance(instance);
-    final ExternalComponentMessageHelper ExternalDragComponent_messageHelper = (ExternalComponentMessageHelper) contextManager.getInstance("Producer_factory__o_d_d_e_ExternalComponentMessageHelper__quals__j_e_i_Any_j_e_i_Default");
-    registerDependentScopedReference(instance, ExternalDragComponent_messageHelper);
-    ExternalDragComponent_ExternalComponentMessageHelper_messageHelper(instance, ExternalDragComponent_messageHelper);
     final SyncBeanManager ExternalDragComponent_beanManager = (SyncBeanManager) contextManager.getInstance("Producer_factory__o_j_e_i_c_c_SyncBeanManager__quals__j_e_i_Any_j_e_i_Default");
     registerDependentScopedReference(instance, ExternalDragComponent_beanManager);
     ExternalDragComponent_SyncBeanManager_beanManager(instance, ExternalDragComponent_beanManager);
+    final ExternalComponentMessageHelper ExternalDragComponent_messageHelper = (ExternalComponentMessageHelper) contextManager.getInstance("Producer_factory__o_d_d_e_ExternalComponentMessageHelper__quals__j_e_i_Any_j_e_i_Default");
+    registerDependentScopedReference(instance, ExternalDragComponent_messageHelper);
+    ExternalDragComponent_ExternalComponentMessageHelper_messageHelper(instance, ExternalDragComponent_messageHelper);
     final ExternalComponentPresenter ExternalDragComponent_externalComponentPresenter = (ExternalComponentPresenter) contextManager.getInstance("Type_factory__o_d_d_c_w_ExternalComponentPresenter__quals__j_e_i_Any_j_e_i_Default");
     registerDependentScopedReference(instance, ExternalDragComponent_externalComponentPresenter);
     ExternalDragComponent_ExternalComponentPresenter_externalComponentPresenter(instance, ExternalDragComponent_externalComponentPresenter);

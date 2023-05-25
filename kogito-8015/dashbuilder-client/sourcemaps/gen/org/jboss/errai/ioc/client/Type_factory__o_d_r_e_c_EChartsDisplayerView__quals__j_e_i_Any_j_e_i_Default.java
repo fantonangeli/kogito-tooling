@@ -29,10 +29,10 @@ public class Type_factory__o_d_r_e_c_EChartsDisplayerView__quals__j_e_i_Any_j_e_
   public EChartsDisplayerView createInstance(final ContextManager contextManager) {
     final EChartsDisplayerView instance = new EChartsDisplayerView();
     setIncompleteInstance(instance);
-    final EChartsTypeFactory EChartsDisplayerView_echartsFactory = (EChartsTypeFactory) contextManager.getInstance("Type_factory__o_d_r_e_c_j_EChartsTypeFactory__quals__j_e_i_Any_j_e_i_Default");
-    EChartsDisplayerView_EChartsTypeFactory_echartsFactory(instance, EChartsDisplayerView_echartsFactory);
     final EChartsResizeHandlerRegister EChartsDisplayerView_eChartsResizeHandlerRegister = (EChartsResizeHandlerRegister) contextManager.getInstance("Type_factory__o_d_r_e_c_EChartsResizeHandlerRegister__quals__j_e_i_Any_j_e_i_Default");
     EChartsDisplayerView_EChartsResizeHandlerRegister_eChartsResizeHandlerRegister(instance, EChartsDisplayerView_eChartsResizeHandlerRegister);
+    final EChartsTypeFactory EChartsDisplayerView_echartsFactory = (EChartsTypeFactory) contextManager.getInstance("Type_factory__o_d_r_e_c_j_EChartsTypeFactory__quals__j_e_i_Any_j_e_i_Default");
+    EChartsDisplayerView_EChartsTypeFactory_echartsFactory(instance, EChartsDisplayerView_echartsFactory);
     setIncompleteInstance(null);
     return instance;
   }

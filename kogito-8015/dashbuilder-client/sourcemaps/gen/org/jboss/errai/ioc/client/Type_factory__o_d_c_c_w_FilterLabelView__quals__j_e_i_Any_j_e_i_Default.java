@@ -38,12 +38,12 @@ public class Type_factory__o_d_c_c_w_FilterLabelView__quals__j_e_i_Any_j_e_i_Def
   public FilterLabelView createInstance(final ContextManager contextManager) {
     final FilterLabelView instance = new FilterLabelView();
     setIncompleteInstance(instance);
-    final Span FilterLabelView_labelText = (Span) contextManager.getInstance("ExtensionProvided_factory__o_j_e_c_c_d_Span__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
-    registerDependentScopedReference(instance, FilterLabelView_labelText);
-    FilterLabelView_Span_labelText(instance, FilterLabelView_labelText);
     final Anchor FilterLabelView_labelRemove = (Anchor) contextManager.getInstance("ExtensionProvided_factory__o_j_e_c_c_d_Anchor__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
     registerDependentScopedReference(instance, FilterLabelView_labelRemove);
     FilterLabelView_Anchor_labelRemove(instance, FilterLabelView_labelRemove);
+    final Span FilterLabelView_labelText = (Span) contextManager.getInstance("ExtensionProvided_factory__o_j_e_c_c_d_Span__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
+    registerDependentScopedReference(instance, FilterLabelView_labelText);
+    FilterLabelView_Span_labelText(instance, FilterLabelView_labelText);
     o_d_c_c_w_FilterLabelViewTemplateResource templateForFilterLabelView = GWT.create(o_d_c_c_w_FilterLabelViewTemplateResource.class);
     Element parentElementForTemplateOfFilterLabelView = TemplateUtil.getRootTemplateParentElement(templateForFilterLabelView.getContents().getText(), "org/dashbuilder/common/client/widgets/FilterLabelView.html", "");
     TemplateUtil.translateTemplate("org/dashbuilder/common/client/widgets/FilterLabelView.html", TemplateUtil.getRootTemplateElement(parentElementForTemplateOfFilterLabelView));
