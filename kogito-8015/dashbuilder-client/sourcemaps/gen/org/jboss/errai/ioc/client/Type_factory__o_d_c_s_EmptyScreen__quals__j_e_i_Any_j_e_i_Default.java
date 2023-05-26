@@ -133,11 +133,11 @@ public class Type_factory__o_d_c_s_EmptyScreen__quals__j_e_i_Any_j_e_i_Default e
   public EmptyScreen createInstance(final ContextManager contextManager) {
     final EmptyScreen instance = new EmptyScreen();
     setIncompleteInstance(instance);
+    final RouterScreen EmptyScreen_router = (RouterScreen) contextManager.getInstance("Type_factory__o_d_c_s_RouterScreen__quals__j_e_i_Any_j_e_i_Default");
+    EmptyScreen_RouterScreen_router(instance, EmptyScreen_router);
     final EmptyScreenView EmptyScreen_view = (EmptyScreenView) contextManager.getInstance("Type_factory__o_d_c_s_v_EmptyScreenView__quals__j_e_i_Any_j_e_i_Default");
     registerDependentScopedReference(instance, EmptyScreen_view);
     EmptyScreen_View_view(instance, EmptyScreen_view);
-    final RouterScreen EmptyScreen_router = (RouterScreen) contextManager.getInstance("Type_factory__o_d_c_s_RouterScreen__quals__j_e_i_Any_j_e_i_Default");
-    EmptyScreen_RouterScreen_router(instance, EmptyScreen_router);
     final PerspectiveManagerImpl EmptyScreen_perspectiveManager = (PerspectiveManagerImpl) contextManager.getInstance("Type_factory__o_u_c_m_PerspectiveManagerImpl__quals__j_e_i_Any_j_e_i_Default");
     EmptyScreen_PerspectiveManager_perspectiveManager(instance, EmptyScreen_perspectiveManager);
     final RuntimeClientLoader EmptyScreen_loader = (RuntimeClientLoader) contextManager.getInstance("Type_factory__o_d_c_RuntimeClientLoader__quals__j_e_i_Any_j_e_i_Default");
@@ -156,20 +156,20 @@ public class Type_factory__o_d_c_s_EmptyScreen__quals__j_e_i_Any_j_e_i_Default e
     return proxyImpl;
   }
 
-  native static View EmptyScreen_View_view(EmptyScreen instance) /*-{
-    return instance.@org.dashbuilder.client.screens.EmptyScreen::view;
-  }-*/;
-
-  native static void EmptyScreen_View_view(EmptyScreen instance, View value) /*-{
-    instance.@org.dashbuilder.client.screens.EmptyScreen::view = value;
-  }-*/;
-
   native static RouterScreen EmptyScreen_RouterScreen_router(EmptyScreen instance) /*-{
     return instance.@org.dashbuilder.client.screens.EmptyScreen::router;
   }-*/;
 
   native static void EmptyScreen_RouterScreen_router(EmptyScreen instance, RouterScreen value) /*-{
     instance.@org.dashbuilder.client.screens.EmptyScreen::router = value;
+  }-*/;
+
+  native static View EmptyScreen_View_view(EmptyScreen instance) /*-{
+    return instance.@org.dashbuilder.client.screens.EmptyScreen::view;
+  }-*/;
+
+  native static void EmptyScreen_View_view(EmptyScreen instance, View value) /*-{
+    instance.@org.dashbuilder.client.screens.EmptyScreen::view = value;
   }-*/;
 
   native static RuntimeClientLoader EmptyScreen_RuntimeClientLoader_loader(EmptyScreen instance) /*-{

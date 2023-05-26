@@ -183,18 +183,18 @@ public class Type_factory__o_d_c_s_RouterScreen__quals__j_e_i_Any_j_e_i_Default 
   public RouterScreen createInstance(final ContextManager contextManager) {
     final RouterScreen instance = new RouterScreen();
     setIncompleteInstance(instance);
-    final SamplesScreen RouterScreen_samplesScreen = (SamplesScreen) contextManager.getInstance("Type_factory__o_d_c_s_SamplesScreen__quals__j_e_i_Any_j_e_i_Default");
-    RouterScreen_SamplesScreen_samplesScreen(instance, RouterScreen_samplesScreen);
-    final ContentErrorScreen RouterScreen_contentErrorScreen = (ContentErrorScreen) contextManager.getInstance("Type_factory__o_d_c_s_ContentErrorScreen__quals__j_e_i_Any_j_e_i_Default");
-    RouterScreen_ContentErrorScreen_contentErrorScreen(instance, RouterScreen_contentErrorScreen);
-    final RuntimeScreen RouterScreen_runtimeScreen = (RuntimeScreen) contextManager.getInstance("Type_factory__o_d_c_s_RuntimeScreen__quals__j_e_i_Any_j_e_i_Default");
-    RouterScreen_RuntimeScreen_runtimeScreen(instance, RouterScreen_runtimeScreen);
-    final PlaceManagerImpl RouterScreen_placeManager = (PlaceManagerImpl) contextManager.getInstance("Type_factory__o_u_c_m_PlaceManagerImpl__quals__j_e_i_Any_j_e_i_Default");
-    RouterScreen_PlaceManager_placeManager(instance, RouterScreen_placeManager);
-    final RuntimeCommunication RouterScreen_runtimeCommunication = (RuntimeCommunication) contextManager.getInstance("Type_factory__o_d_c_RuntimeCommunication__quals__j_e_i_Any_j_e_i_Default");
-    RouterScreen_RuntimeCommunication_runtimeCommunication(instance, RouterScreen_runtimeCommunication);
     final DashboardsListScreen RouterScreen_dashboardsListScreen = (DashboardsListScreen) contextManager.getInstance("Type_factory__o_d_c_s_DashboardsListScreen__quals__j_e_i_Any_j_e_i_Default");
     RouterScreen_DashboardsListScreen_dashboardsListScreen(instance, RouterScreen_dashboardsListScreen);
+    final ContentErrorScreen RouterScreen_contentErrorScreen = (ContentErrorScreen) contextManager.getInstance("Type_factory__o_d_c_s_ContentErrorScreen__quals__j_e_i_Any_j_e_i_Default");
+    RouterScreen_ContentErrorScreen_contentErrorScreen(instance, RouterScreen_contentErrorScreen);
+    final RuntimeCommunication RouterScreen_runtimeCommunication = (RuntimeCommunication) contextManager.getInstance("Type_factory__o_d_c_RuntimeCommunication__quals__j_e_i_Any_j_e_i_Default");
+    RouterScreen_RuntimeCommunication_runtimeCommunication(instance, RouterScreen_runtimeCommunication);
+    final PlaceManagerImpl RouterScreen_placeManager = (PlaceManagerImpl) contextManager.getInstance("Type_factory__o_u_c_m_PlaceManagerImpl__quals__j_e_i_Any_j_e_i_Default");
+    RouterScreen_PlaceManager_placeManager(instance, RouterScreen_placeManager);
+    final RuntimeScreen RouterScreen_runtimeScreen = (RuntimeScreen) contextManager.getInstance("Type_factory__o_d_c_s_RuntimeScreen__quals__j_e_i_Any_j_e_i_Default");
+    RouterScreen_RuntimeScreen_runtimeScreen(instance, RouterScreen_runtimeScreen);
+    final SamplesScreen RouterScreen_samplesScreen = (SamplesScreen) contextManager.getInstance("Type_factory__o_d_c_s_SamplesScreen__quals__j_e_i_Any_j_e_i_Default");
+    RouterScreen_SamplesScreen_samplesScreen(instance, RouterScreen_samplesScreen);
     final RuntimeClientLoader RouterScreen_clientLoader = (RuntimeClientLoader) contextManager.getInstance("Type_factory__o_d_c_RuntimeClientLoader__quals__j_e_i_Any_j_e_i_Default");
     RouterScreen_RuntimeClientLoader_clientLoader(instance, RouterScreen_clientLoader);
     final RouterScreenView RouterScreen_view = (RouterScreenView) contextManager.getInstance("Type_factory__o_d_c_s_v_RouterScreenView__quals__j_e_i_Any_j_e_i_Default");
@@ -250,20 +250,20 @@ public class Type_factory__o_d_c_s_RouterScreen__quals__j_e_i_Any_j_e_i_Default 
     instance.@org.dashbuilder.client.screens.RouterScreen::runtimeScreen = value;
   }-*/;
 
-  native static ContentErrorScreen RouterScreen_ContentErrorScreen_contentErrorScreen(RouterScreen instance) /*-{
-    return instance.@org.dashbuilder.client.screens.RouterScreen::contentErrorScreen;
-  }-*/;
-
-  native static void RouterScreen_ContentErrorScreen_contentErrorScreen(RouterScreen instance, ContentErrorScreen value) /*-{
-    instance.@org.dashbuilder.client.screens.RouterScreen::contentErrorScreen = value;
-  }-*/;
-
   native static DashboardsListScreen RouterScreen_DashboardsListScreen_dashboardsListScreen(RouterScreen instance) /*-{
     return instance.@org.dashbuilder.client.screens.RouterScreen::dashboardsListScreen;
   }-*/;
 
   native static void RouterScreen_DashboardsListScreen_dashboardsListScreen(RouterScreen instance, DashboardsListScreen value) /*-{
     instance.@org.dashbuilder.client.screens.RouterScreen::dashboardsListScreen = value;
+  }-*/;
+
+  native static ContentErrorScreen RouterScreen_ContentErrorScreen_contentErrorScreen(RouterScreen instance) /*-{
+    return instance.@org.dashbuilder.client.screens.RouterScreen::contentErrorScreen;
+  }-*/;
+
+  native static void RouterScreen_ContentErrorScreen_contentErrorScreen(RouterScreen instance, ContentErrorScreen value) /*-{
+    instance.@org.dashbuilder.client.screens.RouterScreen::contentErrorScreen = value;
   }-*/;
 
   native static RuntimeClientLoader RouterScreen_RuntimeClientLoader_clientLoader(RouterScreen instance) /*-{

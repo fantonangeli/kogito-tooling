@@ -40,11 +40,11 @@ public class Type_factory__o_d_r_c_c_c_m_w_D3Map__quals__j_e_i_Any_j_e_i_Default
   public D3Map createInstance(final ContextManager contextManager) {
     final D3Map instance = new D3Map();
     setIncompleteInstance(instance);
+    final MapTooltip D3Map_mapTooltip = (MapTooltip) contextManager.getInstance("Type_factory__o_d_r_c_c_c_m_w_MapTooltip__quals__j_e_i_Any_j_e_i_Default");
+    D3Map_MapTooltip_mapTooltip(instance, D3Map_mapTooltip);
     final HTMLDivElement D3Map_mapContainer = (HTMLDivElement) contextManager.getInstance("ExtensionProvided_factory__e_d_HTMLDivElement__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
     registerDependentScopedReference(instance, D3Map_mapContainer);
     D3Map_HTMLDivElement_mapContainer(instance, D3Map_mapContainer);
-    final MapTooltip D3Map_mapTooltip = (MapTooltip) contextManager.getInstance("Type_factory__o_d_r_c_c_c_m_w_MapTooltip__quals__j_e_i_Any_j_e_i_Default");
-    D3Map_MapTooltip_mapTooltip(instance, D3Map_mapTooltip);
     o_d_r_c_c_c_m_w_D3MapTemplateResource templateForD3Map = GWT.create(o_d_r_c_c_c_m_w_D3MapTemplateResource.class);
     Element parentElementForTemplateOfD3Map = TemplateUtil.getRootTemplateParentElement(templateForD3Map.getContents().getText(), "org/dashbuilder/renderer/c3/client/charts/map/widgets/D3Map.html", "");
     TemplateUtil.translateTemplate("org/dashbuilder/renderer/c3/client/charts/map/widgets/D3Map.html", TemplateUtil.getRootTemplateElement(parentElementForTemplateOfD3Map));

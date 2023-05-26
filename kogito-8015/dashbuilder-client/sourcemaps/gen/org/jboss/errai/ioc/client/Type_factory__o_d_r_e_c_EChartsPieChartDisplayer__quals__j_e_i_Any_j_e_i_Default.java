@@ -20,8 +20,8 @@ public class Type_factory__o_d_r_e_c_EChartsPieChartDisplayer__quals__j_e_i_Any_
   }
 
   public EChartsPieChartDisplayer createInstance(final ContextManager contextManager) {
-    final EChartsTypeFactory _echartsFactory_1 = (EChartsTypeFactory) contextManager.getInstance("Type_factory__o_d_r_e_c_j_EChartsTypeFactory__quals__j_e_i_Any_j_e_i_Default");
     final EChartsDisplayerView _view_0 = (EChartsDisplayerView) contextManager.getInstance("Type_factory__o_d_r_e_c_EChartsDisplayerView__quals__j_e_i_Any_j_e_i_Default");
+    final EChartsTypeFactory _echartsFactory_1 = (EChartsTypeFactory) contextManager.getInstance("Type_factory__o_d_r_e_c_j_EChartsTypeFactory__quals__j_e_i_Any_j_e_i_Default");
     final EChartsPieChartDisplayer instance = new EChartsPieChartDisplayer(_view_0, _echartsFactory_1);
     registerDependentScopedReference(instance, _view_0);
     setIncompleteInstance(instance);

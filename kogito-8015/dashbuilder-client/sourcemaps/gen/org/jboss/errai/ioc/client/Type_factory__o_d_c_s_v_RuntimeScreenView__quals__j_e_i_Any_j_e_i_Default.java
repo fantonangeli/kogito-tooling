@@ -39,6 +39,8 @@ public class Type_factory__o_d_c_s_v_RuntimeScreenView__quals__j_e_i_Any_j_e_i_D
   public RuntimeScreenView createInstance(final ContextManager contextManager) {
     final RuntimeScreenView instance = new RuntimeScreenView();
     setIncompleteInstance(instance);
+    final RuntimeCommunication RuntimeScreenView_runtimeCommunication = (RuntimeCommunication) contextManager.getInstance("Type_factory__o_d_c_RuntimeCommunication__quals__j_e_i_Any_j_e_i_Default");
+    RuntimeScreenView_RuntimeCommunication_runtimeCommunication(instance, RuntimeScreenView_runtimeCommunication);
     final NavTilesWidget RuntimeScreenView_tilesWidget = (NavTilesWidget) contextManager.getInstance("Type_factory__o_d_c_n_w_NavTilesWidget__quals__j_e_i_Any_j_e_i_Default");
     registerDependentScopedReference(instance, RuntimeScreenView_tilesWidget);
     RuntimeScreenView_NavTilesWidget_tilesWidget(instance, RuntimeScreenView_tilesWidget);
@@ -48,8 +50,6 @@ public class Type_factory__o_d_c_s_v_RuntimeScreenView__quals__j_e_i_Any_j_e_i_D
     final BusyIndicatorView RuntimeScreenView_loading = (BusyIndicatorView) contextManager.getInstance("Type_factory__o_u_e_w_c_c_c_BusyIndicatorView__quals__j_e_i_Any_j_e_i_Default");
     registerDependentScopedReference(instance, RuntimeScreenView_loading);
     RuntimeScreenView_BusyIndicatorView_loading(instance, RuntimeScreenView_loading);
-    final RuntimeCommunication RuntimeScreenView_runtimeCommunication = (RuntimeCommunication) contextManager.getInstance("Type_factory__o_d_c_RuntimeCommunication__quals__j_e_i_Any_j_e_i_Default");
-    RuntimeScreenView_RuntimeCommunication_runtimeCommunication(instance, RuntimeScreenView_runtimeCommunication);
     final Elemental2DomUtil RuntimeScreenView_elementalUtil = (Elemental2DomUtil) contextManager.getInstance("Type_factory__o_j_e_c_c_d_e_Elemental2DomUtil__quals__j_e_i_Any_j_e_i_Default");
     registerDependentScopedReference(instance, RuntimeScreenView_elementalUtil);
     RuntimeScreenView_Elemental2DomUtil_elementalUtil(instance, RuntimeScreenView_elementalUtil);

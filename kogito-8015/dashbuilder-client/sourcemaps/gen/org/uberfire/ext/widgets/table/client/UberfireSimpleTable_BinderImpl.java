@@ -1,4 +1,4 @@
-// .ui.xml template last modified: 1685007837142
+// .ui.xml template last modified: 1685105721149
 package org.uberfire.ext.widgets.table.client;
 
 import com.google.gwt.core.client.GWT;

@@ -118,19 +118,19 @@ public class Type_factory__o_d_c_s_SamplesScreen__quals__j_e_i_Any_j_e_i_Default
   public SamplesScreen createInstance(final ContextManager contextManager) {
     final SamplesScreen instance = new SamplesScreen();
     setIncompleteInstance(instance);
-    final ManagedInstance SamplesScreen_samplesCardRowInstance = (ManagedInstance) contextManager.getContextualInstance("ContextualProvider_factory__o_j_e_i_c_a_ManagedInstance__quals__Universal", new Class[] { SamplesCardRow.class }, new Annotation[] { });
-    registerDependentScopedReference(instance, SamplesScreen_samplesCardRowInstance);
-    SamplesScreen_ManagedInstance_samplesCardRowInstance(instance, SamplesScreen_samplesCardRowInstance);
     final RouterScreen SamplesScreen_router = (RouterScreen) contextManager.getInstance("Type_factory__o_d_c_s_RouterScreen__quals__j_e_i_Any_j_e_i_Default");
     SamplesScreen_RouterScreen_router(instance, SamplesScreen_router);
-    final ManagedInstance SamplesScreen_sampleCardInstance = (ManagedInstance) contextManager.getContextualInstance("ContextualProvider_factory__o_j_e_i_c_a_ManagedInstance__quals__Universal", new Class[] { SampleCard.class }, new Annotation[] { });
-    registerDependentScopedReference(instance, SamplesScreen_sampleCardInstance);
-    SamplesScreen_ManagedInstance_sampleCardInstance(instance, SamplesScreen_sampleCardInstance);
     final SamplesScreenView SamplesScreen_view = (SamplesScreenView) contextManager.getInstance("Type_factory__o_d_c_s_v_SamplesScreenView__quals__j_e_i_Any_j_e_i_Default");
     registerDependentScopedReference(instance, SamplesScreen_view);
     SamplesScreen_View_view(instance, SamplesScreen_view);
+    final ManagedInstance SamplesScreen_samplesCardRowInstance = (ManagedInstance) contextManager.getContextualInstance("ContextualProvider_factory__o_j_e_i_c_a_ManagedInstance__quals__Universal", new Class[] { SamplesCardRow.class }, new Annotation[] { });
+    registerDependentScopedReference(instance, SamplesScreen_samplesCardRowInstance);
+    SamplesScreen_ManagedInstance_samplesCardRowInstance(instance, SamplesScreen_samplesCardRowInstance);
     final SamplesService SamplesScreen_samplesService = (SamplesService) contextManager.getInstance("Type_factory__o_d_c_s_SamplesService__quals__j_e_i_Any_j_e_i_Default");
     SamplesScreen_SamplesService_samplesService(instance, SamplesScreen_samplesService);
+    final ManagedInstance SamplesScreen_sampleCardInstance = (ManagedInstance) contextManager.getContextualInstance("ContextualProvider_factory__o_j_e_i_c_a_ManagedInstance__quals__Universal", new Class[] { SampleCard.class }, new Annotation[] { });
+    registerDependentScopedReference(instance, SamplesScreen_sampleCardInstance);
+    SamplesScreen_ManagedInstance_sampleCardInstance(instance, SamplesScreen_sampleCardInstance);
     setIncompleteInstance(null);
     return instance;
   }

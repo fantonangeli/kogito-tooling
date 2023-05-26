@@ -18,10 +18,10 @@ public class Type_factory__o_u_c_v_p_n_NotificationPopupsManagerView__quals__j_e
   public NotificationPopupsManagerView createInstance(final ContextManager contextManager) {
     final NotificationPopupsManagerView instance = new NotificationPopupsManagerView();
     setIncompleteInstance(instance);
-    final ActivityBeansCache NotificationPopupsManagerView_activityBeansCache = (ActivityBeansCache) contextManager.getInstance("Type_factory__o_u_c_m_ActivityBeansCache__quals__j_e_i_Any_j_e_i_Default");
-    NotificationPopupsManagerView_ActivityBeansCache_activityBeansCache(instance, NotificationPopupsManagerView_activityBeansCache);
     final PlaceManagerImpl NotificationPopupsManagerView_placeManager = (PlaceManagerImpl) contextManager.getInstance("Type_factory__o_u_c_m_PlaceManagerImpl__quals__j_e_i_Any_j_e_i_Default");
     NotificationPopupsManagerView_PlaceManager_placeManager(instance, NotificationPopupsManagerView_placeManager);
+    final ActivityBeansCache NotificationPopupsManagerView_activityBeansCache = (ActivityBeansCache) contextManager.getInstance("Type_factory__o_u_c_m_ActivityBeansCache__quals__j_e_i_Any_j_e_i_Default");
+    NotificationPopupsManagerView_ActivityBeansCache_activityBeansCache(instance, NotificationPopupsManagerView_activityBeansCache);
     setIncompleteInstance(null);
     return instance;
   }
