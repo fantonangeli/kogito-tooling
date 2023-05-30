@@ -363,25 +363,25 @@ public class Type_factory__o_u_c_m_PlaceManagerImpl__quals__j_e_i_Any_j_e_i_Defa
   public PlaceManagerImpl createInstance(final ContextManager contextManager) {
     final PlaceManagerImpl instance = new PlaceManagerImpl();
     setIncompleteInstance(instance);
-    final Event PlaceManagerImpl_workbenchPartBeforeCloseEvent = (Event) contextManager.getContextualInstance("ContextualProvider_factory__j_e_e_Event__quals__Universal", new Class[] { BeforeClosePlaceEvent.class }, new Annotation[] { });
-    registerDependentScopedReference(instance, PlaceManagerImpl_workbenchPartBeforeCloseEvent);
-    PlaceManagerImpl_Event_workbenchPartBeforeCloseEvent(instance, PlaceManagerImpl_workbenchPartBeforeCloseEvent);
+    final PanelManagerImpl PlaceManagerImpl_panelManager = (PanelManagerImpl) contextManager.getInstance("Type_factory__o_u_c_w_PanelManagerImpl__quals__j_e_i_Any_j_e_i_Default");
+    PlaceManagerImpl_PanelManager_panelManager(instance, PlaceManagerImpl_panelManager);
+    final PerspectiveManagerImpl PlaceManagerImpl_perspectiveManager = (PerspectiveManagerImpl) contextManager.getInstance("Type_factory__o_u_c_m_PerspectiveManagerImpl__quals__j_e_i_Any_j_e_i_Default");
+    PlaceManagerImpl_PerspectiveManager_perspectiveManager(instance, PlaceManagerImpl_perspectiveManager);
     final Event PlaceManagerImpl_workbenchPartCloseEvent = (Event) contextManager.getContextualInstance("ContextualProvider_factory__j_e_e_Event__quals__Universal", new Class[] { ClosePlaceEvent.class }, new Annotation[] { });
     registerDependentScopedReference(instance, PlaceManagerImpl_workbenchPartCloseEvent);
     PlaceManagerImpl_Event_workbenchPartCloseEvent(instance, PlaceManagerImpl_workbenchPartCloseEvent);
-    final PerspectiveManagerImpl PlaceManagerImpl_perspectiveManager = (PerspectiveManagerImpl) contextManager.getInstance("Type_factory__o_u_c_m_PerspectiveManagerImpl__quals__j_e_i_Any_j_e_i_Default");
-    PlaceManagerImpl_PerspectiveManager_perspectiveManager(instance, PlaceManagerImpl_perspectiveManager);
-    final ActivityLifecycleErrorHandler PlaceManagerImpl_lifecycleErrorHandler = (ActivityLifecycleErrorHandler) contextManager.getInstance("Type_factory__o_u_c_m_ActivityLifecycleErrorHandler__quals__j_e_i_Any_j_e_i_Default");
-    PlaceManagerImpl_ActivityLifecycleErrorHandler_lifecycleErrorHandler(instance, PlaceManagerImpl_lifecycleErrorHandler);
+    final ActivityManagerImpl PlaceManagerImpl_activityManager = (ActivityManagerImpl) contextManager.getInstance("Type_factory__o_u_c_m_ActivityManagerImpl__quals__j_e_i_Any_j_e_i_Default");
+    PlaceManagerImpl_ActivityManager_activityManager(instance, PlaceManagerImpl_activityManager);
     final LayoutSelection PlaceManagerImpl_layoutSelection = (LayoutSelection) contextManager.getInstance("Type_factory__o_u_c_w_LayoutSelection__quals__j_e_i_Any_j_e_i_Default");
     PlaceManagerImpl_LayoutSelection_layoutSelection(instance, PlaceManagerImpl_layoutSelection);
+    final Event PlaceManagerImpl_workbenchPartBeforeCloseEvent = (Event) contextManager.getContextualInstance("ContextualProvider_factory__j_e_e_Event__quals__Universal", new Class[] { BeforeClosePlaceEvent.class }, new Annotation[] { });
+    registerDependentScopedReference(instance, PlaceManagerImpl_workbenchPartBeforeCloseEvent);
+    PlaceManagerImpl_Event_workbenchPartBeforeCloseEvent(instance, PlaceManagerImpl_workbenchPartBeforeCloseEvent);
+    final ActivityLifecycleErrorHandler PlaceManagerImpl_lifecycleErrorHandler = (ActivityLifecycleErrorHandler) contextManager.getInstance("Type_factory__o_u_c_m_ActivityLifecycleErrorHandler__quals__j_e_i_Any_j_e_i_Default");
+    PlaceManagerImpl_ActivityLifecycleErrorHandler_lifecycleErrorHandler(instance, PlaceManagerImpl_lifecycleErrorHandler);
     final Event PlaceManagerImpl_selectWorkbenchPartEvent = (Event) contextManager.getContextualInstance("ContextualProvider_factory__j_e_e_Event__quals__Universal", new Class[] { SelectPlaceEvent.class }, new Annotation[] { });
     registerDependentScopedReference(instance, PlaceManagerImpl_selectWorkbenchPartEvent);
     PlaceManagerImpl_Event_selectWorkbenchPartEvent(instance, PlaceManagerImpl_selectWorkbenchPartEvent);
-    final ActivityManagerImpl PlaceManagerImpl_activityManager = (ActivityManagerImpl) contextManager.getInstance("Type_factory__o_u_c_m_ActivityManagerImpl__quals__j_e_i_Any_j_e_i_Default");
-    PlaceManagerImpl_ActivityManager_activityManager(instance, PlaceManagerImpl_activityManager);
-    final PanelManagerImpl PlaceManagerImpl_panelManager = (PanelManagerImpl) contextManager.getInstance("Type_factory__o_u_c_w_PanelManagerImpl__quals__j_e_i_Any_j_e_i_Default");
-    PlaceManagerImpl_PanelManager_panelManager(instance, PlaceManagerImpl_panelManager);
     setIncompleteInstance(null);
     return instance;
   }
@@ -428,20 +428,20 @@ public class Type_factory__o_u_c_m_PlaceManagerImpl__quals__j_e_i_Any_j_e_i_Defa
     instance.@org.uberfire.client.mvp.PlaceManagerImpl::perspectiveManager = value;
   }-*/;
 
-  native static Event PlaceManagerImpl_Event_selectWorkbenchPartEvent(PlaceManagerImpl instance) /*-{
-    return instance.@org.uberfire.client.mvp.PlaceManagerImpl::selectWorkbenchPartEvent;
-  }-*/;
-
-  native static void PlaceManagerImpl_Event_selectWorkbenchPartEvent(PlaceManagerImpl instance, Event<SelectPlaceEvent> value) /*-{
-    instance.@org.uberfire.client.mvp.PlaceManagerImpl::selectWorkbenchPartEvent = value;
-  }-*/;
-
   native static PanelManager PlaceManagerImpl_PanelManager_panelManager(PlaceManagerImpl instance) /*-{
     return instance.@org.uberfire.client.mvp.PlaceManagerImpl::panelManager;
   }-*/;
 
   native static void PlaceManagerImpl_PanelManager_panelManager(PlaceManagerImpl instance, PanelManager value) /*-{
     instance.@org.uberfire.client.mvp.PlaceManagerImpl::panelManager = value;
+  }-*/;
+
+  native static Event PlaceManagerImpl_Event_selectWorkbenchPartEvent(PlaceManagerImpl instance) /*-{
+    return instance.@org.uberfire.client.mvp.PlaceManagerImpl::selectWorkbenchPartEvent;
+  }-*/;
+
+  native static void PlaceManagerImpl_Event_selectWorkbenchPartEvent(PlaceManagerImpl instance, Event<SelectPlaceEvent> value) /*-{
+    instance.@org.uberfire.client.mvp.PlaceManagerImpl::selectWorkbenchPartEvent = value;
   }-*/;
 
   native static Event PlaceManagerImpl_Event_workbenchPartCloseEvent(PlaceManagerImpl instance) /*-{

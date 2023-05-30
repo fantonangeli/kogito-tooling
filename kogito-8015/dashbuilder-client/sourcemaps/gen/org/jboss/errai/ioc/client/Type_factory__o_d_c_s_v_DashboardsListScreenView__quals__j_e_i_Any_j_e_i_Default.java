@@ -48,12 +48,12 @@ public class Type_factory__o_d_c_s_v_DashboardsListScreenView__quals__j_e_i_Any_
     final HTMLDivElement DashboardsListScreenView_uploadWidgetContainer = (HTMLDivElement) contextManager.getInstance("ExtensionProvided_factory__e_d_HTMLDivElement__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
     registerDependentScopedReference(instance, DashboardsListScreenView_uploadWidgetContainer);
     DashboardsListScreenView_HTMLDivElement_uploadWidgetContainer(instance, DashboardsListScreenView_uploadWidgetContainer);
-    final UploadWidget DashboardsListScreenView_uploadWidget = (UploadWidget) contextManager.getInstance("Type_factory__o_d_c_w_UploadWidget__quals__j_e_i_Any_j_e_i_Default");
-    registerDependentScopedReference(instance, DashboardsListScreenView_uploadWidget);
-    DashboardsListScreenView_UploadWidget_uploadWidget(instance, DashboardsListScreenView_uploadWidget);
     final HTMLDivElement DashboardsListScreenView_dashboardsList = (HTMLDivElement) contextManager.getInstance("ExtensionProvided_factory__e_d_HTMLDivElement__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
     registerDependentScopedReference(instance, DashboardsListScreenView_dashboardsList);
     DashboardsListScreenView_HTMLDivElement_dashboardsList(instance, DashboardsListScreenView_dashboardsList);
+    final UploadWidget DashboardsListScreenView_uploadWidget = (UploadWidget) contextManager.getInstance("Type_factory__o_d_c_w_UploadWidget__quals__j_e_i_Any_j_e_i_Default");
+    registerDependentScopedReference(instance, DashboardsListScreenView_uploadWidget);
+    DashboardsListScreenView_UploadWidget_uploadWidget(instance, DashboardsListScreenView_uploadWidget);
     final HTMLDivElement DashboardsListScreenView_dashboardsListRoot = (HTMLDivElement) contextManager.getInstance("ExtensionProvided_factory__e_d_HTMLDivElement__quals__j_e_i_Any_j_e_i_Default_j_i_Named");
     registerDependentScopedReference(instance, DashboardsListScreenView_dashboardsListRoot);
     DashboardsListScreenView_HTMLDivElement_dashboardsListRoot(instance, DashboardsListScreenView_dashboardsListRoot);

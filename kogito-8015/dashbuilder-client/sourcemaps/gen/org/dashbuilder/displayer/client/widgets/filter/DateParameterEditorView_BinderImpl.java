@@ -1,4 +1,4 @@
-// .ui.xml template last modified: 1685105728701
+// .ui.xml template last modified: 1685450266864
 package org.dashbuilder.displayer.client.widgets.filter;
 
 import com.google.gwt.core.client.GWT;

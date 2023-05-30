@@ -140,11 +140,11 @@ public class Type_factory__o_d_c_s_RuntimeScreen__quals__j_e_i_Any_j_e_i_Default
   public RuntimeScreen createInstance(final ContextManager contextManager) {
     final RuntimeScreen instance = new RuntimeScreen();
     setIncompleteInstance(instance);
+    final PlaceManagerImpl RuntimeScreen_placeManager = (PlaceManagerImpl) contextManager.getInstance("Type_factory__o_u_c_m_PlaceManagerImpl__quals__j_e_i_Any_j_e_i_Default");
+    RuntimeScreen_PlaceManager_placeManager(instance, RuntimeScreen_placeManager);
     final RuntimeScreenView RuntimeScreen_view = (RuntimeScreenView) contextManager.getInstance("Type_factory__o_d_c_s_v_RuntimeScreenView__quals__j_e_i_Any_j_e_i_Default");
     registerDependentScopedReference(instance, RuntimeScreen_view);
     RuntimeScreen_View_view(instance, RuntimeScreen_view);
-    final PlaceManagerImpl RuntimeScreen_placeManager = (PlaceManagerImpl) contextManager.getInstance("Type_factory__o_u_c_m_PlaceManagerImpl__quals__j_e_i_Any_j_e_i_Default");
-    RuntimeScreen_PlaceManager_placeManager(instance, RuntimeScreen_placeManager);
     setIncompleteInstance(null);
     return instance;
   }

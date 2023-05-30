@@ -78,8 +78,8 @@ public class Type_factory__o_d_d_c_e_ClientIntervalBuilderLocator__quals__j_e_i_
   }
 
   public ClientIntervalBuilderLocator createInstance(final ContextManager contextManager) {
-    final IntervalBuilderDynamicLabel _intervalBuilderDynamicLabel_0 = (IntervalBuilderDynamicLabel) contextManager.getInstance("Type_factory__o_d_d_e_g_IntervalBuilderDynamicLabel__quals__j_e_i_Any_j_e_i_Default");
     final ClientIntervalBuilderDynamicDate _intervalBuilderDynamicDate_1 = (ClientIntervalBuilderDynamicDate) contextManager.getInstance("Type_factory__o_d_d_c_e_ClientIntervalBuilderDynamicDate__quals__j_e_i_Any_j_e_i_Default");
+    final IntervalBuilderDynamicLabel _intervalBuilderDynamicLabel_0 = (IntervalBuilderDynamicLabel) contextManager.getInstance("Type_factory__o_d_d_e_g_IntervalBuilderDynamicLabel__quals__j_e_i_Any_j_e_i_Default");
     final IntervalBuilderFixedDate _intervalBuilderFixedDate_2 = (IntervalBuilderFixedDate) contextManager.getInstance("Type_factory__o_d_d_e_g_IntervalBuilderFixedDate__quals__j_e_i_Any_j_e_i_Default");
     final ClientIntervalBuilderLocator instance = new ClientIntervalBuilderLocator(_intervalBuilderDynamicLabel_0, _intervalBuilderDynamicDate_1, _intervalBuilderFixedDate_2);
     registerDependentScopedReference(instance, _intervalBuilderDynamicLabel_0);

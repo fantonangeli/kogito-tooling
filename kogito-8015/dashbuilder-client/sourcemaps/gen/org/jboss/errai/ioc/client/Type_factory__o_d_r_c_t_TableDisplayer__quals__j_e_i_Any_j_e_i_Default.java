@@ -20,11 +20,11 @@ public class Type_factory__o_d_r_c_t_TableDisplayer__quals__j_e_i_Any_j_e_i_Defa
   }
 
   public TableDisplayer createInstance(final ContextManager contextManager) {
-    final FilterLabelSet _filterLabelSet_1 = (FilterLabelSet) contextManager.getInstance("Type_factory__o_d_c_c_w_FilterLabelSet__quals__j_e_i_Any_j_e_i_Default");
     final View _view_0 = (TableDisplayerView) contextManager.getInstance("Type_factory__o_d_r_c_t_TableDisplayerView__quals__j_e_i_Any_j_e_i_Default");
+    final FilterLabelSet _filterLabelSet_1 = (FilterLabelSet) contextManager.getInstance("Type_factory__o_d_c_c_w_FilterLabelSet__quals__j_e_i_Any_j_e_i_Default");
     final TableDisplayer instance = new TableDisplayer(_view_0, _filterLabelSet_1);
-    registerDependentScopedReference(instance, _filterLabelSet_1);
     registerDependentScopedReference(instance, _view_0);
+    registerDependentScopedReference(instance, _filterLabelSet_1);
     setIncompleteInstance(instance);
     setIncompleteInstance(null);
     return instance;

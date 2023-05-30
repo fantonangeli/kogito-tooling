@@ -75,10 +75,10 @@ public class Type_factory__o_d_c_RuntimeModelContentListener__quals__j_e_i_Any_j
   public RuntimeModelContentListener createInstance(final ContextManager contextManager) {
     final RuntimeModelContentListener instance = new RuntimeModelContentListener();
     setIncompleteInstance(instance);
-    final RuntimeCommunication RuntimeModelContentListener_runtimeCommunication = (RuntimeCommunication) contextManager.getInstance("Type_factory__o_d_c_RuntimeCommunication__quals__j_e_i_Any_j_e_i_Default");
-    RuntimeModelContentListener_RuntimeCommunication_runtimeCommunication(instance, RuntimeModelContentListener_runtimeCommunication);
     final RouterScreen RuntimeModelContentListener_routerScreen = (RouterScreen) contextManager.getInstance("Type_factory__o_d_c_s_RouterScreen__quals__j_e_i_Any_j_e_i_Default");
     RuntimeModelContentListener_RouterScreen_routerScreen(instance, RuntimeModelContentListener_routerScreen);
+    final RuntimeCommunication RuntimeModelContentListener_runtimeCommunication = (RuntimeCommunication) contextManager.getInstance("Type_factory__o_d_c_RuntimeCommunication__quals__j_e_i_Any_j_e_i_Default");
+    RuntimeModelContentListener_RuntimeCommunication_runtimeCommunication(instance, RuntimeModelContentListener_runtimeCommunication);
     setIncompleteInstance(null);
     return instance;
   }

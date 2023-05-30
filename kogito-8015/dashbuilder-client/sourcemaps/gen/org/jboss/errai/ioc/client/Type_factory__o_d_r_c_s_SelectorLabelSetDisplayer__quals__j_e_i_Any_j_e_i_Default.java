@@ -20,11 +20,11 @@ public class Type_factory__o_d_r_c_s_SelectorLabelSetDisplayer__quals__j_e_i_Any
   }
 
   public SelectorLabelSetDisplayer createInstance(final ContextManager contextManager) {
-    final View _view_0 = (SelectorLabelSetDisplayerView) contextManager.getInstance("Type_factory__o_d_r_c_s_SelectorLabelSetDisplayerView__quals__j_e_i_Any_j_e_i_Default");
     final SyncBeanManager _beanManager_1 = (SyncBeanManager) contextManager.getInstance("Producer_factory__o_j_e_i_c_c_SyncBeanManager__quals__j_e_i_Any_j_e_i_Default");
+    final View _view_0 = (SelectorLabelSetDisplayerView) contextManager.getInstance("Type_factory__o_d_r_c_s_SelectorLabelSetDisplayerView__quals__j_e_i_Any_j_e_i_Default");
     final SelectorLabelSetDisplayer instance = new SelectorLabelSetDisplayer(_view_0, _beanManager_1);
-    registerDependentScopedReference(instance, _view_0);
     registerDependentScopedReference(instance, _beanManager_1);
+    registerDependentScopedReference(instance, _view_0);
     setIncompleteInstance(instance);
     setIncompleteInstance(null);
     return instance;
