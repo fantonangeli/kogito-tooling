@@ -138,10 +138,10 @@ public class Type_factory__o_d_c_s_EmptyScreen__quals__j_e_i_Any_j_e_i_Default e
     EmptyScreen_View_view(instance, EmptyScreen_view);
     final RouterScreen EmptyScreen_router = (RouterScreen) contextManager.getInstance("Type_factory__o_d_c_s_RouterScreen__quals__j_e_i_Any_j_e_i_Default");
     EmptyScreen_RouterScreen_router(instance, EmptyScreen_router);
-    final RuntimeClientLoader EmptyScreen_loader = (RuntimeClientLoader) contextManager.getInstance("Type_factory__o_d_c_RuntimeClientLoader__quals__j_e_i_Any_j_e_i_Default");
-    EmptyScreen_RuntimeClientLoader_loader(instance, EmptyScreen_loader);
     final PerspectiveManagerImpl EmptyScreen_perspectiveManager = (PerspectiveManagerImpl) contextManager.getInstance("Type_factory__o_u_c_m_PerspectiveManagerImpl__quals__j_e_i_Any_j_e_i_Default");
     EmptyScreen_PerspectiveManager_perspectiveManager(instance, EmptyScreen_perspectiveManager);
+    final RuntimeClientLoader EmptyScreen_loader = (RuntimeClientLoader) contextManager.getInstance("Type_factory__o_d_c_RuntimeClientLoader__quals__j_e_i_Any_j_e_i_Default");
+    EmptyScreen_RuntimeClientLoader_loader(instance, EmptyScreen_loader);
     setIncompleteInstance(null);
     return instance;
   }

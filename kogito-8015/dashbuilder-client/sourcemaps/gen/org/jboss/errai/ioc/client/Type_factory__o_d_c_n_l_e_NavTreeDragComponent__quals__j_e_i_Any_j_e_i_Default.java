@@ -25,9 +25,9 @@ public class Type_factory__o_d_c_n_l_e_NavTreeDragComponent__quals__j_e_i_Any_j_
   }
 
   public NavTreeDragComponent createInstance(final ContextManager contextManager) {
-    final PerspectivePluginManager _pluginManager_1 = (RuntimePerspectivePluginManager) contextManager.getInstance("Type_factory__o_d_c_p_RuntimePerspectivePluginManager__quals__j_e_i_Any_j_e_i_Default");
     final NavigationManager _navigationManager_0 = (NavigationManagerImpl) contextManager.getInstance("Type_factory__o_d_c_n_i_NavigationManagerImpl__quals__j_e_i_Any_j_e_i_Default");
     final NavTreeWidget _navWidget_2 = (NavTreeWidget) contextManager.getInstance("Type_factory__o_d_c_n_w_NavTreeWidget__quals__j_e_i_Any_j_e_i_Default");
+    final PerspectivePluginManager _pluginManager_1 = (RuntimePerspectivePluginManager) contextManager.getInstance("Type_factory__o_d_c_p_RuntimePerspectivePluginManager__quals__j_e_i_Any_j_e_i_Default");
     final NavTreeDragComponent instance = new NavTreeDragComponent(_navigationManager_0, _pluginManager_1, _navWidget_2);
     registerDependentScopedReference(instance, _navWidget_2);
     setIncompleteInstance(instance);

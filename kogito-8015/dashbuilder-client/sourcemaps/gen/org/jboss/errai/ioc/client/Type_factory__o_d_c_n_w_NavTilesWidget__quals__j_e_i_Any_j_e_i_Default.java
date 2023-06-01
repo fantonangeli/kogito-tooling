@@ -29,14 +29,14 @@ public class Type_factory__o_d_c_n_w_NavTilesWidget__quals__j_e_i_Any_j_e_i_Defa
   }
 
   public NavTilesWidget createInstance(final ContextManager contextManager) {
-    final View _view_0 = (NavTilesWidgetView) contextManager.getInstance("Type_factory__o_d_c_n_w_NavTilesWidgetView__quals__j_e_i_Any_j_e_i_Default");
-    final NavigationManager _navigationManager_1 = (NavigationManagerImpl) contextManager.getInstance("Type_factory__o_d_c_n_i_NavigationManagerImpl__quals__j_e_i_Any_j_e_i_Default");
-    final PerspectivePluginManager _perspectivePluginManager_2 = (RuntimePerspectivePluginManager) contextManager.getInstance("Type_factory__o_d_c_p_RuntimePerspectivePluginManager__quals__j_e_i_Any_j_e_i_Default");
     final PlaceManager _placeManager_3 = (PlaceManagerImpl) contextManager.getInstance("Type_factory__o_u_c_m_PlaceManagerImpl__quals__j_e_i_Any_j_e_i_Default");
     final SyncBeanManager _beanManager_4 = (SyncBeanManager) contextManager.getInstance("Producer_factory__o_j_e_i_c_c_SyncBeanManager__quals__j_e_i_Any_j_e_i_Default");
+    final View _view_0 = (NavTilesWidgetView) contextManager.getInstance("Type_factory__o_d_c_n_w_NavTilesWidgetView__quals__j_e_i_Any_j_e_i_Default");
+    final PerspectivePluginManager _perspectivePluginManager_2 = (RuntimePerspectivePluginManager) contextManager.getInstance("Type_factory__o_d_c_p_RuntimePerspectivePluginManager__quals__j_e_i_Any_j_e_i_Default");
+    final NavigationManager _navigationManager_1 = (NavigationManagerImpl) contextManager.getInstance("Type_factory__o_d_c_n_i_NavigationManagerImpl__quals__j_e_i_Any_j_e_i_Default");
     final NavTilesWidget instance = new NavTilesWidget(_view_0, _navigationManager_1, _perspectivePluginManager_2, _placeManager_3, _beanManager_4);
-    registerDependentScopedReference(instance, _view_0);
     registerDependentScopedReference(instance, _beanManager_4);
+    registerDependentScopedReference(instance, _view_0);
     setIncompleteInstance(instance);
     thisInstance.setReference(instance, "onNavTreeChangedSubscription", CDI.subscribe("org.dashbuilder.navigation.event.NavTreeChangedEvent", new AbstractCDIEventCallback<NavTreeChangedEvent>() {
       public void fireEvent(final NavTreeChangedEvent event) {

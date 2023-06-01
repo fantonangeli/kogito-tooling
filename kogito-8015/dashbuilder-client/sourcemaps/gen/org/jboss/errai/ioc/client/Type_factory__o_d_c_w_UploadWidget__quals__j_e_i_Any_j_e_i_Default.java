@@ -19,13 +19,13 @@ public class Type_factory__o_d_c_w_UploadWidget__quals__j_e_i_Any_j_e_i_Default 
   public UploadWidget createInstance(final ContextManager contextManager) {
     final UploadWidget instance = new UploadWidget();
     setIncompleteInstance(instance);
-    final RouterScreen UploadWidget_routerScreen = (RouterScreen) contextManager.getInstance("Type_factory__o_d_c_s_RouterScreen__quals__j_e_i_Any_j_e_i_Default");
-    UploadWidget_RouterScreen_routerScreen(instance, UploadWidget_routerScreen);
     final UploadWidgetView UploadWidget_view = (UploadWidgetView) contextManager.getInstance("Type_factory__o_d_c_w_v_UploadWidgetView__quals__j_e_i_Any_j_e_i_Default");
     registerDependentScopedReference(instance, UploadWidget_view);
     UploadWidget_View_view(instance, UploadWidget_view);
     final RuntimeClientLoader UploadWidget_runtimeClientLoader = (RuntimeClientLoader) contextManager.getInstance("Type_factory__o_d_c_RuntimeClientLoader__quals__j_e_i_Any_j_e_i_Default");
     UploadWidget_RuntimeClientLoader_runtimeClientLoader(instance, UploadWidget_runtimeClientLoader);
+    final RouterScreen UploadWidget_routerScreen = (RouterScreen) contextManager.getInstance("Type_factory__o_d_c_s_RouterScreen__quals__j_e_i_Any_j_e_i_Default");
+    UploadWidget_RouterScreen_routerScreen(instance, UploadWidget_routerScreen);
     setIncompleteInstance(null);
     return instance;
   }

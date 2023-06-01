@@ -21,17 +21,17 @@ public class Type_factory__o_d_r_c_s_SelectorSliderDisplayer__quals__j_e_i_Any_j
   }
 
   public SelectorSliderDisplayer createInstance(final ContextManager contextManager) {
+    final DateParameterEditor _maxDateEditor_2 = (DateParameterEditor) contextManager.getInstance("Type_factory__o_d_d_c_w_f_DateParameterEditor__quals__j_e_i_Any_j_e_i_Default");
     final DateParameterEditor _minDateEditor_1 = (DateParameterEditor) contextManager.getInstance("Type_factory__o_d_d_c_w_f_DateParameterEditor__quals__j_e_i_Any_j_e_i_Default");
+    final NumberParameterEditor _maxNumberEditor_4 = (NumberParameterEditor) contextManager.getInstance("Type_factory__o_d_d_c_w_f_NumberParameterEditor__quals__j_e_i_Any_j_e_i_Default");
     final View _view_0 = (SelectorSliderDisplayerView) contextManager.getInstance("Type_factory__o_d_r_c_s_SelectorSliderDisplayerView__quals__j_e_i_Any_j_e_i_Default");
     final NumberParameterEditor _minNumberEditor_3 = (NumberParameterEditor) contextManager.getInstance("Type_factory__o_d_d_c_w_f_NumberParameterEditor__quals__j_e_i_Any_j_e_i_Default");
-    final DateParameterEditor _maxDateEditor_2 = (DateParameterEditor) contextManager.getInstance("Type_factory__o_d_d_c_w_f_DateParameterEditor__quals__j_e_i_Any_j_e_i_Default");
-    final NumberParameterEditor _maxNumberEditor_4 = (NumberParameterEditor) contextManager.getInstance("Type_factory__o_d_d_c_w_f_NumberParameterEditor__quals__j_e_i_Any_j_e_i_Default");
     final SelectorSliderDisplayer instance = new SelectorSliderDisplayer(_view_0, _minDateEditor_1, _maxDateEditor_2, _minNumberEditor_3, _maxNumberEditor_4);
+    registerDependentScopedReference(instance, _maxDateEditor_2);
     registerDependentScopedReference(instance, _minDateEditor_1);
+    registerDependentScopedReference(instance, _maxNumberEditor_4);
     registerDependentScopedReference(instance, _view_0);
     registerDependentScopedReference(instance, _minNumberEditor_3);
-    registerDependentScopedReference(instance, _maxDateEditor_2);
-    registerDependentScopedReference(instance, _maxNumberEditor_4);
     setIncompleteInstance(instance);
     setIncompleteInstance(null);
     return instance;
