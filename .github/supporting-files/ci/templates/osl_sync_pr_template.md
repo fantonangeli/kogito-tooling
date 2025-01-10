@@ -6,4 +6,4 @@ This pull request has been created by a GitHub workflow to synchronize the main 
 [View Action]($RUN_URL)
 
 Resolved conflicts:
-$SYNC_CHANGES
+$TRUNCATED_SYNC_CHANGES
